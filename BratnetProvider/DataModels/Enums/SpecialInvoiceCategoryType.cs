@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
-    public enum SpecialDocumentCategoryType
+    public enum SpecialInvoiceCategoryType
     {
         /// <summary>
         /// Subsidies - grants
