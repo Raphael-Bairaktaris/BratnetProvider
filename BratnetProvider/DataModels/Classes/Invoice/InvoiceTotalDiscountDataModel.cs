@@ -1,9 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
@@ -18,14 +13,14 @@ namespace BratnetProvider
         /// The total discount amount
         /// </summary>
         [JsonProperty("totalDiscountAmount")]
-        public object TotalDiscountAmount { get; set; }
+        public decimal? TotalDiscountAmount { get; set; }
 
         /// <summary>
         /// The total discount percent
         /// </summary>
         [JsonProperty("totalDiscountPercent")]
-        public object TotalDiscountPercent { get; set; }
-        
+        public decimal? TotalDiscountPercent { get; set; }
+
         #endregion
 
         #region Constructor
@@ -35,7 +30,7 @@ namespace BratnetProvider
         /// </summary>
         public InvoiceTotalDiscountDataModel()
         {
-            
+
         }
 
         #endregion

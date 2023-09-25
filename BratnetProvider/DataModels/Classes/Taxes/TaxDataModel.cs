@@ -1,21 +1,37 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
-    public class TaxesDataModel
+    public class TaxDataModel
     {
+        #region Private Members
+
+        /// <summary>
+        /// The member of the <see cref="TaxType"/> property
+        /// </summary>
+        private IEnumerable<TaxType>? mTaxType;
+
+        #endregion
+
         #region Public Property
 
         /// <summary>
         /// The tax type
         /// </summary>
+        [AllowNull]
         [JsonProperty("taxType")]
-        public TaxType TaxType { get; set; }
+        public IEnumerable<TaxType> TaxType 
+        { 
+            get => mTaxType ?? Enumerable.Empty<TaxType>();
+            
+            set => mTaxType = value;
+        }
 
         /// <summary>
         /// The tax category
@@ -53,7 +69,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public TaxesDataModel()
+        public TaxDataModel()
         {
             
         }

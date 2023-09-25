@@ -3,7 +3,7 @@
     /// <summary>
     /// The VAT exemption type enum
     /// </summary>
-    public enum VATExemptionType
+    public enum VATExemptionCategory
     {
         /// <summary>
         /// Without VAT – article 2 and 3 thereof VAT code

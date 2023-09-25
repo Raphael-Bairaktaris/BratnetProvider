@@ -13,6 +13,15 @@ namespace BratnetProvider
     /// </summary>
     public class InvoiceHeaderDataModel
     {
+        #region Private Members
+
+        /// <summary>
+        /// The member of the <see cref="Series"/> property 
+        /// </summary>
+        private string? mSeries;
+
+        #endregion
+
         #region Public Property
 
         /// <summary>
@@ -20,7 +29,12 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("series")]
-        public string Series { get; set; }
+        public string Series 
+        {
+            get => mSeries ?? string.Empty;
+            
+            set => mSeries = value;
+        }
 
         /// <summary>
         /// The invoice serial number
@@ -38,7 +52,7 @@ namespace BratnetProvider
         /// The invoice type
         /// </summary>
         [JsonProperty("invoiceType")]
-        public object InvoiceType { get; set; }
+        public InvoiceType InvoiceType { get; set; }
 
         /// <summary>
         /// The vat payment suspension indication
@@ -61,8 +75,8 @@ namespace BratnetProvider
         /// <summary>
         /// The correlated invoice
         /// </summary>
-        [JsonProperty("correlatedInvoice")]
-        public long? CorrelatedInvoice { get; set; }
+        [JsonProperty("correlatedInvoices")]
+        public long? CorrelatedInvoices { get; set; }
 
         /// <summary>
         /// The self pricing indication
@@ -87,7 +101,7 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("vehicleNumber")]
-        public string VehicleNumber { get; set; }
+        public string? VehicleNumber { get; set; }
 
         /// <summary>
         /// The move purpose index

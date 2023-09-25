@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,21 +11,41 @@ namespace BratnetProvider
     /// <summary>
     /// Represent a taxes descriptio data
     /// </summary>
-    public class TaxesDescriptionDataModel
+    public class TaxDescriptionDataModel
     {
+        #region Private Members
+
+        /// <summary>
+        /// The member of the <see cref="TaxDescription"/> property
+        /// </summary>
+        private string? mTaxDescription;
+
+        /// <summary>
+        /// The member of the <see cref="VATCategory"/> property
+        /// </summary>
+        private IEnumerable<VATCategory>? mVATCategory;
+
+        #endregion
+
         #region Public Property
 
         /// <summary>
         /// The line id
         /// </summary>
         [JsonProperty("lineid")]
-        public int LindId { get; set; }
+        public int LineId { get; set; }
 
         /// <summary>
         /// The tax description
         /// </summary>
+        [AllowNull]
         [JsonProperty("taxDescription")]
-        public string TaxDescription { get; set; }
+        public string TaxDescription 
+        { 
+            get => mTaxDescription ?? string.Empty;
+
+            set => mTaxDescription = value;
+        }
 
         /// <summary>
         /// The tax amount
@@ -41,8 +62,14 @@ namespace BratnetProvider
         /// <summary>
         /// The vat category
         /// </summary>
+        [AllowNull]
         [JsonProperty("VatCategory")]
-        public VATCategory VATCategory { get; set; }
+        public IEnumerable<VATCategory> VATCategory 
+        { 
+            get => mVATCategory ?? Enumerable.Empty<VATCategory>();
+
+            set => mVATCategory = value;
+        }
 
         #endregion
 
@@ -51,7 +78,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public TaxesDescriptionDataModel()
+        public TaxDescriptionDataModel()
         {
             
         }

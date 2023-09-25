@@ -12,10 +12,6 @@ namespace BratnetProvider
     {
         #region Private Members
 
-        /// <summary>
-        /// The member of the <see cref="AuthenticationCode"/> property
-        /// </summary>
-        private string? mAuthenticationCode;
 
         #endregion
 
@@ -24,47 +20,38 @@ namespace BratnetProvider
         /// <summary>
         /// The unique auto incremented item uid
         /// </summary>
-        [AllowNull]
         [JsonProperty("uid")]
         public uint UId { get; set; }
 
         /// <summary>
         /// The invoice unique mark
         /// </summary>
-        [AllowNull]
         [JsonProperty("mark")]
         public long? Mark { get; set; }
 
         /// <summary>
         /// The invoice cancellation mark
         /// </summary>
-        [AllowNull]
         [JsonProperty("cancelledByMark")]
         public long? CancelledByMark { get; set; }
 
         /// <summary>
         /// The invoice authentication code
         /// </summary>
-        [AllowNull]
         [JsonProperty("authenticationCode")]
-        public string AuthenticationCode 
-        { 
-            get => mAuthenticationCode ?? string.Empty;
-            set => mAuthenticationCode = value;
-        }
+        public string? AuthenticationCode { get; set; }
 
         /// <summary>
         /// The invoice transmission failure
         /// </summary>
         [JsonProperty("transmissionFailure")]
-        public object TransmissionFailure { get; set; }
+        public string? TransmissionFailure { get; set; }
 
         /// <summary>
         /// The invoice issuer
         /// </summary>
-        [AllowNull]
         [JsonProperty("issuer")]
-        public VATNumberDataModel Issuer { get; set; }
+        public VATNumberDataModel? Issuer { get; set; }
 
         #endregion
 

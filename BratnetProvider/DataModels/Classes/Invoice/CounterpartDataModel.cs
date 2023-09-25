@@ -32,21 +32,19 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("country")]
-        public string Country { get; set; }
+        public CountryCode Country { get; set; }
 
         /// <summary>
-        /// The counterpart postal code
+        /// The branch
         /// </summary>
-        [AllowNull]
-        [JsonProperty("postalCode")]
-        public string PostalCode { get; set; }
+        [JsonProperty("branch")]
+        public uint Branch { get; set; }
 
         /// <summary>
-        /// The counterpart city information
+        /// The address data model
         /// </summary>
-        [AllowNull]
-        [JsonProperty("city")]
-        public string City { get; set; }
+        [JsonProperty("address")]
+        public AddressDataModel Address { get; set; }
 
         #endregion
 

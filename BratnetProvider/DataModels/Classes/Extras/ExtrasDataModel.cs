@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,7 @@ namespace BratnetProvider
         /// <summary>
         /// The member of the <see cref="SalerCompanyName"/> property
         /// </summary>
-        private string mSalerCompanyName;
+        private string? mSalerCompanyName;
 
         /// <summary>
         /// The member of the <see cref="SalerActivity"/> property
@@ -70,9 +71,9 @@ namespace BratnetProvider
         private string? mSalerVAT;
 
         /// <summary>
-        /// The member of the <see cref="SalerDoyName"/> property
+        /// The member of the <see cref="SalerDOYName"/> property
         /// </summary>
-        private string? mSalerDoyName;
+        private string? mSalerDOYName;
 
         /// <summary>
         /// The member of the <see cref="SalerRepresentative"/> property
@@ -100,9 +101,9 @@ namespace BratnetProvider
         private string? mCustomerVAT;
 
         /// <summary>
-        /// The meber of the <see cref="CustomerDoyName"/> property
+        /// The meber of the <see cref="CustomerDOYName"/> property
         /// </summary>
-        private string? mCustomerDoyName;
+        private string? mCustomerDOYName;
 
         /// <summary>
         /// The meber of the <see cref="CustomerAddress"/> property
@@ -186,6 +187,7 @@ namespace BratnetProvider
         /// <summary>
         /// The remarks
         /// </summary>
+        [AllowNull]
         [JsonProperty("remarks")]
         public string Remarks 
         { 
@@ -209,6 +211,7 @@ namespace BratnetProvider
         /// <summary>
         /// The saler's name
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerName")]
         public string SalerName 
         { 
@@ -220,6 +223,7 @@ namespace BratnetProvider
         /// <summary>
         /// The saler company name
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerCompanyName")]
         public string SalerCompanyName 
         { 
@@ -231,6 +235,7 @@ namespace BratnetProvider
         /// <summary>
         /// The saler's activity
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerActivity")]
         public string SalerActivity 
         { 
@@ -242,6 +247,7 @@ namespace BratnetProvider
         /// <summary>
         /// The saler's street name
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerStreetName")]
         public string SalerAddress 
         { 
@@ -253,6 +259,7 @@ namespace BratnetProvider
         /// <summary>
         /// The saler's additional street name
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerAdditionalStreetName")]
         public string SalerRegion 
         { 
@@ -264,10 +271,11 @@ namespace BratnetProvider
         /// <summary>
         /// The saler's postal code
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerTk")]
         public string SalerPostalCode 
         { 
-            get => SalerPostalCode ?? string.Empty;
+            get => mSalerPostalCode ?? string.Empty;
 
             set => mSalerPostalCode = value; 
         }
@@ -275,6 +283,7 @@ namespace BratnetProvider
         /// <summary>
         /// The saler's city
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerCity")]
         public string SalerCity 
         { 
@@ -286,6 +295,7 @@ namespace BratnetProvider
         /// <summary>
         /// The saler's email
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerEmail")]
         public string SalerEmail 
         { 
@@ -298,11 +308,12 @@ namespace BratnetProvider
         /// The saler's website
         /// </summary>
         [JsonProperty("salerWebsite")]
-        public Uri SalerWebsite { get; set; }
+        public Uri? SalerWebsite { get; set; }
 
         /// <summary>
         /// The saler's GCR (General Commercial Registry)
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerGemh")]
         public string SalerGCR 
         {
@@ -314,6 +325,7 @@ namespace BratnetProvider
         /// <summary>
         /// The saler's VAT
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerVat")]
         public string SalerVAT 
         { 
@@ -326,21 +338,24 @@ namespace BratnetProvider
         /// The saler's doy (Public Financial Service) code
         /// </summary>
         [JsonProperty("salerDoyCode")]
-        public uint SalerDoyCode { get; set; }
+        public uint SalerDOYCode { get; set; }
 
         /// <summary>
         /// The saler's doy (Public Financial Service) name
-        /// </summary>
-        public string SalerDoyName 
+        /// </summary>|
+        [AllowNull]
+        [JsonProperty("salerDoyName")]
+        public string SalerDOYName 
         {
-            get => mSalerDoyName ?? string.Empty;
+            get => mSalerDOYName ?? string.Empty;
 
-            set => mSalerDoyName = value; 
+            set => mSalerDOYName = value; 
         }
 
         /// <summary>
         /// The saler's representative
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerRepresentative")]
         public string SalerRepresentative 
         { 
@@ -352,6 +367,7 @@ namespace BratnetProvider
         /// <summary>
         /// The saler's representative vat number
         /// </summary>
+        [AllowNull]
         [JsonProperty("salerRepresentativeVat")]
         public string SalerRepresentativeVAT 
         { 
@@ -369,6 +385,7 @@ namespace BratnetProvider
         /// <summary>
         /// The customer's name
         /// </summary>
+        [AllowNull]
         [JsonProperty("customerName")]
         public string CustomerName 
         {
@@ -380,6 +397,7 @@ namespace BratnetProvider
         /// <summary>
         /// The customer's activity
         /// </summary>
+        [AllowNull]
         [JsonProperty("customerActivity")]
         public string CustomerActivity 
         { 
@@ -391,6 +409,7 @@ namespace BratnetProvider
         /// <summary>
         /// The customer's vat number
         /// </summary>
+        [AllowNull]
         [JsonProperty("customerVAT")]
         public string CustomerVAT 
         { 
@@ -403,22 +422,24 @@ namespace BratnetProvider
         /// The customer's doy code 
         /// </summary>
         [JsonProperty("customerDoyCode")]
-        public int CustomerDoyCode { get; set; }
+        public int CustomerDOYCode { get; set; }
 
         /// <summary>
         /// The customer's doy name
         /// </summary>
+        [AllowNull]
         [JsonProperty("customerDoyName")]
-        public string CustomerDoyName 
+        public string CustomerDOYName 
         { 
-            get => mCustomerDoyName ?? string.Empty;
+            get => mCustomerDOYName ?? string.Empty;
 
-            set => mCustomerDoyName = value;
+            set => mCustomerDOYName = value;
         }
 
         /// <summary>
         /// The customer's address
         /// </summary>
+        [AllowNull]
         [JsonProperty("customerStreetName")]
         public string CustomerAddress 
         { 
@@ -430,6 +451,7 @@ namespace BratnetProvider
         /// <summary>
         /// The customer's region
         /// </summary>
+        [AllowNull]
         [JsonProperty("customerAdditionalStreetName")]
         public string CustomerRegion 
         { 
@@ -441,6 +463,7 @@ namespace BratnetProvider
         /// <summary>
         /// The customer's postal code
         /// </summary>
+        [AllowNull]
         [JsonProperty("customerTk")]
         public string CustomerPostalCode 
         {
@@ -452,6 +475,7 @@ namespace BratnetProvider
         /// <summary>
         /// The customer's city
         /// </summary>
+        [AllowNull]
         [JsonProperty("customerCity")]
         public string CustomerCity 
         { 
@@ -463,6 +487,7 @@ namespace BratnetProvider
         /// <summary>
         /// The customer's email
         /// </summary>
+        [AllowNull]
         [JsonProperty("customerEmail")]
         public string CustomerEmail 
         { 
@@ -474,6 +499,7 @@ namespace BratnetProvider
         /// <summary>
         /// The shipment's type
         /// </summary>
+        [AllowNull]
         [JsonProperty("shipmentName")]
         public string ShipmentType 
         { 
@@ -485,6 +511,7 @@ namespace BratnetProvider
         /// <summary>
         /// The loading address
         /// </summary>
+        [AllowNull]
         [JsonProperty("loadingAddress")]
         public string LoadingAddress 
         { 
@@ -496,6 +523,7 @@ namespace BratnetProvider
         /// <summary>
         /// The destination's name
         /// </summary>
+        [AllowNull]
         [JsonProperty("destinationName")]
         public string DestinationName 
         { 
@@ -507,6 +535,7 @@ namespace BratnetProvider
         /// <summary>
         /// The destination address
         /// </summary>
+        [AllowNull]
         [JsonProperty("destinationAddress")]
         public string DestinationAddress
         {
@@ -518,6 +547,7 @@ namespace BratnetProvider
         /// <summary>
         /// The destination city
         /// </summary>
+        [AllowNull]
         [JsonProperty("destinationCity")]
         public string DestinationCity
         {
@@ -529,6 +559,7 @@ namespace BratnetProvider
         /// <summary>
         /// The destination zip code
         /// </summary>
+        [AllowNull]
         [JsonProperty("destinationZipCode")]
         public string DestinationZipCode
         {
@@ -557,6 +588,7 @@ namespace BratnetProvider
         /// <summary>
         /// The vehicle number
         /// </summary>
+        [AllowNull]
         [JsonProperty("vehicleNumber")]
         public string VehicleNumber 
         { 
@@ -580,6 +612,7 @@ namespace BratnetProvider
         /// <summary>
         /// The hotel room
         /// </summary>
+        [AllowNull]
         [JsonProperty("hotelRoom")]
         public string HotelRoom
         { 
@@ -591,6 +624,7 @@ namespace BratnetProvider
         /// <summary>
         /// The alternative customer name
         /// </summary>
+        [AllowNull]
         [JsonProperty("altCustname")]
         public string AltCustomerName
         {
@@ -602,6 +636,7 @@ namespace BratnetProvider
         /// <summary>
         /// The unique national id
         /// </summary>
+        [AllowNull]
         [JsonProperty("nationalId")]
         public string NationalId
         {

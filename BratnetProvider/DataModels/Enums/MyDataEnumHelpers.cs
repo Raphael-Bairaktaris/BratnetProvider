@@ -211,39 +211,39 @@ namespace BratnetProvider
         }
 
         /// <summary>
-        /// Returns the <see cref="VATExemptionType"/> that is associated with <paramref name="value"/> 
+        /// Returns the <see cref="VATExemptionCategory"/> that is associated with <paramref name="value"/> 
         /// NOTE: Based on VAT Code articles
         /// </summary>
         /// <param name="value">The VAT exemption</param>
         /// <returns></returns>
-        public static VATExemptionType? ToVATExemptionType(int? value)
+        public static VATExemptionCategory? ToVATExemptionType(int? value)
         {
             switch (value)
             {
-                case 1: return VATExemptionType.Articles2And3;
-                case 2: return VATExemptionType.Article5;
-                case 3: return VATExemptionType.Article13;
-                case 4: return VATExemptionType.Article14;
-                case 5: return VATExemptionType.Article16;
-                case 6: return VATExemptionType.Article19;
-                case 7: return VATExemptionType.Article22;
-                case 8: return VATExemptionType.Article24;
-                case 9: return VATExemptionType.Article25;
-                case 10: return VATExemptionType.Article26;
-                case 11: return VATExemptionType.Article27;
-                case 12: return VATExemptionType.Article27ForOpenSeaShips;
-                case 13: return VATExemptionType.Article27Point1Gamma;
-                case 14: return VATExemptionType.Article28;
-                case 15: return VATExemptionType.Article39;
-                case 16: return VATExemptionType.Article39A;
-                case 17: return VATExemptionType.Article40;
-                case 18: return VATExemptionType.Article41;
-                case 19: return VATExemptionType.Article47;
-                case 20: return VATExemptionType.Article43IncludingVAT;
-                case 21: return VATExemptionType.Article44IncludingVAT;
-                case 22: return VATExemptionType.Article45IncludingVAT;
-                case 23: return VATExemptionType.Article46IncludingVAT;
-                case 24: return VATExemptionType.Article6;
+                case 1: return VATExemptionCategory.Articles2And3;
+                case 2: return VATExemptionCategory.Article5;
+                case 3: return VATExemptionCategory.Article13;
+                case 4: return VATExemptionCategory.Article14;
+                case 5: return VATExemptionCategory.Article16;
+                case 6: return VATExemptionCategory.Article19;
+                case 7: return VATExemptionCategory.Article22;
+                case 8: return VATExemptionCategory.Article24;
+                case 9: return VATExemptionCategory.Article25;
+                case 10: return VATExemptionCategory.Article26;
+                case 11: return VATExemptionCategory.Article27;
+                case 12: return VATExemptionCategory.Article27ForOpenSeaShips;
+                case 13: return VATExemptionCategory.Article27Point1Gamma;
+                case 14: return VATExemptionCategory.Article28;
+                case 15: return VATExemptionCategory.Article39;
+                case 16: return VATExemptionCategory.Article39A;
+                case 17: return VATExemptionCategory.Article40;
+                case 18: return VATExemptionCategory.Article41;
+                case 19: return VATExemptionCategory.Article47;
+                case 20: return VATExemptionCategory.Article43IncludingVAT;
+                case 21: return VATExemptionCategory.Article44IncludingVAT;
+                case 22: return VATExemptionCategory.Article45IncludingVAT;
+                case 23: return VATExemptionCategory.Article46IncludingVAT;
+                case 24: return VATExemptionCategory.Article6;
                 default: return null;
             }
         }

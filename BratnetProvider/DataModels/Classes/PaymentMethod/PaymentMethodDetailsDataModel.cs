@@ -13,6 +13,7 @@ namespace BratnetProvider
     /// </summary>
     public class PaymentMethodDetailsDataModel
     {
+
         #region Public Property
 
         /// <summary>
@@ -32,9 +33,8 @@ namespace BratnetProvider
         /// <summary>
         /// The payment method information
         /// </summary>
-        [AllowNull]
         [JsonProperty("paymentMethodInfo")]
-        public string PaymentMethodInfo { get; set; }
+        public string? PaymentMethodInfo { get; set; }
 
         #endregion
 

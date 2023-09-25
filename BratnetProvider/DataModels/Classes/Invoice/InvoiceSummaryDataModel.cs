@@ -18,19 +18,19 @@ namespace BratnetProvider
         /// The total net value
         /// </summary>
         [JsonProperty("totalNetValue")]
-        public int TotalNetValue { get; set; }
+        public decimal TotalNetValue { get; set; }
 
         /// <summary>
         /// The total vat amount
         /// </summary>
         [JsonProperty("totalVatAmount")]
-        public int TotalVATAmount { get; set; }
+        public decimal TotalVATAmount { get; set; }
 
         /// <summary>
         /// The total withhled amount
         /// </summary>
         [JsonProperty("totalWithheldAmount")]
-        public WithheldPercentageCategory TotalWithheldAmount { get; set; }
+        public decimal TotalWithheldAmount { get; set; }
 
         /// <summary>
         /// The total fees amount
@@ -42,19 +42,19 @@ namespace BratnetProvider
         /// The total stamp duty amount
         /// </summary>
         [JsonProperty("totalStampDutyAmount")]
-        public int TotalStampDutyAmount { get; set; }
+        public decimal TotalStampDutyAmount { get; set; }
 
         /// <summary>
         /// The total of other taxes amount
         /// </summary>
         [JsonProperty("totalOtherTaxesAmount")]
-        public OtherTaxesPercentageCategory TotalOtherTaxesAmount { get; set; }
+        public decimal TotalOtherTaxesAmount { get; set; }
 
         /// <summary>
         /// The total deduction amount
         /// </summary>
         [JsonProperty("totalDeductionsAmount")]
-        public int TotalDeductionsAmount { get; set; }
+        public decimal TotalDeductionsAmount { get; set; }
 
         /// <summary>
         /// The total gross value
@@ -69,27 +69,16 @@ namespace BratnetProvider
         public decimal PrintGrossValue { get; set; }
 
         /// <summary>
-        /// The income classification type
+        /// The income classifications
         /// </summary>
-        public IncomeClassificationType classificationType { get; set; }
+        [JsonProperty("incomeClassification")]
+        public IncomeClassificationDataModel IncomeClassifications { get; set; }
 
         /// <summary>
-        /// The income classification category
+        /// The expense classifications
         /// </summary>
-        [JsonProperty("classificationCategory")]
-        public IncomeClassificationCategory ClassificationCategory { get; set; }
-
-        /// <summary>
-        /// The amount
-        /// </summary>
-        [JsonProperty("amount")]
-        public int Amount { get; set; }
-
-        /// <summary>
-        /// The unique id
-        /// </summary>
-        [JsonProperty("id")]
-        public int Id { get; set; }
+        [JsonProperty("expenseClassification")]
+        public ExpenseClassificationDataModel ExpenseClassifications { get; set; }
 
         #endregion
 

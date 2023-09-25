@@ -13,30 +13,19 @@ namespace BratnetProvider
     /// </summary>
     public class VATNumberDataModel
     {
-        #region Private Members
-
-        /// <summary>
-        /// The member of the <see cref="Name"/> property
-        /// </summary>
-        private string? mName;
-
-        #endregion
-
         #region Public property
 
         /// <summary>
         /// The invoice vat number
         /// </summary>
-        [AllowNull]
         [JsonProperty("vatNumber")]
         public uint VATNumber { get; set; }
 
         /// <summary>
         /// The issuer country information
         /// </summary>
-        [AllowNull]
         [JsonProperty("country")]
-        public object Country { get; set; }
+        public CountryCode Country { get; set; } = CountryCode.GR;
 
         /// <summary>
         /// The issuer branch number
@@ -50,18 +39,14 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("name")]
-        public string Name 
-        {
-            get => mName ?? string.Empty; 
-            set => mName = value;
-        }
+        public string? Name { get; set; }
 
         /// <summary>
         /// The invoice address
         /// </summary>
         [AllowNull]
         [JsonProperty("address")]
-        public string Address { get; set; }
+        public string? Address { get; set; }
 
         #endregion
 

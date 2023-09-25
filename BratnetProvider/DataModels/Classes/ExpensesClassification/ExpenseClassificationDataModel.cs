@@ -9,29 +9,32 @@ using System.Threading.Tasks;
 namespace BratnetProvider
 {
     /// <summary>
-    /// Represents an income classification data
+    /// Represent an esxpense classification model
     /// </summary>
-    public class IncomeClassificationDataModel
+    public class ExpenseClassificationDataModel
     {
         #region Public Property
 
         /// <summary>
         /// The classification type
         /// </summary>
-        public IncomeClassificationType ClassificationType { get; set; }
+        public ExpenseClassificationType ClassificationType { get; set; }
 
         /// <summary>
         /// The classification category
         /// </summary>
-        public IncomeClassificationCategory ClassificationCategory { get; set; }
+        public ExpenseClassificationCategory ClassificationCategory { get; set; }
 
         /// <summary>
         /// The amount
+        /// Required
+        /// Min value 0
+        /// fraction digits 2
         /// </summary>
         public decimal Amount { get; set; }
 
         /// <summary>
-        /// The Id
+        /// The unique id
         /// </summary>
         public byte? Id { get; set; }
 
@@ -42,7 +45,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public IncomeClassificationDataModel()
+        public ExpenseClassificationDataModel()
         {
             
         }
