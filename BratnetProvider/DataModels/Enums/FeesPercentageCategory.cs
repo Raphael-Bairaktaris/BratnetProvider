@@ -43,7 +43,7 @@
         /// <summary>
         /// Environmental Fee & plastic bag Law 2339/2001 no. 6a 0.07 euros per piece
         /// </summary>
-        EnvironmentalFeePercent,
+        EnvironmentalFeePercentForPlasticBag,
 
         /// <summary>
         /// Homicide Levy 2%
@@ -84,7 +84,7 @@
         /// Contribution of environmental protection of plastic products 
         /// 0.04 euros per piece [Article 4 of Law 4736/2020
         /// </summary>
-        EnviromentalFeePercent,
+        EnvironmentalFeePercentForPlasticProducts,
 
         /// <summary>
         /// Recycling fee 0.08 cents per piece [Article 80 of Law 4819/2021]

@@ -15,6 +15,10 @@ namespace BratnetProvider
     {
         #region Private Members
 
+        /// <summary>
+        /// The member of the <see cref="Address"/> property
+        /// </summary>
+        private AddressDataModel? mAddress;
 
         #endregion
 
@@ -44,7 +48,12 @@ namespace BratnetProvider
         /// The address data model
         /// </summary>
         [JsonProperty("address")]
-        public AddressDataModel Address { get; set; }
+        public AddressDataModel Address
+        {
+            get => mAddress ??= new();
+
+            set => mAddress = value;
+        }
 
         #endregion
 

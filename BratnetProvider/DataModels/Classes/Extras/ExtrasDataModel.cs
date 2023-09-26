@@ -71,9 +71,9 @@ namespace BratnetProvider
         private string? mSalerVAT;
 
         /// <summary>
-        /// The member of the <see cref="SalerDOYName"/> property
+        /// The member of the <see cref="SalerPFSName"/> property
         /// </summary>
-        private string? mSalerDOYName;
+        private string? mSalerPFSName;
 
         /// <summary>
         /// The member of the <see cref="SalerRepresentative"/> property
@@ -101,9 +101,9 @@ namespace BratnetProvider
         private string? mCustomerVAT;
 
         /// <summary>
-        /// The meber of the <see cref="CustomerDOYName"/> property
+        /// The meber of the <see cref="CustomerPFSName"/> property
         /// </summary>
-        private string? mCustomerDOYName;
+        private string? mCustomerPFSName;
 
         /// <summary>
         /// The meber of the <see cref="CustomerAddress"/> property
@@ -338,18 +338,18 @@ namespace BratnetProvider
         /// The saler's doy (Public Financial Service) code
         /// </summary>
         [JsonProperty("salerDoyCode")]
-        public uint SalerDOYCode { get; set; }
+        public uint SalerPFSCode { get; set; }
 
         /// <summary>
         /// The saler's doy (Public Financial Service) name
         /// </summary>|
         [AllowNull]
         [JsonProperty("salerDoyName")]
-        public string SalerDOYName 
+        public string SalerPFSName 
         {
-            get => mSalerDOYName ?? string.Empty;
+            get => mSalerPFSName ?? string.Empty;
 
-            set => mSalerDOYName = value; 
+            set => mSalerPFSName = value; 
         }
 
         /// <summary>
@@ -425,15 +425,15 @@ namespace BratnetProvider
         public int CustomerDOYCode { get; set; }
 
         /// <summary>
-        /// The customer's doy name
+        /// The customer's PFS name
         /// </summary>
         [AllowNull]
         [JsonProperty("customerDoyName")]
-        public string CustomerDOYName 
+        public string CustomerPFSName 
         { 
-            get => mCustomerDOYName ?? string.Empty;
+            get => mCustomerPFSName ?? string.Empty;
 
-            set => mCustomerDOYName = value;
+            set => mCustomerPFSName = value;
         }
 
         /// <summary>

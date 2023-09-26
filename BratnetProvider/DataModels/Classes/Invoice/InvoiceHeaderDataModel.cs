@@ -99,7 +99,6 @@ namespace BratnetProvider
         /// <summary>
         /// The vehicle license plate number
         /// </summary>
-        [AllowNull]
         [JsonProperty("vehicleNumber")]
         public string? VehicleNumber { get; set; }
 
@@ -112,13 +111,14 @@ namespace BratnetProvider
         /// <summary>
         /// The fuel used index
         /// </summary>
+        [JsonProperty("fuelInvoice")]
         public FuelCodeCategoryType FuelInvoice { get; set; }
 
         /// <summary>
         /// The speific invoice cetegory
         /// </summary>
         [JsonProperty("specialInvoiceCategory")]
-        public SpecialInvoiceCategoryType SpecialInvoiceCategory { get; set; }
+        public SpecialInvoiceCategoryType? SpecialInvoiceCategory { get; set; }
 
         #endregion
 

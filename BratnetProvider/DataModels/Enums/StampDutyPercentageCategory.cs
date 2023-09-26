@@ -23,6 +23,6 @@
         /// <summary>
         /// Other cases of Paper Stamp
         /// </summary>
-        OtherCasesOfStamDuty
+        OtherCasesOfStampDuty
     }
 }

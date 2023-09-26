@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BratnetProvider
+﻿namespace BratnetProvider
 {
     public enum DocumentDeviationType
     {
@@ -12,7 +6,7 @@ namespace BratnetProvider
         /// This value is used for Data Transmission by the Recipient due Failure to Transmit it Publisher.
         /// Allowed types documents: 1.1, 1.6, 2.1, 2.4, 5.2, 8.1 and 8.2
         /// </summary>
-        RecipientOmissiontransmission,
+        RecipientOmissionTransmission,
 
         /// <summary>
         /// This value is used for Data Transmission from the Publisher, at case it agrees with the 

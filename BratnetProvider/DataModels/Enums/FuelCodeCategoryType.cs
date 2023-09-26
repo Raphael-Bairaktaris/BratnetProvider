@@ -135,7 +135,7 @@ namespace BratnetProvider
         CyclicHydrocarbons,
 
         /// <summary>
-        /// Light oil (White Spirit)
+        /// Light petrol (White Spirit)
         /// </summary>
         LightPetrol,
 

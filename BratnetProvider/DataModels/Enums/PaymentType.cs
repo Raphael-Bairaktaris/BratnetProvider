@@ -13,7 +13,7 @@
         /// <summary>
         /// Foreigner's Professional Payment Account
         /// </summary>
-        BusinessForeignPaymentsAccount = 2,
+        BusinessForeignPaymentAccount = 2,
 
         /// <summary>
         /// Cash payment

@@ -53,7 +53,7 @@ namespace BratnetProvider
         /// <summary>
         /// The member of the <see cref="WithheldPercentCategory"/> property
         /// </summary>
-        private IEnumerable<WithheldPercentageCategory>? mWithheldPercentCategory;
+        private IEnumerable<WithholdingTaxCategory>? mWithheldPercentCategory;
 
         /// <summary>
         /// The member of the <see cref="StamputyPercentCategory"/> property
@@ -224,9 +224,9 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("withheldPercentCategory")]
-        public IEnumerable<WithheldPercentageCategory> WithheldPercentCategory
+        public IEnumerable<WithholdingTaxCategory> WithheldPercentCategory
         { 
-            get => mWithheldPercentCategory ?? Enumerable.Empty<WithheldPercentageCategory>();
+            get => mWithheldPercentCategory ?? Enumerable.Empty<WithholdingTaxCategory>();
 
             set => mWithheldPercentCategory = value;
         }
@@ -363,7 +363,7 @@ namespace BratnetProvider
         /// 
         /// </summary>
         [JsonProperty("measurementUnitName")]
-        public object MeasurementUnitName { get; set; }
+        public MeasurementUnit MeasurementUnitName { get; set; }
 
         /// <summary>
         /// The percentage of VAT

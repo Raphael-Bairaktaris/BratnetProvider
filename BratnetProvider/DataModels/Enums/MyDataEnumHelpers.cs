@@ -109,7 +109,7 @@ namespace BratnetProvider
             switch (value)
             {
                 case 1: return PaymentType.BusinessHomePaymentAccount;
-                case 2: return PaymentType.BusinessForeignPaymentsAccount;
+                case 2: return PaymentType.BusinessForeignPaymentAccount;
                 case 3: return PaymentType.Cash;
                 case 4: return PaymentType.Check;
                 case 5: return PaymentType.OnCredit;
@@ -152,16 +152,16 @@ namespace BratnetProvider
         }
 
         /// <summary>
-        /// Returns the <see cref="DetailType"/> that is associated with <paramref name="value"/> 
+        /// Returns the <see cref="InvoiceDetailType"/> that is associated with <paramref name="value"/> 
         /// </summary>
         /// <param name="value">The detail type</param>
         /// <returns></returns>
-        public static DetailType? ToDetailType(int? value)
+        public static InvoiceDetailType? ToDetailType(int? value)
         {
             switch (value)
             {
-                case 1: return DetailType.ThirdPartySalesClearance;
-                case 2: return DetailType.RemunerationfromThirdPartySales;
+                case 1: return InvoiceDetailType.ThirdPartySalesClearance;
+                case 2: return InvoiceDetailType.FeeFromThirdPartySales;
                 default: return null;
             }
         }
@@ -264,29 +264,29 @@ namespace BratnetProvider
         }
 
         /// <summary>
-        /// Returns the <see cref="WithheldPercentageCategory"/> that is associated with <paramref name="value"/> 
+        /// Returns the <see cref="WithholdingTaxCategory"/> that is associated with <paramref name="value"/> 
         /// </summary>
         /// <param name="value">The withheld percentage category</param>
         /// <returns></returns>
-        public static WithheldPercentageCategory? ToWithheldPercentageCategory(int? value)
+        public static WithholdingTaxCategory? ToWithheldPercentageCategory(int? value)
         {
             switch (value)
             {
-                case 1: return WithheldPercentageCategory.Tax15Percent;
-                case 2: return WithheldPercentageCategory.Rights20Percent;
-                case 3: return WithheldPercentageCategory.ManagementAdviceFees20Percent;
-                case 4: return WithheldPercentageCategory.TechnicalWorks3Percent;
-                case 5: return WithheldPercentageCategory.LiquidFuelsAndTobaccoProducts1Percent;
-                case 6: return WithheldPercentageCategory.OtherGoods4Percent;
-                case 7: return WithheldPercentageCategory.Services8Percent;
-                case 8: return WithheldPercentageCategory.AdvancePayment4Percent;
-                case 9: return WithheldPercentageCategory.AdvancePayment10Percent;
-                case 10: return WithheldPercentageCategory.AdvancePayment15Percent;
-                case 11: return WithheldPercentageCategory.WithholdingTaxPercent;
-                case 12: return WithheldPercentageCategory.WithholdingTax15Percent;
-                case 13: return WithheldPercentageCategory.WithholdingTax10Percent;
-                case 14: return WithheldPercentageCategory.WithholdingSpecialSolidarityContribution;
-                case 15: return WithheldPercentageCategory.WithholdingTerminationOfEmployment;
+                case 1: return WithholdingTaxCategory.CaseBTax15Percent;
+                case 2: return WithholdingTaxCategory.CaseCRights20Percent;
+                case 3: return WithholdingTaxCategory.CaseDManagementAdviceFees20Percent;
+                case 4: return WithholdingTaxCategory.CaseDTechnicalWorks3Percent;
+                case 5: return WithholdingTaxCategory.LiquidFuelsAndTobaccoProducts1Percent;
+                case 6: return WithholdingTaxCategory.OtherGoods4Percent;
+                case 7: return WithholdingTaxCategory.Services8Percent;
+                case 8: return WithholdingTaxCategory.AdvancePayment4Percent;
+                case 9: return WithholdingTaxCategory.AdvancePayment10Percent;
+                case 10: return WithholdingTaxCategory.AdvancePayment15Percent;
+                case 11: return WithholdingTaxCategory.WithholdingTaxPercent;
+                case 12: return WithholdingTaxCategory.WithholdingTax15Percent;
+                case 13: return WithholdingTaxCategory.WithholdingTax10Percent;
+                case 14: return WithholdingTaxCategory.WithholdingSpecialSolidarityContribution;
+                case 15: return WithholdingTaxCategory.WithholdingTerminationOfEmployment;
                 default: return null;
             }
         }
@@ -341,7 +341,7 @@ namespace BratnetProvider
                 case 5: return FeesPercentageCategory.MobileCalls12Percent;
                 case 6: return FeesPercentageCategory.CableTV10Percent;
                 case 7: return FeesPercentageCategory.Telephone5Percent;
-                case 8: return FeesPercentageCategory.EnvironmentalFeePercent;
+                case 8: return FeesPercentageCategory.EnvironmentalFeePercentForPlasticBag;
                 case 9: return FeesPercentageCategory.Homicide2Percent;
                 default: return null;
             }

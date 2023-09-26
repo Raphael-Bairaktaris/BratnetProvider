@@ -12,6 +12,20 @@ namespace BratnetProvider
     /// </summary>
     public class InvoiceSummaryDataModel
     {
+        #region Private Members
+
+        /// <summary>
+        /// The member of the <see cref="IncomeClassifications"/> property
+        /// </summary>
+        private IEnumerable<IncomeClassificationDataModel>? mIncomeClassifications;
+
+        /// <summary>
+        /// The member of the <see cref="ExpenseClassifications"/> property
+        /// </summary>
+        private IEnumerable<ExpenseClassificationDataModel>? mExpenseClassifications;
+
+        #endregion
+
         #region Public Property
 
         /// <summary>
@@ -72,13 +86,23 @@ namespace BratnetProvider
         /// The income classifications
         /// </summary>
         [JsonProperty("incomeClassification")]
-        public IncomeClassificationDataModel IncomeClassifications { get; set; }
+        public IEnumerable<IncomeClassificationDataModel> IncomeClassifications
+        {
+            get => mIncomeClassifications ?? Enumerable.Empty<IncomeClassificationDataModel>();
+
+            set => mIncomeClassifications = value;
+        }
 
         /// <summary>
         /// The expense classifications
         /// </summary>
         [JsonProperty("expenseClassification")]
-        public ExpenseClassificationDataModel ExpenseClassifications { get; set; }
+        public IEnumerable<ExpenseClassificationDataModel> ExpenseClassifications
+        {
+            get => mExpenseClassifications ?? Enumerable.Empty<ExpenseClassificationDataModel>();
+
+            set => mExpenseClassifications = value;
+        }
 
         #endregion
 

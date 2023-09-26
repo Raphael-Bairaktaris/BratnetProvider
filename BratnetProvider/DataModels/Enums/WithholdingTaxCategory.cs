@@ -3,27 +3,27 @@
     /// <summary>
     /// The withheld tax percentage category
     /// </summary>
-    public enum WithheldPercentageCategory
+    public enum WithholdingTaxCategory
     {
         /// <summary>
         /// Approx. b'- Interest - 15%
         /// </summary>
-        Tax15Percent,
+        CaseBTax15Percent,
 
         /// <summary>
         /// Approx. c' - Rights - 20%
         /// </summary>
-        Rights20Percent,
+        CaseCRights20Percent,
 
         /// <summary>
         /// Approx. d' - Management Consulting Fees - 20%
         /// </summary>
-        ManagementAdviceFees20Percent,
+        CaseDManagementAdviceFees20Percent,
 
         /// <summary>
         /// Approx. d' - Technical Works - 3%
         /// </summary>
-        TechnicalWorks3Percent,
+        CaseDTechnicalWorks3Percent,
 
         /// <summary>
         /// Liquid fuels and tobacco industry products 1%
