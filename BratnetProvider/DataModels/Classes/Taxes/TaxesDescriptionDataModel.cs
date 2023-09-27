@@ -11,7 +11,7 @@ namespace BratnetProvider
     /// <summary>
     /// Represent a taxes descriptio data
     /// </summary>
-    public class TaxDescriptionDataModel
+    public class TaxesDescriptionDataModel
     {
         #region Private Members
 
@@ -19,11 +19,6 @@ namespace BratnetProvider
         /// The member of the <see cref="TaxDescription"/> property
         /// </summary>
         private string? mTaxDescription;
-
-        /// <summary>
-        /// The member of the <see cref="VATCategory"/> property
-        /// </summary>
-        private IEnumerable<VATCategory>? mVATCategory;
 
         #endregion
 
@@ -64,12 +59,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("VatCategory")]
-        public IEnumerable<VATCategory> VATCategory 
-        { 
-            get => mVATCategory ?? Enumerable.Empty<VATCategory>();
-
-            set => mVATCategory = value;
-        }
+        [JsonConverter(typeof(VATCategoryToIntJsonConverter))]
+        public VATCategory VATCategory { get; set; }
 
         #endregion
 
@@ -78,7 +69,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public TaxDescriptionDataModel()
+        public TaxesDescriptionDataModel()
         {
             
         }

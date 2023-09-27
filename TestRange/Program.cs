@@ -6,63 +6,71 @@ using System.Text;
 
 Console.WriteLine("Hello, World!");
 
-var json = await File.ReadAllTextAsync(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ISO4217.json"));
+//var invoiceType = InvoiceType.SalesInvoice;
 
-var ob = JsonConvert.DeserializeObject<JObject>(json);
+//var s = BratnetProviderClientConstants.InvoiceTypeToStringMapper[invoiceType];
 
-var infos = new List<CurrencyInfo>();
+var json = File.ReadAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Provider.json"));
 
-foreach (var item in ob!)
-{
-    var code = string.Empty;
-    var name = string.Empty;
-    var symbol = string.Empty;
-    foreach(var pair in (JObject)item.Value)
-    {
-        if (code == string.Empty)
-        {
-            code = pair.Value.ToString();
+var result = JsonConvert.DeserializeObject<InvoicesDataModel>(json);
 
-            continue;
-        }
+//var json = await File.ReadAllTextAsync(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ISO4217.json"));
 
-        if (name == string.Empty) 
-        {
-            name = pair.Value.ToString();
+//var ob = JsonConvert.DeserializeObject<JObject>(json);
 
-            continue;
-        }
+//var infos = new List<CurrencyInfo>();
 
-        symbol = pair.Value.ToString();
-    }
-    infos.Add(new CurrencyInfo()
-    {
-        Code = code,
-        Name = name,
-        Symbol = symbol
-    });
-}
+//foreach (var item in ob!)
+//{
+//    var code = string.Empty;
+//    var name = string.Empty;
+//    var symbol = string.Empty;
+//    foreach(var pair in (JObject)item.Value)
+//    {
+//        if (code == string.Empty)
+//        {
+//            code = pair.Value.ToString();
 
-var sb = new StringBuilder();
-var i = 0;
-foreach(var info in infos)
-{
-    sb.AppendLine("/// <summary>");
-    sb.AppendLine($"/// {info.Name} ({info.Symbol})");
-    sb.AppendLine("/// </summary>");
-    sb.AppendLine($"{info.Code} = {i},");
-    sb.AppendLine();
+//            continue;
+//        }
 
-    i++;
-}
+//        if (name == string.Empty) 
+//        {
+//            name = pair.Value.ToString();
 
-var result = sb.ToString();
+//            continue;
+//        }
 
-var euro = CurrencyCode.EUR;
+//        symbol = pair.Value.ToString();
+//    }
+//    infos.Add(new CurrencyInfo()
+//    {
+//        Code = code,
+//        Name = name,
+//        Symbol = symbol
+//    });
+//}
 
-var integer = (int)euro;
+//var sb = new StringBuilder();
+//var i = 0;
+//foreach(var info in infos)
+//{
+//    sb.AppendLine("/// <summary>");
+//    sb.AppendLine($"/// {info.Name} ({info.Symbol})");
+//    sb.AppendLine("/// </summary>");
+//    sb.AppendLine($"{info.Code} = {i},");
+//    sb.AppendLine();
 
-var s = (CurrencyCode)integer;
+//    i++;
+//}
+
+//var result = sb.ToString();
+
+//var euro = CurrencyCode.EUR;
+
+//var integer = (int)euro;
+
+//var s = (CurrencyCode)integer;
 
 Console.ReadLine();
 

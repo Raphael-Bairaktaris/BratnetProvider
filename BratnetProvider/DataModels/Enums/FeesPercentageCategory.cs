@@ -41,7 +41,7 @@
         Telephone5Percent,
 
         /// <summary>
-        /// Environmental Fee & plastic bag Law 2339/2001 no. 6a 0.07 euros per piece
+        /// Environmental Fee and plastic bag Law 2339/2001 no. 6a 0.07 euros per piece
         /// </summary>
         EnvironmentalFeePercentForPlasticBag,
 

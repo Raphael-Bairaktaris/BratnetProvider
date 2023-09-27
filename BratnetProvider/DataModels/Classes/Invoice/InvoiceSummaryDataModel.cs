@@ -32,62 +32,62 @@ namespace BratnetProvider
         /// The total net value
         /// </summary>
         [JsonProperty("totalNetValue")]
-        public decimal TotalNetValue { get; set; }
+        public decimal? TotalNetValue { get; set; }
 
         /// <summary>
         /// The total vat amount
         /// </summary>
         [JsonProperty("totalVatAmount")]
-        public decimal TotalVATAmount { get; set; }
+        public decimal? TotalVATAmount { get; set; }
 
         /// <summary>
         /// The total withhled amount
         /// </summary>
         [JsonProperty("totalWithheldAmount")]
-        public decimal TotalWithheldAmount { get; set; }
+        public decimal? TotalWithheldAmount { get; set; }
 
         /// <summary>
         /// The total fees amount
         /// </summary>
         [JsonProperty("totalFeesAmount")]
-        public decimal TotalFeesAmount { get; set; }
+        public decimal? TotalFeesAmount { get; set; }
 
         /// <summary>
         /// The total stamp duty amount
         /// </summary>
         [JsonProperty("totalStampDutyAmount")]
-        public decimal TotalStampDutyAmount { get; set; }
+        public decimal? TotalStampDutyAmount { get; set; }
 
         /// <summary>
         /// The total of other taxes amount
         /// </summary>
         [JsonProperty("totalOtherTaxesAmount")]
-        public decimal TotalOtherTaxesAmount { get; set; }
+        public decimal? TotalOtherTaxesAmount { get; set; }
 
         /// <summary>
         /// The total deduction amount
         /// </summary>
         [JsonProperty("totalDeductionsAmount")]
-        public decimal TotalDeductionsAmount { get; set; }
+        public decimal? TotalDeductionsAmount { get; set; }
 
         /// <summary>
         /// The total gross value
         /// </summary>
         [JsonProperty("totalGrossValue")]
-        public decimal TotalGrossValue { get; set; }
+        public decimal? TotalGrossValue { get; set; }
 
         /// <summary>
         /// The total print gross value
         /// </summary>
         [JsonProperty("totalPrintGrossValue")]
-        public decimal PrintGrossValue { get; set; }
+        public decimal? PrintGrossValue { get; set; }
 
         /// <summary>
         /// The income classifications
         /// </summary>
         [JsonProperty("incomeClassification")]
         public IEnumerable<IncomeClassificationDataModel> IncomeClassifications
-        {
+        { 
             get => mIncomeClassifications ?? Enumerable.Empty<IncomeClassificationDataModel>();
 
             set => mIncomeClassifications = value;

@@ -20,56 +20,6 @@ namespace BratnetProvider
         /// </summary>
         private string? mName;
 
-        /// <summary>
-        /// The member of the <see cref="FuelCode"/>
-        /// </summary>
-        private IEnumerable<FuelCodeCategoryType>? mFuelCode;
-
-        /// <summary>
-        /// The member of the <see cref="Quantity"/> property
-        /// </summary>
-        private decimal mQuantity = 1;
-
-        /// <summary>
-        /// The member of the <see cref="MeasurementUnit"/> 
-        /// </summary>
-        private IEnumerable<MeasurementUnit>? mMeasurementUnit;
-
-        /// <summary>
-        /// The member of the <see cref="InvoiceDetailType"/> property
-        /// </summary>
-        private IEnumerable<InvoiceType>? mInvoiceDetailtype;
-
-        /// <summary>
-        /// The member of the <see cref="VATCategory"/> property
-        /// </summary>
-        private IEnumerable<VATCategory>? mVATCategory;
-
-        /// <summary>
-        /// The member of the <see cref="VATExemptionCategory"/> property
-        /// </summary>
-        private IEnumerable<VATExemptionCategory>? mVATExemptionCategory;
-
-        /// <summary>
-        /// The member of the <see cref="WithheldPercentCategory"/> property
-        /// </summary>
-        private IEnumerable<WithholdingTaxCategory>? mWithheldPercentCategory;
-
-        /// <summary>
-        /// The member of the <see cref="StamputyPercentCategory"/> property
-        /// </summary>
-        private IEnumerable<StampDutyPercentageCategory>? mStampDutyPercentCategory;
-
-        /// <summary>
-        /// The member of the <see cref="FeesPercentCategory"/> property
-        /// </summary>
-        private IEnumerable<FeesPercentageCategory>? mFeesPercentCategory;
-
-        /// <summary>
-        /// The member of the <see cref="OtherTaxesPercentCategory"/>
-        /// </summary>
-        private IEnumerable<OtherTaxesPercentageCategory>? mOtherTaxesPercentCategory;
-
         #endregion
 
         #region Public Property
@@ -99,7 +49,7 @@ namespace BratnetProvider
         public int LineNumber { get; set; } = 1;
 
         /// <summary>
-        /// 
+        /// The rec type
         /// </summary>
         [JsonProperty("recType")]
         public string? RecType { get; set; }
@@ -107,55 +57,26 @@ namespace BratnetProvider
         /// <summary>
         /// The fuel code
         /// </summary>
-        [AllowNull]
         [JsonProperty("fuelCode")]
-        public IEnumerable<FuelCodeCategoryType> FuelCode 
-        { 
-            get => mFuelCode ?? Enumerable.Empty<FuelCodeCategoryType>();
-
-            set => mFuelCode = value;
-        }
+        public FuelCodeCategoryType? FuelCode { get; set; }
 
         /// <summary>
         /// The product quantity
         /// </summary>
         [JsonProperty("quantity")]
-        public decimal Quantity 
-        {
-            get => mQuantity;
-
-            set
-            {
-                if (value < 0)
-                    mQuantity = 0;
-                else 
-                    mQuantity = value;
-            }
-        }
+        public double Quantity { get; set; }
 
         /// <summary>
         /// The measurment unit
         /// </summary>
-        [AllowNull]
         [JsonProperty("measurementUnit")]
-        public IEnumerable<MeasurementUnit> MeasurementUnit 
-        { 
-            get => mMeasurementUnit ?? Enumerable.Empty<MeasurementUnit>();
-            
-            set => mMeasurementUnit = value;
-        }
+        public MeasurementUnit MeasurementUnit { get; set; }
 
         /// <summary>
         /// The type of invoice
         /// </summary>
-        [AllowNull]
         [JsonProperty("invoiceDetailType")]
-        public IEnumerable<InvoiceType> InvoiceDetailType 
-        {
-            get => mInvoiceDetailtype ?? Enumerable.Empty<InvoiceType>();
-
-            set => mInvoiceDetailtype = value;
-        }
+        public string? InvoiceDetailType { get; set; }
 
         /// <summary>
         /// Product value before discount
@@ -172,14 +93,8 @@ namespace BratnetProvider
         /// <summary>
         /// The vat number category
         /// </summary>
-        [AllowNull]
         [JsonProperty("vatCategory")]
-        public IEnumerable<VATCategory> VATCategory 
-        { 
-            get => mVATCategory ?? Enumerable.Empty<VATCategory>();
-
-            set => mVATCategory = value;
-        }
+        public VATCategory? VATCategory { get; set; }
 
         /// <summary>
         /// 
@@ -190,14 +105,8 @@ namespace BratnetProvider
         /// <summary>
         /// The vat exemption type
         /// </summary>
-        [AllowNull]
         [JsonProperty("vatExemptionCategory")]
-        public IEnumerable<VATExemptionCategory> VATExemptionCategory
-        {
-            get => mVATExemptionCategory ?? Enumerable.Empty<VATExemptionCategory>();
-
-            set => mVATExemptionCategory = value;
-        }
+        public VATExemptionCategory? VATExemptionCategory { get; set; }
 
         /// <summary>
         /// 
@@ -222,14 +131,8 @@ namespace BratnetProvider
         /// <summary>
         /// The withheld percent category
         /// </summary>
-        [AllowNull]
         [JsonProperty("withheldPercentCategory")]
-        public IEnumerable<WithholdingTaxCategory> WithheldPercentCategory
-        { 
-            get => mWithheldPercentCategory ?? Enumerable.Empty<WithholdingTaxCategory>();
-
-            set => mWithheldPercentCategory = value;
-        }
+        public WithholdingTaxCategory? WithheldPercentCategory { get; set; }
 
         /// <summary>
         /// The stamp duty amount
@@ -241,14 +144,8 @@ namespace BratnetProvider
         /// <summary>
         /// The stamp duty percent category
         /// </summary>
-        [AllowNull]
         [JsonProperty("stampDutyPercentCategory")]
-        public IEnumerable<StampDutyPercentageCategory> StamputyPercentCategory
-        {
-            get => mStampDutyPercentCategory ?? Enumerable.Empty<StampDutyPercentageCategory>();
-
-            set => mStampDutyPercentCategory = value;
-        }
+        public StampDutyPercentageCategory? StamputyPercentCategory { get; set; }
 
         /// <summary>
         /// The fees amount
@@ -261,26 +158,14 @@ namespace BratnetProvider
         /// <summary>
         /// The fees percent category
         /// </summary>
-        [AllowNull]
         [JsonProperty("feesPercentCategory")]
-        public IEnumerable<FeesPercentageCategory> FeesPercentCategory 
-        { 
-            get => mFeesPercentCategory ?? Enumerable.Empty<FeesPercentageCategory>();
-
-            set => mFeesPercentCategory = value;
-        }
+        public FeesPercentageCategory? FeesPercentCategory { get; set; }
 
         /// <summary>
         /// The other taxes percent category
         /// </summary>
-        [AllowNull]
         [JsonProperty("otherTaxesPercentCategory")]
-        public IEnumerable<OtherTaxesPercentageCategory> OtherTaxesPercentCategory 
-        {
-            get => mOtherTaxesPercentCategory ?? Enumerable.Empty<OtherTaxesPercentageCategory>();
-
-            set => mOtherTaxesPercentCategory = value;
-        }
+        public OtherTaxesPercentageCategory? OtherTaxesPercentCategory { get; set; }
 
         /// <summary>
         /// The other taxes amount
@@ -309,30 +194,20 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("incomeClassification")]
-        public IncomeClassificationDataModel IncomeClassifications 
-        {
-            get;
-
-            set; 
-        }
+        public IEnumerable<IncomeClassificationDataModel> IncomeClassifications { get; set; }
 
         /// <summary>
         /// The expense classifications
         /// </summary>
         [AllowNull]
         [JsonProperty("expenseClassification")]
-        public ExpenseClassificationDataModel ExpenseClassifications 
-        { 
-            get; 
-
-            set; 
-        }
+        public IEnumerable<ExpenseClassificationDataModel> ExpenseClassifications { get; set; }
 
         /// <summary>
         /// The quantity
         /// </summary>
         [JsonProperty("quantity15")]
-        public uint Quantity15 { get; set; }
+        public uint? Quantity15 { get; set; }
 
         /// <summary>
         /// The item's description 
@@ -345,7 +220,7 @@ namespace BratnetProvider
         /// The price
         /// </summary>
         [JsonProperty("price")]
-        public int Price { get; set; }
+        public decimal? Price { get; set; }
 
         /// <summary>
         /// The amount of discount

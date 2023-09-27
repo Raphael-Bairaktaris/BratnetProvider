@@ -13,28 +13,13 @@ namespace BratnetProvider
     /// </summary>
     public class InvoiceTaxVATAnalysisDataModel
     {
-        #region Private Members
-
-        /// <summary>
-        /// The member of the <see cref="VATCategory"/> property
-        /// </summary>
-        private IEnumerable<VATCategory>? mVATCategory;
-
-        #endregion
-
         #region Public Property
 
         /// <summary>
         /// The vat category
         /// </summary>
-        [AllowNull]
         [JsonProperty("vatCategory")]
-        public IEnumerable<VATCategory> VATCategory 
-        {
-            get => mVATCategory ?? Enumerable.Empty<VATCategory>();
-            
-            set => mVATCategory = value;
-        }
+        public VATCategory VATCategory { get; set; }
 
         /// <summary>
         /// The vat percent

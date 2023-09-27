@@ -11,7 +11,7 @@ namespace BratnetProvider
     /// <summary>
     /// Represents a vat number data 
     /// </summary>
-    public class VATNumberDataModel
+    public class IssuerDetailDataModel
     {
         #region Public property
 
@@ -55,7 +55,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public VATNumberDataModel()
+        public IssuerDetailDataModel()
         {
             
         }

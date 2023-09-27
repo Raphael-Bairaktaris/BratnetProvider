@@ -113,7 +113,7 @@ namespace BratnetProvider
         /// <summary>
         /// Maps the <see cref="InvoiceDetailType"/>s to their related <see cref="int"/>s
         /// </summary>
-        public static IReadOnlyDictionary<InvoiceDetailType, int> DetailTypeToStringMapper { get; } = new Dictionary<InvoiceDetailType, int>()
+        public static IReadOnlyDictionary<InvoiceDetailType, int> DetailTypeToIntMapper { get; } = new Dictionary<InvoiceDetailType, int>()
         {
             { InvoiceDetailType.ThirdPartySalesClearance, 1 },
             { InvoiceDetailType.FeeFromThirdPartySales, 2 }
@@ -195,7 +195,6 @@ namespace BratnetProvider
             { InvoiceType.VariousIncomeArrangementsForTaxBase, "17.4" },
             { InvoiceType.VariousExpenseArrangementsForAccountingBase, "17.5" },
             { InvoiceType.VariousExpenseArrangementsForTaxBase, "17.6" }
-
         }.ToImmutableDictionary();
 
         
@@ -209,7 +208,6 @@ namespace BratnetProvider
             { LineItemType.OtherTaxLineWithVAT, 3 },
             { LineItemType.Giftcard, 6 },
             { LineItemType.NegativeSignOfValues, 7 }
-
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -220,7 +218,6 @@ namespace BratnetProvider
             { MeasurementUnit.Pieces, "pieces" },
             { MeasurementUnit.Kilos, "kilos" },
             { MeasurementUnit.Liters, "liters" }
-
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -231,7 +228,6 @@ namespace BratnetProvider
             { MeasurementUnit.Pieces, 1 },
             { MeasurementUnit.Kilos, 2 },
             { MeasurementUnit.Liters, 3 }
-
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -247,7 +243,21 @@ namespace BratnetProvider
             {MovePurpose.Storage, 6 },
             {MovePurpose.ProcessingAssembly, 7 },
             {MovePurpose.BetweenEntityFacilities, 8 }
+        }.ToImmutableDictionary();
 
+        /// <summary>
+        /// Maps the <see cref="MovePurpose"/>s to their related greek <see cref="string"/>s
+        /// </summary>
+        public static IReadOnlyDictionary<MovePurpose, string> MovePurposeToGreekStringMapper { get; } = new Dictionary<MovePurpose, string>()
+        {
+            {MovePurpose.Sale, "Προς Πώληση" },
+            {MovePurpose.SaleforThirdPartyAccount, "" },
+            {MovePurpose.Sampling, "" },
+            {MovePurpose.Exhibition, "" },
+            {MovePurpose.Return, "" },
+            {MovePurpose.Storage, "" },
+            {MovePurpose.ProcessingAssembly, "" },
+            {MovePurpose.BetweenEntityFacilities, "" }
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -293,7 +303,6 @@ namespace BratnetProvider
 
             // SCT (Special Consumption Tax)
             { OtherTaxesPercentageCategory.EFC, 19 }
-
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -308,7 +317,20 @@ namespace BratnetProvider
             { PaymentType.OnCredit, 5 },
             { PaymentType.WebBanking, 6 },
             { PaymentType.POSOrEPOS, 7 }
+        }.ToImmutableDictionary();
 
+        /// <summary>
+        /// Maps the <see cref="PaymentType"/>s to their related greek <see cref="string"/>s
+        /// </summary>
+        public static IReadOnlyDictionary<PaymentType, string> PaymentTypeToGreekStringMapper { get; } = new Dictionary<PaymentType, string>()
+        {
+            { PaymentType.BusinessHomePaymentAccount, "" },
+            { PaymentType.BusinessForeignPaymentAccount, "" },
+            { PaymentType.Cash, "Τοίς Μετρητοίς" },
+            { PaymentType.Check, "" },
+            { PaymentType.OnCredit, "" },
+            { PaymentType.WebBanking, "" },
+            { PaymentType.POSOrEPOS, "" }
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -331,7 +353,6 @@ namespace BratnetProvider
             { StampDutyPercentageCategory.Rate2Point4, 2},
             { StampDutyPercentageCategory.Rate3Point6, 3},
             { StampDutyPercentageCategory.OtherCasesOfStampDuty, 4}
-
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -344,7 +365,6 @@ namespace BratnetProvider
             {TaxType.OtherTaxes, 3},
             {TaxType.Stamp, 4},
             {TaxType.Reservations, 5}
-
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -354,7 +374,6 @@ namespace BratnetProvider
         {
             { TransmissionFailure.ProviderError, "providerError"},
             { TransmissionFailure.MyDataError, "myDataError" }
-
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -370,7 +389,6 @@ namespace BratnetProvider
             { VATCategory.VATRate4, 6 },
             { VATCategory.ExcludingVAT, 7 },
             { VATCategory.EntriesWithoutVAT, 8 }
-
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -420,7 +438,6 @@ namespace BratnetProvider
             { VATExemptionCategory.Article47b, 29 },
             { VATExemptionCategory.Article47c, 30 },
             { VATExemptionCategory.Article47d, 31 }
-
         }.ToImmutableDictionary();
 
         /// <summary>
@@ -467,7 +484,6 @@ namespace BratnetProvider
 
             // Withholding tax dividends
             { WithholdingTaxCategory.WitholdingTaxDividend, 18 }
-
         }.ToImmutableDictionary();
     }
 }

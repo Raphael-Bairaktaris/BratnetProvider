@@ -200,7 +200,7 @@ namespace BratnetProvider
         /// Indicates the time
         /// </summary>
         [JsonProperty("time")]
-        public TimeOnly Time { get; set; }
+        public TimeOnly? Time { get; set; }
 
         /// <summary>
         /// Sends email
@@ -380,7 +380,7 @@ namespace BratnetProvider
         /// The customer's code
         /// </summary>
         [JsonProperty("customerCode")]
-        public int CustomerCode { get; set; }
+        public int? CustomerCode { get; set; }
 
         /// <summary>
         /// The customer's name
@@ -577,12 +577,14 @@ namespace BratnetProvider
         /// The payment method
         /// </summary>
         [JsonProperty("paymentMethodName")]
-        public PaymentType? PaymentMethod { get; set; }
+        [JsonConverter(typeof(PaymentTypeToGreekStringJsonConverter))]
+        public PaymentType? PaymentMethodName { get; set; }
 
         /// <summary>
         /// The move purpose
         /// </summary>
         [JsonProperty("movePurpose")]
+        [JsonConverter(typeof(MovePurposeToGreekStringJsonConverter))]
         public MovePurpose? MovePurpose { get; set; }
 
         /// <summary>
@@ -601,13 +603,13 @@ namespace BratnetProvider
         /// The hotel start date
         /// </summary>
         [JsonProperty("hotelStartDate")]
-        public DateOnly HotelStartDate { get; set; }
+        public DateOnly? HotelStartDate { get; set; }
 
         /// <summary>
         /// The hotel end date
         /// </summary>
         [JsonProperty("hotelEndDate")]
-        public DateOnly HotelEndDate { get; set; }
+        public DateOnly? HotelEndDate { get; set; }
 
         /// <summary>
         /// The hotel room

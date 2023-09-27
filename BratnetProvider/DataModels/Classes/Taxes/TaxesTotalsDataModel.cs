@@ -7,9 +7,9 @@ namespace BratnetProvider
         #region Private Members
 
         /// <summary>
-        /// The member of the <see cref="TaxDataModel"/> property
+        /// The member of the <see cref="TaxesDataModel"/> property
         /// </summary>
-        private IEnumerable<TaxDataModel>? mTaxDataModel;
+        private IEnumerable<TaxesDataModel>? mTaxDataModel;
 
         #endregion
 
@@ -19,9 +19,9 @@ namespace BratnetProvider
         /// The taxes totals
         /// </summary>
         [JsonProperty("taxesTotals")]
-        public IEnumerable<TaxDataModel> Taxes 
+        public IEnumerable<TaxesDataModel> Taxes 
         {
-            get => mTaxDataModel ?? Enumerable.Empty<TaxDataModel>();
+            get => mTaxDataModel ?? Enumerable.Empty<TaxesDataModel>();
                  
             set => mTaxDataModel = value;
         } 

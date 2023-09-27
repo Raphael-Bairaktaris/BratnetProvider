@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
-    public class TaxDataModel
+    public class TaxesDataModel
     {
         #region Private Members
 
@@ -37,7 +37,7 @@ namespace BratnetProvider
         /// The tax category
         /// </summary>
         [JsonProperty("taxCategory")]
-        public byte? TaxCategory { get; set; }
+        public VATCategory TaxCategory { get; set; }
 
         /// <summary>
         /// The underlying value
@@ -60,7 +60,7 @@ namespace BratnetProvider
         /// Unique tax id
         /// </summary>
         [JsonProperty("id")]
-        public byte? Id { get; set; }
+        public byte? TaxId { get; set; }
 
         #endregion
 
@@ -69,7 +69,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public TaxDataModel()
+        public TaxesDataModel()
         {
             
         }

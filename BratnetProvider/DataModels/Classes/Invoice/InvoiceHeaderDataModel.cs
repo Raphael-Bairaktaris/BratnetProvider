@@ -20,6 +20,11 @@ namespace BratnetProvider
         /// </summary>
         private string? mSeries;
 
+        /// <summary>
+        /// The member of the <see cref="mCorrelatedInvoices"/> property
+        /// </summary>
+        private IEnumerable<long>? mCorrelatedInvoices;
+
         #endregion
 
         #region Public Property
@@ -52,6 +57,7 @@ namespace BratnetProvider
         /// The invoice type
         /// </summary>
         [JsonProperty("invoiceType")]
+        [JsonConverter(typeof(InvoiceTypeToStringJsonConverter))]
         public InvoiceType InvoiceType { get; set; }
 
         /// <summary>
@@ -75,8 +81,14 @@ namespace BratnetProvider
         /// <summary>
         /// The correlated invoice
         /// </summary>
+        [AllowNull]
         [JsonProperty("correlatedInvoices")]
-        public long? CorrelatedInvoices { get; set; }
+        public IEnumerable<long> CorrelatedInvoices
+        {
+            get => mCorrelatedInvoices ?? Enumerable.Empty<long>();
+
+            set => mCorrelatedInvoices = value;
+        }
 
         /// <summary>
         /// The self pricing indication

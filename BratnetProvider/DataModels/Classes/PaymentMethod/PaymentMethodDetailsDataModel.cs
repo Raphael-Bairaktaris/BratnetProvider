@@ -20,6 +20,7 @@ namespace BratnetProvider
         /// The payment method type
         /// </summary>
         [JsonProperty("type")]
+        [JsonConverter(typeof(PaymentTypeToGreekStringJsonConverter))]
         public PaymentType? Type { get; set; }
 
         /// <summary>

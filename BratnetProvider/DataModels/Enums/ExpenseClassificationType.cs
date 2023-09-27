@@ -362,12 +362,12 @@
         E3_883_004,
 
         /// <summary>
-        /// Purchases & spending within the country
+        /// Purchases and spending within the country
         /// </summary>
         VAT_361,
 
         /// <summary>
-        /// Purchases & imports ind. Goods (fixed)
+        /// Purchases and imports ind. Goods (fixed)
         /// </summary>
         VAT_362,
 

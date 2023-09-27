@@ -1,0 +1,5468 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BratnetProvider</name>
+    </assembly>
+    <members>
+        <member name="T:BratnetProvider.ExpenseClassificationDataModel">
+            <summary>
+            Represent an esxpense classification model
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExpenseClassificationDataModel.ClassificationType">
+            <summary>
+            The classification type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExpenseClassificationDataModel.ClassificationCategory">
+            <summary>
+            The classification category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExpenseClassificationDataModel.Amount">
+            <summary>
+            The amount
+            Required
+            Min value 0
+            fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExpenseClassificationDataModel.Id">
+            <summary>
+            The unique id
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.ExpenseClassificationDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.ExtrasDataModel">
+            <summary>
+            Represent an extra data model
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mRemarks">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.Remarks"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerName">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerName"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerCompanyName">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerCompanyName"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerActivity">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerActivity"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerAddress">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerAddress"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerRegion">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerRegion"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerPostalCode">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerPostalCode"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerCity">
+            <summary>
+            The memberof the <see cref="P:BratnetProvider.ExtrasDataModel.SalerCity"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerEmail">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerEmail"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerGCR">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerGCR"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerVAT">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerVAT"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerPFSName">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerPFSName"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerRepresentative">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerRepresentative"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mSalerRepresentativeVAT">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.SalerRepresentativeVAT"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mCustomerName">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.CustomerName"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mCustomerActivity">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.CustomerActivity"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mCustomerVAT">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.CustomerVAT"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mCustomerPFSName">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.CustomerPFSName"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mCustomerAddress">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.CustomerAddress"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mCustomerRegion">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.CustomerRegion"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mCustomerPostalCode">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.CustomerPostalCode"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mCustomerCity">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.CustomerCity"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mCustomerEmail">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.CustomerEmail"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mShipmentType">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.ShipmentType"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mLoadingAddress">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.LoadingAddress"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mDestinationName">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.DestinationName"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mDestinationAddress">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.DestinationAddress"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mDestinationCity">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.DestinationCity"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mDestinationZipCode">
+            <summary>
+            The meber of the <see cref="P:BratnetProvider.ExtrasDataModel.DestinationZipCode"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mVehicleNumber">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.VehicleNumber"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mHotelRoom">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.HotelRoom"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mAltCustomerName">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.AltCustomerName"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExtrasDataModel.mNationalId">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExtrasDataModel.NationalId"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.Remarks">
+            <summary>
+            The remarks
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.Time">
+            <summary>
+            Indicates the time
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SendEmail">
+            <summary>
+            Sends email
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerName">
+            <summary>
+            The saler's name
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerCompanyName">
+            <summary>
+            The saler company name
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerActivity">
+            <summary>
+            The saler's activity
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerAddress">
+            <summary>
+            The saler's street name
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerRegion">
+            <summary>
+            The saler's additional street name
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerPostalCode">
+            <summary>
+            The saler's postal code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerCity">
+            <summary>
+            The saler's city
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerEmail">
+            <summary>
+            The saler's email
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerWebsite">
+            <summary>
+            The saler's website
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerGCR">
+            <summary>
+            The saler's GCR (General Commercial Registry)
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerVAT">
+            <summary>
+            The saler's VAT
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerPFSCode">
+            <summary>
+            The saler's doy (Public Financial Service) code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerPFSName">
+            <summary>
+            The saler's doy (Public Financial Service) name
+            </summary>|
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerRepresentative">
+            <summary>
+            The saler's representative
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.SalerRepresentativeVAT">
+            <summary>
+            The saler's representative vat number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerCode">
+            <summary>
+            The customer's code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerName">
+            <summary>
+            The customer's name
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerActivity">
+            <summary>
+            The customer's activity
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerVAT">
+            <summary>
+            The customer's vat number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerDOYCode">
+            <summary>
+            The customer's doy code 
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerPFSName">
+            <summary>
+            The customer's PFS name
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerAddress">
+            <summary>
+            The customer's address
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerRegion">
+            <summary>
+            The customer's region
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerPostalCode">
+            <summary>
+            The customer's postal code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerCity">
+            <summary>
+            The customer's city
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CustomerEmail">
+            <summary>
+            The customer's email
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.ShipmentType">
+            <summary>
+            The shipment's type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.LoadingAddress">
+            <summary>
+            The loading address
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.DestinationName">
+            <summary>
+            The destination's name
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.DestinationAddress">
+            <summary>
+            The destination address
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.DestinationCity">
+            <summary>
+            The destination city
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.DestinationZipCode">
+            <summary>
+            The destination zip code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.CorrelatedInvoice">
+            <summary>
+            The correlated invoice
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.PaymentMethodName">
+            <summary>
+            The payment method
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.MovePurpose">
+            <summary>
+            The move purpose
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.VehicleNumber">
+            <summary>
+            The vehicle number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.HotelStartDate">
+            <summary>
+            The hotel start date
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.HotelEndDate">
+            <summary>
+            The hotel end date
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.HotelRoom">
+            <summary>
+            The hotel room
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.AltCustomerName">
+            <summary>
+            The alternative customer name
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExtrasDataModel.NationalId">
+            <summary>
+            The unique national id
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.ExtrasDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.IncomeClassificationDataModel">
+            <summary>
+            Represents an income classification data
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IncomeClassificationDataModel.ClassificationType">
+            <summary>
+            The classification type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IncomeClassificationDataModel.ClassificationCategory">
+            <summary>
+            The classification category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IncomeClassificationDataModel.Amount">
+            <summary>
+            The amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IncomeClassificationDataModel.Id">
+            <summary>
+            The TaxId
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.IncomeClassificationDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.AddressDataModel">
+            <summary>
+            Represents an address data
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.AddressDataModel.mPostalCode">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.AddressDataModel.PostalCode"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.AddressDataModel.mCity">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.AddressDataModel.City"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.AddressDataModel.PostalCode">
+            <summary>
+            The postal code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.AddressDataModel.City">
+            <summary>
+            The city name
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.AddressDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.CounterpartDataModel">
+            <summary>
+            Represent a counterpart data
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CounterpartDataModel.mAddress">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.CounterpartDataModel.Address"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.CounterpartDataModel.VATNumber">
+            <summary>
+            The counterpart vat number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.CounterpartDataModel.Country">
+            <summary>
+            The counterpart country information
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.CounterpartDataModel.Branch">
+            <summary>
+            The branch
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.CounterpartDataModel.Address">
+            <summary>
+            The address data model
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.CounterpartDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoiceDataModel">
+            <summary>
+            Represents an invoice data
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceDataModel.mInvoiceVATAnalysis">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceDataModel.InvoiceVATAnalysis"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceDataModel.mInvoiceTaxVATAnalysis">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceDataModel.InvoiceTaxVATAnalysis"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceDataModel.mInvoiceDetails">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceDataModel.InvoiceDetails"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.UId">
+            <summary>
+            The unique auto incremented item uid
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.Mark">
+            <summary>
+            The invoice unique mark
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.CancelledByMark">
+            <summary>
+            The invoice cancellation mark
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.AuthenticationCode">
+            <summary>
+            The invoice authentication code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.TransmissionFailure">
+            <summary>
+            The invoice transmission failure
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.Issuer">
+            <summary>
+            The invoice issuer
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.Counterpart">
+            <summary>
+            The invoice counterpart
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.InvoiceHeader">
+            <summary>
+            The invoice header
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.PaymentMethods">
+            <summary>
+            The invoice payment methods
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.InvoiceDetails">
+            <summary>
+            The invoice detail
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.TaxesTotals">
+            <summary>
+            The invoice taxes totals
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.TaxesDescriptions">
+            <summary>
+            The invoice taxes description
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.InvoiceSummary">
+            <summary>
+            The invoice summary
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.InvoiceTotalDiscount">
+            <summary>
+            The invoice total discount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.InvoiceVATAnalysis">
+            <summary>
+            The invoice VAT analysis
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.InvoiceTaxVATAnalysis">
+            <summary>
+            The invoice tax VAT analysis
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDataModel.Extras">
+            <summary>
+            The invoice extras
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoiceDetailDataModel">
+            <summary>
+            represent an invoice detail data
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceDetailDataModel.mName">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceDetailDataModel.Name"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.Name">
+            <summary>
+            Indicates the name of product
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.Code">
+            <summary>
+            Indicates the product code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.LineNumber">
+            <summary>
+            The type of line
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.RecType">
+            <summary>
+            The rec type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.FuelCode">
+            <summary>
+            The fuel code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.Quantity">
+            <summary>
+            The product quantity
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.MeasurementUnit">
+            <summary>
+            The measurment unit
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.InvoiceDetailType">
+            <summary>
+            The type of invoice
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.NetValueBeforeDiscount">
+            <summary>
+            Product value before discount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.NetValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.VATCategory">
+            <summary>
+            The vat number category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.VATAmount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.VATExemptionCategory">
+            <summary>
+            The vat exemption type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.Dienergeia">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.DiscountOption">
+            <summary>
+            The discount optiong discrimination
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.WithheldAmmount">
+            <summary>
+            The tax withholding amount
+            Min value 0 
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.WithheldPercentCategory">
+            <summary>
+            The withheld percent category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.StamDutyAmount">
+            <summary>
+            The stamp duty amount
+            Min value 0
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.StamputyPercentCategory">
+            <summary>
+            The stamp duty percent category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.FeesAmount">
+            <summary>
+            The fees amount
+            Min value 0
+            Fraction digits
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.FeesPercentCategory">
+            <summary>
+            The fees percent category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.OtherTaxesPercentCategory">
+            <summary>
+            The other taxes percent category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.OtherTaxesAmount">
+            <summary>
+            The other taxes amount
+            Min value 0
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.DeductionsAmount">
+            <summary>
+            The deduction amount
+            Min value 0
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.LineComments">
+            <summary>
+            The comns for the line
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.IncomeClassifications">
+            <summary>
+            The income classifications
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.ExpenseClassifications">
+            <summary>
+            The expense classifications
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.Quantity15">
+            <summary>
+            The quantity
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.ItemDespcription">
+            <summary>
+            The item's description 
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.Price">
+            <summary>
+            The price
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.DiscountAmount">
+            <summary>
+            The amount of discount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.DiscountPercent">
+            <summary>
+            The percentage of discount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.MeasurementUnitName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.VATPercent">
+            <summary>
+            The percentage of VAT
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceDetailDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoiceHeaderDataModel">
+            <summary>
+            Represent an invoice header data
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceHeaderDataModel.mSeries">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceHeaderDataModel.Series"/> property 
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceHeaderDataModel.mCorrelatedInvoices">
+            <summary>
+            The member of the <see cref="F:BratnetProvider.InvoiceHeaderDataModel.mCorrelatedInvoices"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.Series">
+            <summary>
+            The invoice series number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.AA">
+            <summary>
+            The invoice serial number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.IssueDate">
+            <summary>
+            The invoice date of issue
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.InvoiceType">
+            <summary>
+            The invoice type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.VATPaymentSuspension">
+            <summary>
+            The vat payment suspension indication
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.Currency">
+            <summary>
+            The type of currency
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.ExchangeRate">
+            <summary>
+            The exchange rate values0 - 50000
+            Fraction digits 5
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.CorrelatedInvoices">
+            <summary>
+            The correlated invoice
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.SelfPricing">
+            <summary>
+            The self pricing indication
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.DispatchDate">
+            <summary>
+            The date of dispatched invoice
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.DispatchTime">
+            <summary>
+            The time of dispatched invoice
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.VehicleNumber">
+            <summary>
+            The vehicle license plate number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.MovePurpose">
+            <summary>
+            The move purpose index
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.FuelInvoice">
+            <summary>
+            The fuel used index
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceHeaderDataModel.SpecialInvoiceCategory">
+            <summary>
+            The speific invoice cetegory
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceHeaderDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoicesDataModel">
+            <summary>
+            Represent an invoice data model
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoicesDataModel.mInvoices">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoicesDataModel.Invoices"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoicesDataModel.Invoices">
+            <summary>
+            The invoices
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoicesDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoiceSummaryDataModel">
+            <summary>
+            Represents the invoice summary data
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceSummaryDataModel.mIncomeClassifications">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceSummaryDataModel.IncomeClassifications"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceSummaryDataModel.mExpenseClassifications">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceSummaryDataModel.ExpenseClassifications"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalNetValue">
+            <summary>
+            The total net value
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalVATAmount">
+            <summary>
+            The total vat amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalWithheldAmount">
+            <summary>
+            The total withhled amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalFeesAmount">
+            <summary>
+            The total fees amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalStampDutyAmount">
+            <summary>
+            The total stamp duty amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalOtherTaxesAmount">
+            <summary>
+            The total of other taxes amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalDeductionsAmount">
+            <summary>
+            The total deduction amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalGrossValue">
+            <summary>
+            The total gross value
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.PrintGrossValue">
+            <summary>
+            The total print gross value
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.IncomeClassifications">
+            <summary>
+            The income classifications
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.ExpenseClassifications">
+            <summary>
+            The expense classifications
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceSummaryDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoiceTaxVATAnalysisDataModel">
+            <summary>
+            Represent an invoice tax analysis data
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceTaxVATAnalysisDataModel.VATCategory">
+            <summary>
+            The vat category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceTaxVATAnalysisDataModel.VATPercent">
+            <summary>
+            The vat percent
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceTaxVATAnalysisDataModel.NetAmount">
+            <summary>
+            The net value per vat
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceTaxVATAnalysisDataModel.VATAmount">
+            <summary>
+            The vat amount
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceTaxVATAnalysisDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoiceTotalDiscountDataModel">
+            <summary>
+            Represent an invoice total discount data
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceTotalDiscountDataModel.TotalDiscountAmount">
+            <summary>
+            The total discount amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceTotalDiscountDataModel.TotalDiscountPercent">
+            <summary>
+            The total discount percent
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceTotalDiscountDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoiceVATAnalysisDataModel">
+            <summary>
+            Represent an invoice vat analysis data
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceVATAnalysisDataModel.VATCategory">
+            <summary>
+            The vat category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceVATAnalysisDataModel.VATPercent">
+            <summary>
+            The vat percent
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceVATAnalysisDataModel.NetAmount">
+            <summary>
+            The net value per vat
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceVATAnalysisDataModel.VATAmount">
+            <summary>
+            The vat amount
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceVATAnalysisDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.IssuerDetailDataModel">
+            <summary>
+            Represents a vat number data 
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IssuerDetailDataModel.VATNumber">
+            <summary>
+            The invoice vat number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IssuerDetailDataModel.Country">
+            <summary>
+            The issuer country information
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IssuerDetailDataModel.Branch">
+            <summary>
+            The issuer branch number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IssuerDetailDataModel.Name">
+            <summary>
+            The issuer entity name
+            Max lenght = 150
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IssuerDetailDataModel.Address">
+            <summary>
+            The invoice address
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.IssuerDetailDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.PaymentMethodDataModel">
+            <summary>
+            Represent a payment method data
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.PaymentMethodDataModel.PaymentMethods">
+            <summary>
+            The payment method information
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.PaymentMethodDataModel.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.PaymentMethodDetailsDataModel">
+            <summary>
+            Represent a payment method detail data
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.PaymentMethodDetailsDataModel.Type">
+            <summary>
+            The payment method type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.PaymentMethodDetailsDataModel.Amount">
+            <summary>
+            The payment amount required
+            Fraction digits 2
+            Min value 0
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.PaymentMethodDetailsDataModel.PaymentMethodInfo">
+            <summary>
+            The payment method information
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.PaymentMethodDetailsDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TaxesDataModel.mTaxType">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.TaxesDataModel.TaxType"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDataModel.TaxType">
+            <summary>
+            The tax type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDataModel.TaxCategory">
+            <summary>
+            The tax category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDataModel.UnderlyingValue">
+            <summary>
+            The underlying value
+            Min Value 0
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDataModel.TaxAmount">
+            <summary>
+            The tax amount
+            Min value 0
+            Fraction digits 2
+            Required
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDataModel.TaxId">
+            <summary>
+            Unique tax id
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.TaxesDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.TaxesDescriptionDataModel">
+            <summary>
+            Represent a taxes descriptio data
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TaxesDescriptionDataModel.mTaxDescription">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.TaxesDescriptionDataModel.TaxDescription"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionDataModel.LineId">
+            <summary>
+            The line id
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionDataModel.TaxDescription">
+            <summary>
+            The tax description
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionDataModel.TaxAmount">
+            <summary>
+            The tax amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionDataModel.TaxVATAmount">
+            <summary>
+            The tax vat amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionDataModel.VATCategory">
+            <summary>
+            The vat category
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.TaxesDescriptionDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TaxesTotalsDataModel.mTaxDataModel">
+            <summary>
+            The member of the <see cref="T:BratnetProvider.TaxesDataModel"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesTotalsDataModel.Taxes">
+            <summary>
+            The taxes totals
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.TaxesTotalsDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.CountryCode">
+            <summary>
+            The Alpha-2 country codes
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AD">
+            <summary>
+            Andorra
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AE">
+            <summary>
+            United Arab Emirates
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AF">
+            <summary>
+            Afghanistan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AG">
+            <summary>
+            Antigua And Barbuda
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AI">
+            <summary>
+            Anguilla
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AL">
+            <summary>
+            Albania
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AM">
+            <summary>
+            Armenia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AN">
+            <summary>
+            Netherlands Antilles
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AO">
+            <summary>
+            Angola
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AQ">
+            <summary>
+            Antarctica
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AR">
+            <summary>
+            Argentina
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AS">
+            <summary>
+            American Samoa
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AT">
+            <summary>
+            Austria
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AU">
+            <summary>
+            Australia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AW">
+            <summary>
+            Aruba
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AX">
+            <summary>
+            Aland Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.AZ">
+            <summary>
+            Azerbaijan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BA">
+            <summary>
+            Bosnia And Herzegovina
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BB">
+            <summary>
+            Barbados
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BD">
+            <summary>
+            Bangladesh
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BE">
+            <summary>
+            Belgium
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BF">
+            <summary>
+            Burkina Faso
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BG">
+            <summary>
+            Bulgaria
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BH">
+            <summary>
+            Bahrain
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BI">
+            <summary>
+            Burundi
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BJ">
+            <summary>
+            Benin
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BL">
+            <summary>
+            Saint Barthelemy
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BM">
+            <summary>
+            Bermuda
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BN">
+            <summary>
+            Brunei
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BO">
+            <summary>
+            Bolivia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BR">
+            <summary>
+            Brazil
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BS">
+            <summary>
+            Bahamas
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BT">
+            <summary>
+            Bhutan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BV">
+            <summary>
+            Bouvet Island
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BW">
+            <summary>
+            Botswana
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BY">
+            <summary>
+            Belarus
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.BZ">
+            <summary>
+            Belize
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CA">
+            <summary>
+            Canada
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CC">
+            <summary>
+            Cocos Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CD">
+            <summary>
+            Democratic Republicofthe Congo
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CF">
+            <summary>
+            Central African Republic
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CG">
+            <summary>
+            Republicofthe Congo
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CH">
+            <summary>
+            Switzerland
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CI">
+            <summary>
+            Ivory Coast
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CK">
+            <summary>
+            Cook Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CL">
+            <summary>
+            Chile
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CM">
+            <summary>
+            Cameroon
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CN">
+            <summary>
+            China
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CO">
+            <summary>
+            Colombia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CR">
+            <summary>
+            Costa Rica
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CU">
+            <summary>
+            Cuba
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CV">
+            <summary>
+            Cape Verde
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CX">
+            <summary>
+            Christmas Island
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CY">
+            <summary>
+            Cyprus
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.CZ">
+            <summary>
+            Czech Republic
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.DE">
+            <summary>
+            Germany
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.DJ">
+            <summary>
+            Djibouti
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.DK">
+            <summary>
+            Denmark
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.DM">
+            <summary>
+            Dominica
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.DO">
+            <summary>
+            Dominican Republic
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.DZ">
+            <summary>
+            Algeria
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.EC">
+            <summary>
+            Ecuador
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.EE">
+            <summary>
+            Estonia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.EG">
+            <summary>
+            Egypt
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.EH">
+            <summary>
+            Western Sahara
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ER">
+            <summary>
+            Eritrea
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ES">
+            <summary>
+            Spain
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ET">
+            <summary>
+            Ethiopia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.FI">
+            <summary>
+            Finland
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.FJ">
+            <summary>
+            Fiji
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.FK">
+            <summary>
+            Falkland Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.FM">
+            <summary>
+            Micronesia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.FO">
+            <summary>
+            Faroe Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.FR">
+            <summary>
+            France
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GA">
+            <summary>
+            Gabon
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GB">
+            <summary>
+            United Kingdom
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GD">
+            <summary>
+            Grenada
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GE">
+            <summary>
+            Georgia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GF">
+            <summary>
+            French Guiana
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GG">
+            <summary>
+            Guernsey
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GH">
+            <summary>
+            Ghana
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GI">
+            <summary>
+            Gibraltar
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GL">
+            <summary>
+            Greenland
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GM">
+            <summary>
+            Gambia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GN">
+            <summary>
+            Guinea
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GP">
+            <summary>
+            Guadeloupe
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GQ">
+            <summary>
+            Equatorial Guinea
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GR">
+            <summary>
+            Greece
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GS">
+            <summary>
+            South GeorgiaΑndthe South Sandwich Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GT">
+            <summary>
+            Guatemala
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GU">
+            <summary>
+            Guam
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GW">
+            <summary>
+            Guinea Bissau
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.GY">
+            <summary>
+            Guyana
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.HK">
+            <summary>
+            Hong Kong
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.HM">
+            <summary>
+            Heard IslandΑnd Mc Donald Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.HN">
+            <summary>
+            Honduras
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.HR">
+            <summary>
+            Croatia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.HT">
+            <summary>
+            Haiti
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.HU">
+            <summary>
+            Hungary
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ID">
+            <summary>
+            Indonesia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.IE">
+            <summary>
+            Ireland
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.IL">
+            <summary>
+            Israel
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.IM">
+            <summary>
+            Isleof Man
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.IN">
+            <summary>
+            India
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.IO">
+            <summary>
+            British Indian Ocean Territory
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.IQ">
+            <summary>
+            Iraq
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.IR">
+            <summary>
+            Iran
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.IS">
+            <summary>
+            Iceland
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.IT">
+            <summary>
+            Italy
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.JE">
+            <summary>
+            Jersey
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.JM">
+            <summary>
+            Jamaica
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.JO">
+            <summary>
+            Jordan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.JP">
+            <summary>
+            Japan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KE">
+            <summary>
+            Kenya
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KG">
+            <summary>
+            Kyrgyzstan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KH">
+            <summary>
+            Cambodia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KI">
+            <summary>
+            Kiribati
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KM">
+            <summary>
+            Comoros
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KN">
+            <summary>
+            Saint KittsΑnd Nevis
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KP">
+            <summary>
+            North Korea
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KR">
+            <summary>
+            South Korea
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KW">
+            <summary>
+            Kuwait
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KY">
+            <summary>
+            Cayman Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.KZ">
+            <summary>
+            Kazakhstan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LA">
+            <summary>
+            Laos
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LB">
+            <summary>
+            Lebanon
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LC">
+            <summary>
+            Saint Lucia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LI">
+            <summary>
+            Liechtenstein
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LK">
+            <summary>
+            Sri Lanka
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LR">
+            <summary>
+            Liberia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LS">
+            <summary>
+            Lesotho
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LT">
+            <summary>
+            Lithuania
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LU">
+            <summary>
+            Luxembourg
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LV">
+            <summary>
+            Latvia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.LY">
+            <summary>
+            Libya
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MA">
+            <summary>
+            Morocco
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MC">
+            <summary>
+            Monaco
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MD">
+            <summary>
+            Moldova
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ME">
+            <summary>
+            Montenegro
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MF">
+            <summary>
+            Saint Martin
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MG">
+            <summary>
+            Madagascar
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MH">
+            <summary>
+            Marshall Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MK">
+            <summary>
+            Macedonia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ML">
+            <summary>
+            Mali
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MM">
+            <summary>
+            Myanmar
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MN">
+            <summary>
+            Mongolia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MO">
+            <summary>
+            Macau
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MP">
+            <summary>
+            Northern Mariana Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MQ">
+            <summary>
+            Martinique
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MR">
+            <summary>
+            Mauritania
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MS">
+            <summary>
+            Montserrat
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MT">
+            <summary>
+            Malta
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MU">
+            <summary>
+            Mauritius
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MV">
+            <summary>
+            Maldives
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MW">
+            <summary>
+            Malawi
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MX">
+            <summary>
+            Mexico
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MY">
+            <summary>
+            Malaysia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.MZ">
+            <summary>
+            Mozambique
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NA">
+            <summary>
+            Namibia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NC">
+            <summary>
+            New Caledonia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NE">
+            <summary>
+            Niger
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NF">
+            <summary>
+            Norfolk Island
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NG">
+            <summary>
+            Nigeria
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NI">
+            <summary>
+            Nicaragua
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NL">
+            <summary>
+            Netherlands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NO">
+            <summary>
+            Norway
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NP">
+            <summary>
+            Nepal
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NR">
+            <summary>
+            Nauru
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NU">
+            <summary>
+            Niue
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.NZ">
+            <summary>
+            New Zealand
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.OM">
+            <summary>
+            Oman
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PA">
+            <summary>
+            Panama
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PE">
+            <summary>
+            Peru
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PF">
+            <summary>
+            French Polynesia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PG">
+            <summary>
+            Papua New Guinea
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PH">
+            <summary>
+            Philippines
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PK">
+            <summary>
+            Pakistan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PL">
+            <summary>
+            Poland
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PM">
+            <summary>
+            Saint Pierre And Miquelon
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PN">
+            <summary>
+            Pitcairn
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PR">
+            <summary>
+            Puerto Rico
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PS">
+            <summary>
+            Palestine
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PT">
+            <summary>
+            Portugal
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PW">
+            <summary>
+            Palau
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.PY">
+            <summary>
+            Paraguay
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.QA">
+            <summary>
+            Qatar
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.RE">
+            <summary>
+            Reunion
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.RO">
+            <summary>
+            Romania
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.RS">
+            <summary>
+            Serbia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.RU">
+            <summary>
+            Russia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.RW">
+            <summary>
+            Rwanda
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SA">
+            <summary>
+            Saudi Arabia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SB">
+            <summary>
+            Solomon Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SC">
+            <summary>
+            Seychelles
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SD">
+            <summary>
+            Sudan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SE">
+            <summary>
+            Sweden
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SG">
+            <summary>
+            Singapore
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SH">
+            <summary>
+            Saint Helena
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SI">
+            <summary>
+            Slovenia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SJ">
+            <summary>
+            Svalbard And Jan Mayen
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SK">
+            <summary>
+            Slovakia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SL">
+            <summary>
+            Sierra Leone
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SM">
+            <summary>
+            San Marino
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SN">
+            <summary>
+            Senegal
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SO">
+            <summary>
+            Somalia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SR">
+            <summary>
+            Suriname
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ST">
+            <summary>
+            Sao Tome And Principe
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SV">
+            <summary>
+            El Salvador
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SY">
+            <summary>
+            Syria
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.SZ">
+            <summary>
+            Swaziland
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TC">
+            <summary>
+            Turks And Caicos Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TD">
+            <summary>
+            Chad
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TF">
+            <summary>
+            French Southern Territories
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TG">
+            <summary>
+            Togo
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TH">
+            <summary>
+            Thailand
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TJ">
+            <summary>
+            Tajikistan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TK">
+            <summary>
+            Tokelau
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TL">
+            <summary>
+            East Timor
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TM">
+            <summary>
+            Turkmenistan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TN">
+            <summary>
+            Tunisia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TO">
+            <summary>
+            Tonga
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TR">
+            <summary>
+            Turkey
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TT">
+            <summary>
+            Trinidad And Tobago
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TV">
+            <summary>
+            Tuvalu
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TW">
+            <summary>
+            Taiwan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.TZ">
+            <summary>
+            Tanzania
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.UA">
+            <summary>
+            Ukraine
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.UG">
+            <summary>
+            Uganda
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.UM">
+            <summary>
+            United States Minor Outlying Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.US">
+            <summary>
+            United States
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.UY">
+            <summary>
+            Uruguay
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.UZ">
+            <summary>
+            Uzbekistan
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.VA">
+            <summary>
+            Vatican
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.VC">
+            <summary>
+            Saint Vincent and the Grenadines
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.VE">
+            <summary>
+            Venezuela
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.VG">
+            <summary>
+            British Virgin Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.VI">
+            <summary>
+            US Virgin Islands
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.VN">
+            <summary>
+            Vietnam
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.VU">
+            <summary>
+            Vanuatu
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.WF">
+            <summary>
+            WallisΑnd Futuna
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.WS">
+            <summary>
+            Samoa
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.YE">
+            <summary>
+            Yemen
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.YT">
+            <summary>
+            Mayotte
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ZA">
+            <summary>
+            South Africa
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ZM">
+            <summary>
+            Zambia
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CountryCode.ZW">
+            <summary>
+            Zimbabwe
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.CurrencyCode">
+            <summary>
+            The currency code enum format ISO 4217
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BDT">
+            <summary>
+            Bangladeshi Taka (৳)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.EUR">
+            <summary>
+            Euro (€)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.XOF">
+            <summary>
+            CFA Franc BCEAO (CFA)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BGN">
+            <summary>
+            Bulgarian Lăv (Лв.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BAM">
+            <summary>
+            Bosnia-Herzegovina Convertible Marka (KM)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BBD">
+            <summary>
+            Barbados Dollar (Bds$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.XPF">
+            <summary>
+            CFP Franc (₣)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BMD">
+            <summary>
+            Bermudian Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BND">
+            <summary>
+            Brunei Dollar (B$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SGD">
+            <summary>
+            Singapore Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BOB">
+            <summary>
+            Boliviano (Bs)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BHD">
+            <summary>
+            Bahraini Dinar (د.ب)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BIF">
+            <summary>
+            Burundian Franc (FBu)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BTN">
+            <summary>
+            Bhutanese Ngultrum (Nu.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.JMD">
+            <summary>
+            Jamaican Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.NOK">
+            <summary>
+            Norwegian Krone (kr)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BWP">
+            <summary>
+            Botswana Pula (P)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.WST">
+            <summary>
+            Samoan Tālā (SAT)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.USD">
+            <summary>
+            US Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BRL">
+            <summary>
+            Brazilian Real (R$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BSD">
+            <summary>
+            Bahamian Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.GBP">
+            <summary>
+            Pound Sterling (£)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BYN">
+            <summary>
+            Belarussian Ruble (BYN)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BZD">
+            <summary>
+            Belize Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.RUB">
+            <summary>
+            Russian Ruble (₽)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.RWF">
+            <summary>
+            Rwandan Franc (R₣)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.RSD">
+            <summary>
+            Serbian Dinar (din)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.TMT">
+            <summary>
+            Turkmenistani Manat (T)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.TJS">
+            <summary>
+            Tajikistani Somoni (ЅM)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.RON">
+            <summary>
+            Romanian Leu (lei)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.NZD">
+            <summary>
+            New Zealand Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.GTQ">
+            <summary>
+            Guatemalan Quetzal (Q)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.XAF">
+            <summary>
+            CFA Franc BEAC (FCFA)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.JPY">
+            <summary>
+            Japanese Yen (¥)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.GYD">
+            <summary>
+            Guyanese Dollar (G$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.GEL">
+            <summary>
+            Georgian Lari (ლ)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.XCD">
+            <summary>
+            East Caribbean Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.GNF">
+            <summary>
+            Guinean Franc (FG)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.GMD">
+            <summary>
+            Gambian Dalasi (D)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.DKK">
+            <summary>
+            Danish Krone (Kr.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.GIP">
+            <summary>
+            Gibraltar Pound (£)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.GHS">
+            <summary>
+            Ghanaian Cedi (GH₵)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.OMR">
+            <summary>
+            Omani Rial (ر.ع.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.TND">
+            <summary>
+            Tunisian Dinar (د.ت)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.JOD">
+            <summary>
+            Jordanian Dinar (د.ا)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.HRK">
+            <summary>
+            Croatian Kuna (kn)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.HTG">
+            <summary>
+            Haitian Gourde (G)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.HUF">
+            <summary>
+            Hungarian Forint (Ft)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.HKD">
+            <summary>
+            Hong Kong Dollar (HK$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.HNL">
+            <summary>
+            Honduran Lempira (L)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.AUD">
+            <summary>
+            Australian Dollar (A$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.VEF">
+            <summary>
+            Venezuelan Bolivar (VEF)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.ILS">
+            <summary>
+            Israeli New Sheqel (₪)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.PYG">
+            <summary>
+            Paraguayan Guarani (₲)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.IQD">
+            <summary>
+            Iraqi Dinar (ع.د)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.PAB">
+            <summary>
+            Panamanian Balboa (B/.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.PGK">
+            <summary>
+            Papua New Guinean Kina (K)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.PEN">
+            <summary>
+            Peruvian Nuevo Sol (S/)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.PKR">
+            <summary>
+            Pakistani Rupee (₨)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.PHP">
+            <summary>
+            Philippine Peso (₱)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.PLN">
+            <summary>
+            Polish Zloty (zł)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.ZMW">
+            <summary>
+            Zambian Kwacha (ZK)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MAD">
+            <summary>
+            Moroccan Dirham (MAD)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.EGP">
+            <summary>
+            Egyptian Pound (E£)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.ZAR">
+            <summary>
+            South African Rand (R)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.VND">
+            <summary>
+            Vietnamese Dong (₫)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SBD">
+            <summary>
+            Solomon Islands Dollar (Si$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.ETB">
+            <summary>
+            Ethiopian Birr (ብር)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SOS">
+            <summary>
+            Somali Shilling (Sh.so.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SAR">
+            <summary>
+            Saudi Riyal (ر.س)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.ERN">
+            <summary>
+            Eritrean Nakfa (نافكا)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MDL">
+            <summary>
+            Moldovan Leu (L)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MGA">
+            <summary>
+            Malagasy Ariary (Ar)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.UZS">
+            <summary>
+            Uzbekistan Som (so'm)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MMK">
+            <summary>
+            Myanmar Kyat (K)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MOP">
+            <summary>
+            Macanese Pataca (MOP$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MNT">
+            <summary>
+            Mongolian Tögrög (₮)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MKD">
+            <summary>
+            Macedonian Denar (Ден)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MUR">
+            <summary>
+            Mauritian Rupee (₨)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MWK">
+            <summary>
+            Malawian Kwacha (MK)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MVR">
+            <summary>
+            Maldivian Rufiyaa (Rf)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MRO">
+            <summary>
+            Mauritanian Ouguiya (UM)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.UGX">
+            <summary>
+            Ugandan Shilling (USh)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.TZS">
+            <summary>
+            Tanzanian Shilling (TSh)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MYR">
+            <summary>
+            Malaysian Ringgit (RM)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MXN">
+            <summary>
+            Mexican Peso (Mex$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SHP">
+            <summary>
+            Saint Helena Pound (£)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.FJD">
+            <summary>
+            Fiji Dollar (FJ$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.FKP">
+            <summary>
+            Falkland Islands Pound (£)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.NIO">
+            <summary>
+            Nicaraguan Córdoba (C$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.NAD">
+            <summary>
+            Namibian Dollar (N$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.VUV">
+            <summary>
+            Vanuatu Vatu (VT)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.NGN">
+            <summary>
+            Nigerian Naira (₦)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.NPR">
+            <summary>
+            Nepalese Rupee (रू)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CHF">
+            <summary>
+            Swiss Franc (Fr.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.COP">
+            <summary>
+            Colombian Peso ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CNY">
+            <summary>
+            Chinese Yuan (¥)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CNH">
+            <summary>
+            Chinese Yuan Renminbi (¥)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CLP">
+            <summary>
+            Chilean Peso ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CAD">
+            <summary>
+            Canadian Dollar (CAD $)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CDF">
+            <summary>
+            Congolese Franc (FC)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CZK">
+            <summary>
+            Czech Koruna (CZK)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CRC">
+            <summary>
+            Costa Rican Colon (₡)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.ANG">
+            <summary>
+            Netherlands Antillean Guilder (NAƒ)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CVE">
+            <summary>
+            Cape Verde Escudo ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CUC">
+            <summary>
+            Cuban Convertible Peso (CUC)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.CUP">
+            <summary>
+            Cuban Peso ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SZL">
+            <summary>
+            Swazi Lilangeni (E)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SYP">
+            <summary>
+            Syrian Pound (£S)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.KGS">
+            <summary>
+            Kyrgyzstani Som (Лв)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.KES">
+            <summary>
+            Kenyan Shilling (Ksh)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SSP">
+            <summary>
+            South Sudanese Pound (£)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SRD">
+            <summary>
+            Surinamese Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.KHR">
+            <summary>
+            Cambodian Riel (៛)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.KMF">
+            <summary>
+            Comoro Franc (CF)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.STD">
+            <summary>
+            Sao Tomean Dobra (Db)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.KRW">
+            <summary>
+            South Korean Won (₩)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.KPW">
+            <summary>
+            North Korean Won (₩)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.KWD">
+            <summary>
+            Kuwaiti Dinar (د.ك)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SLL">
+            <summary>
+            Sierra Leonean Leone (Le)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SCR">
+            <summary>
+            Seychelles Rupee (SR)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.KZT">
+            <summary>
+            Kazakhstani Tenge (₸)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.KYD">
+            <summary>
+            Cayman Islands Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SEK">
+            <summary>
+            Swedish Krona (kr)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.SDG">
+            <summary>
+            Sudanese Pound (ج.س.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.DOP">
+            <summary>
+            Dominican Peso ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.DJF">
+            <summary>
+            Djiboutian Franc (Fdj)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.YER">
+            <summary>
+            Yemeni Rial (﷼)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.DZD">
+            <summary>
+            Algerian Dinar (دج)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.UYU">
+            <summary>
+            Uruguayan Peso ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.LBP">
+            <summary>
+            Lebanese Pound (ل.ل.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.LAK">
+            <summary>
+            Lao Kip (₭)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.TWD">
+            <summary>
+            New Taiwan Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.TTD">
+            <summary>
+            Trinidad and Tobago Dollar ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.TRY">
+            <summary>
+            Turkish Lira (₺)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.LKR">
+            <summary>
+            Sri Lankan Rupee (රු)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.TOP">
+            <summary>
+            Tongan paʻanga (T$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.LRD">
+            <summary>
+            Liberian Dollar (L$)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.LSL">
+            <summary>
+            Lesotho Loti (M)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.THB">
+            <summary>
+            Thai Baht (฿)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.LYD">
+            <summary>
+            Libyan Dinar (ل.د)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.AED">
+            <summary>
+            UAE Dirham (د.إ)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.AFN">
+            <summary>
+            Afghan Afghani (؋)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.ISK">
+            <summary>
+            Icelandic Króna (kr)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.IRR">
+            <summary>
+            Iranian Rial (﷼)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.AMD">
+            <summary>
+            Armenian Dram (֏)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.ALL">
+            <summary>
+            Albanian Lek (L)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.AOA">
+            <summary>
+            Angolan Kwanza (Kz)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.ARS">
+            <summary>
+            Argentine Peso ($)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.BYR">
+            <summary>
+            Belarusian Rouble (BYN)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.INR">
+            <summary>
+            Indian Rupee (₹)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.UAH">
+            <summary>
+            Ukrainian Hryvnia (₴)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.AWG">
+            <summary>
+            Aruban Florin (ƒ)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.AZN">
+            <summary>
+            Azerbaijani Manat (₼)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.IDR">
+            <summary>
+            Indonesian Rupiah (Rp)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.QAR">
+            <summary>
+            Qatari Rial (ر.ق)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CurrencyCode.MZN">
+            <summary>
+            Mozambican Metical (MT)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.DocumentDeviationType.RecipientOmissionTransmission">
+            <summary>
+            This value is used for Data Transmission by the Recipient due Failure to Transmit it Publisher.
+            Allowed types documents: 1.1, 1.6, 2.1, 2.4, 5.2, 8.1 and 8.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.DocumentDeviationType.IssuerOmissionTransmission">
+            <summary>
+            This value is used for Data Transmission from the Publisher, at case it agrees with the 
+            Recipient's label on failure to transmit by (publisher) Allowed types documents: 11.3, 11.4, 13.1, and 13.31
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.DocumentDeviationType.TransmissionOfDeviationFromReceiver">
+            <summary>
+            This value is used for Data Transmission (non counter documents) by the Recipient due Transmission Deviation
+            Given by the Publisher Allowed types documents: 11.3, 11.4, 13.1, and 13.31 
+            (Especially and exclusively for documents issued within 2021 are allowed in addition and types 1.1 and 5.2)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.DocumentDeviationType.TransmissionOfDeviationFromPublisher">
+            <summary>
+            This value is used for Data Transmission myDATA REST API 65 from the Publisher, at case it agrees with the 
+            Recipient's label "Transmission Deviation" in facing press Document A1 that he had forward to the Receiver 
+            Allowed types documents: 11.3, 11.4, 13.1, and 13.31
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.ExpenseClassificationCategory">
+            <summary>
+            The enum for the expenses classification category type
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_1">
+            <summary>
+            Commodity Purchases (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_2">
+            <summary>
+            Purchases of A'-B' Materials (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_3">
+            <summary>
+            Receive Services (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_4">
+            <summary>
+            General Expenses with the right to deduct VAT (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_5">
+            <summary>
+            General Expenses without VAT deduction (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_6">
+            <summary>
+            Staff Remuneration and Benefits (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_7">
+            <summary>
+            Fixed Assets (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_8">
+            <summary>
+            Depreciation of Fixed Assets (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_9">
+            <summary>
+            Expenses for third party payment (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_10">
+            <summary>
+            Expenses of previous years (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_11">
+            <summary>
+            Future expenses (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_12">
+            <summary>
+            Other Expense Adjustment Entries (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_13">
+            <summary>
+            Opening Stocks (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_14">
+            <summary>
+            Period End Stocks (-) / (+)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategory.Category2_95">
+            <summary>
+            Other Expense Information (-) / (+)
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.ExpenseClassificationType">
+            <summary>
+            Provides enumeration for the expenses classification type
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_101">
+            <summary>
+            Launch merchandise
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_102_001">
+            <summary>
+            Purchases of consumer goods (net amount)/Wholesale
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_102_002">
+            <summary>
+            Purchases of consumer goods (net amount)/Retail
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_102_003">
+            <summary>
+            Purchases of consumer goods (net amount)/Goods of article 39a par.5 of the Code
+            VAT (law 2859/2000)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_102_004">
+            <summary>
+            Purchases of consumer goods (net amount)/Foreign Intra-Community
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_102_005">
+            <summary>
+            Purchases of goods for use (net amount)/Foreign Third Countries
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_102_006">
+            <summary>
+            Purchases of consumer goods (net amount) Other
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_104">
+            <summary>
+            Expiring goods
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_201">
+            <summary>
+            Raw materials and starting materials/Production
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_202_001">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Wholesale
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_202_002">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Retail
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_202_003">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Foreign Intra-Community
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_202_004">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Foreign Third Countries
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_202_005">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Other
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_204">
+            <summary>
+            Ending inventories of raw materials and materials/Production
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_207">
+            <summary>
+            Products and production in progress start/Production
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_209">
+            <summary>
+            Products and production in progress expiration/Production
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_301">
+            <summary>
+            Raw materials and starting materials/Agriculture
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_302_001">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Wholesale
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_302_002">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Retail
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_302_003">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Foreign Intra-Community
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_302_004">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Foreign Third Countries
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_302_005">
+            <summary>
+            Purchases of raw materials and consumables (net amount)/Other
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_304">
+            <summary>
+            Ending stocks of raw materials and materials/Agriculture
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_307">
+            <summary>
+            Products and production in progress start/Agriculture
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_309">
+            <summary>
+            Finishing products and production in progress/Agriculture
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_312">
+            <summary>
+            Starting stocks (animals - plants)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_313_001">
+            <summary>
+            Purchases of animals - plants (net amount)/Wholesale
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_313_002">
+            <summary>
+            Purchases of animals - plants (net amount)/Retail
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_313_003">
+            <summary>
+            Purchases of animals - plants (net amount)/Foreign Intra-Community
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_313_004">
+            <summary>
+            Purchases of animals - plants (net amount)/Foreign Third Countries
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_313_005">
+            <summary>
+            Purchases of animals - plants (net amount)/Other
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_315">
+            <summary>
+            End stocks (animals - plants)/Agriculture
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_581_001">
+            <summary>
+            Employee benefits/Gross earnings
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_581_002">
+            <summary>
+            Employee benefits/Employer contributions
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_581_003">
+            <summary>
+            Employee benefits/Other benefits
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_582">
+            <summary>
+            Asset measurement losses
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_583">
+            <summary>
+            Debit exchange differences
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_584">
+            <summary>
+            Losses on disposal-withdrawal of non-current assets
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_001">
+            <summary>
+            Domestic - foreign management fees (management fees)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_002">
+            <summary>
+            Expenses from affiliated businesses
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_003">
+            <summary>
+            Expenditure from non-cooperating states or from states with preferential tax status
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_004">
+            <summary>
+            Expenses for information days
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_005">
+            <summary>
+            Reception and hospitality expenses
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_006">
+            <summary>
+            Travel expenses
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_007">
+            <summary>
+            Self-Employed Insurance Contributions
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_008">
+            <summary>
+            Costs and commissions of consignee on behalf of farmers
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_009">
+            <summary>
+            Other Fees for domestic services
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_010">
+            <summary>
+            Other Fees for foreign services
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_011">
+            <summary>
+            Energy
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_012">
+            <summary>
+            Water supply
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_013">
+            <summary>
+            Telecommunications
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_014">
+            <summary>
+            Rentals
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_015">
+            <summary>
+            Advertising and display
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_585_016">
+            <summary>
+            Other Expenses
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_586">
+            <summary>
+            Debt interest and related costs
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_587">
+            <summary>
+            Depreciation
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_588">
+            <summary>
+            Unusual expenses, damages and fines
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_589">
+            <summary>
+            Provisions (except staff provisions)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_881_001">
+            <summary>
+            Purchases of tangible assets for use/Wholesale
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_881_002">
+            <summary>
+            Purchases of tangible fixed assets/Retail
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_881_003">
+            <summary>
+            Purchases of tangible fixed assets for use/Foreign Intra-Community
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_881_004">
+            <summary>
+            Purchases of tangible fixed assets for use/Foreign Third Countries
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_882_001">
+            <summary>
+            Purchases of intangible fixed assets/Wholesale
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_882_002">
+            <summary>
+            Purchases of intangible fixed assets/Retail
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_882_003">
+            <summary>
+            Purchases of non-tangible fixed assets for use/Foreign Intra-Community
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_882_004">
+            <summary>
+            Purchases of intangible fixed assets for use/Foreign Third Countries
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_883_001">
+            <summary>
+            Purchases of intangible fixed assets/Wholesale
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_883_002">
+            <summary>
+            Purchases of intangible fixed assets/Retail
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_883_003">
+            <summary>
+            Purchases of non-tangible fixed assets for use/Foreign Intra-Community
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_883_004">
+            <summary>
+            Purchases of intangible fixed assets for use/Foreign Third Countries
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.VAT_361">
+            <summary>
+            Purchases and spending within the country
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.VAT_362">
+            <summary>
+            Purchases and imports ind. Goods (fixed)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.VAT_363">
+            <summary>
+            Other non-expenditure imports Goods (fixed)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.VAT_364">
+            <summary>
+            Intra-Community acquisitions of goods
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.VAT_365">
+            <summary>
+            Intra-community downloads of services art. 14.2.a
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.VAT_366">
+            <summary>
+            Other actions of recipient
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_103">
+            <summary>
+            Depreciation of goods
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_203">
+            <summary>
+            Impairment of raw materials and materials
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_303">
+            <summary>
+            Impairment of raw materials and materials
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_208">
+            <summary>
+            Impairment of products and production in progress
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_308">
+            <summary>
+            Impairment of products and production in progress
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_314">
+            <summary>
+            Impairment of animals - plants - goods
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_106">
+            <summary>
+            Own production of fixed assets - Self deliveries - Destruction of stocks
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_205">
+            <summary>
+            Own production of fixed assets - Self deliveries - Destruction of stocks
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_305">
+            <summary>
+            Own production of fixed assets - Self deliveries - Destruction of stocks
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_210">
+            <summary>
+            Own production of fixed assets - Self deliveries - Destruction of stocks
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_310">
+            <summary>
+            Own production of fixed assets - Self deliveries - Destruction of stocks
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_318">
+            <summary>
+            Own production of fixed assets - Self deliveries - Destruction of stocks
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationType.E3_598_002">
+            <summary>
+            Purchases of goods subject to VAT
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.FeesPercentageCategory">
+            <summary>
+            The fees percentage category
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.MonthlyBill12Percent">
+            <summary>
+            For a monthly bill up to 50 euros 12%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.MonthlyBill15Percent">
+            <summary>
+            For a monthly bill from 50.01 up to 100 euros 15%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.MonthlyBill18Percent">
+            <summary>
+            For a monthly bill from 100.01 up to 150 euros 18%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.MonthlyBill20Percent">
+            <summary>
+            For a monthly bill from 150.01 euros and above 20%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.MobileCalls12Percent">
+            <summary>
+            Mobile calls fee 12%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.CableTV10Percent">
+            <summary>
+            Cable TV 10% off
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.Telephone5Percent">
+            <summary>
+            5% landline subscriber fee
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.EnvironmentalFeePercentForPlasticBag">
+            <summary>
+            Environmental Fee and plastic bag Law 2339/2001 no. 6a 0.07 euros per piece
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.Homicide2Percent">
+            <summary>
+            Homicide Levy 2%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.OtherFees">
+            <summary>
+            Other Fees
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.OtherTaxFees">
+            <summary>
+            Other tax fees
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.HomicideContribution">
+            <summary>
+            Homicide contribution
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.MonthlyBillOfEachConnection10Percent">
+            <summary>
+            For monthly bill of each connection (10%)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.MobileCalls10Percent">
+            <summary>
+            Mobile calls fee 10%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.MobileAndPrepaidFee0Percent">
+            <summary>
+            Mobile and prepaid fee for natural persons aged 15-29 0%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.EnvironmentalFeePercentForPlasticProducts">
+            <summary>
+            Contribution of environmental protection of plastic products 
+            0.04 euros per piece [Article 4 of Law 4736/2020
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.RecyclingFee">
+            <summary>
+            Recycling fee 0.08 cents per piece [Article 80 of Law 4819/2021]
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.AccommodationFee">
+            <summary>
+            Accommodation fee for transients
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.GrossRevenueTaxOfRestaurants">
+            <summary>
+            Tax on the gross revenues of restaurants and related shops
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.GrossReceiptFeeOfEntertainmentCenters">
+            <summary>
+            Fee on the gross receipts of entertainment centers
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.CasinoGrossReceiptsTax">
+            <summary>
+            Tax on casino gross receipts
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FeesPercentageCategory.OtherFeeOnGrossReceipts">
+            <summary>
+            Other fees on gross receipts
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.Benzine95RON">
+            <summary>
+            Benzine 95 RON
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.Benzine95RONPlus">
+            <summary>
+            Benzine 95 RON +
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.Benzine100RON">
+            <summary>
+            Benzine 100 RON
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.BenzineLRP">
+            <summary>
+            Benzine Lrp
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.AirplaneBenzine">
+            <summary>
+            Airplane Benzine
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.SpecialJetFuel">
+            <summary>
+            Special jet fuel
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.Diesel">
+            <summary>
+            Diesel
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.DieselPremium">
+            <summary>
+            Diesel premium
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.DieselHeatnn">
+            <summary>
+            Diesel heatnn
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.DieaselHeatPremium">
+            <summary>
+            Diesel heat premium
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.DieselLight">
+            <summary>
+            Diesel light
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.OtherUseDiesel">
+            <summary>
+            Other use diesel
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.NavyDiesel">
+            <summary>
+            Navy diesel
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.KerosenJP1">
+            <summary>
+            Kerosene jp1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.OtherUseKerosene">
+            <summary>
+            Other use kerosene
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.FuelOil">
+            <summary>
+            Fuel oil
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.NavyFuelOil">
+            <summary>
+            Navy fuel oil
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.LPG">
+            <summary>
+            LPG (liquid gas)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.LPGAndMethaneIndustial">
+            <summary>
+            LPG and methane industrial / commercial engines (bulk)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.LPGAndMethaneHeating">
+            <summary>
+            LPG and methane heating and other uses (bulk)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.LPGAndMethaneCommercialEngines">
+            <summary>
+            LPG and methane industrial / commercial engines (in bottles)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.LPGAndMethaneHeatingOtherUse">
+            <summary>
+            LPG and methane heating and other uses (in bottles)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.CNG">
+            <summary>
+            CNG (Compressed Natural Gas)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.AromaticHydrocarbons">
+            <summary>
+            Aromatic Hydrocarbons Tariff Class 2707
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.CyclicHydrocarbons">
+            <summary>
+            Cyclic Hydrocarbons Tariff Class 2902
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.LightPetrol">
+            <summary>
+            Light petrol (White Spirit)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.LightOil">
+            <summary>
+            Light oil
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.Biodiesel">
+            <summary>
+            Bio diesel
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.FuelCodeCategoryType.OtherServiceCharges">
+            <summary>
+            Other service charges
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.IncomeClassificationCategory">
+            <summary>
+            The enum for the income classification category
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_1">
+            <summary>
+            Revenue from Sale of Goods (+) / (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_2">
+            <summary>
+            Revenue from Sale of Products (+) / (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_3">
+            <summary>
+            Income from Provision of Services (+) / (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_4">
+            <summary>
+            Income from Sale of Fixed Assets (+) / (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_5">
+            <summary>
+            Other Income/Profits (+) / (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_6">
+            <summary>
+            Self-delivery / Self-use (+) / (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_7">
+            <summary>
+            Income for third party L/S (+) / (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_8">
+            <summary>
+            Previous years income (+)/ (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_9">
+            <summary>
+            Deferred income (+) / (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_10">
+            <summary>
+            Other Income Adjustment Entries (+) / (-)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategory.Category1_95">
+            <summary>
+            Other Income Information (+) / (-)
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.IncomeClassificationType">
+            <summary>
+            Provides enumeration for the income classification type
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_106">
+            <summary>
+            Own production of fixed assets - Self deliveries - Damages of stocks/Goods
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_205">
+            <summary>
+            Own production of fixed assets - Self-deliveries - Inventory destructions/Raw materials and other materials
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_210">
+            <summary>
+            Own production of fixed assets - Self deliveries - Inventory destructions/Products and production in progress
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_305">
+            <summary>
+            Own production of fixed assets - Self-deliveries - Inventory destructions/Raw materials and other materials
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_310">
+            <summary>
+            Own production of fixed assets - Self deliveries - Inventory destructions/Products and production in progress
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_318">
+            <summary>
+            Own production of fixed assets - Self deliveries - Inventory losses/Production expenses
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_561_001">
+            <summary>
+            Sales of goods and services Wholesale - Commercial
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_561_002">
+            <summary>
+            Sales of goods and services Wholesale based on article 39a par 5 of the VAT Code. (Law 2859/2000)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_561_003">
+            <summary>
+            Sales of goods and services Retail - Private Customers
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_561_004">
+            <summary>
+            Retail sales of goods and services based on article 39a par 5 of the VAT Code. (Law 2859/2000)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_561_005">
+            <summary>
+            Foreign Intra-Community sales of goods and services
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_561_006">
+            <summary>
+            Πωλήσεις αγαθών και υπηρεσιών Εξωτερικού Τρίτες Χώρες
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_561_007">
+            <summary>
+            Sales of goods and services Other
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_562">
+            <summary>
+            Other ordinary income
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_563">
+            <summary>
+            Credit interest and similar income
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_564">
+            <summary>
+            Credit exchange differences
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_565">
+            <summary>
+            Participation income
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_566">
+            <summary>
+            Gains on disposal of non-current assets
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_567">
+            <summary>
+            Gains from reversal of provisions and impairments
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_568">
+            <summary>
+            Gains from measurement at fair value
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_570">
+            <summary>
+            Extraordinary income and profits
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_595">
+            <summary>
+            Self-production expenses
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_596">
+            <summary>
+            Subsidies - Grants
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_597">
+            <summary>
+            Subsidies - Subsidies for investment purposes - covering expenses
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_880_001">
+            <summary>
+            Wholesale Asset Sales
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_880_002">
+            <summary>
+            Retail Asset Sales
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_880_003">
+            <summary>
+            Sales of Foreign Fixed Assets Intra-Community
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_880_004">
+            <summary>
+            Sales of Foreign Assets Third Countries
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_881_001">
+            <summary>
+            Sales for accounts of Third Parties Wholesale
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_881_002">
+            <summary>
+            Sales for accounts of Third Retailers
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_881_003">
+            <summary>
+            Sales for accounts of Third Parties External Intra-Community
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_881_004">
+            <summary>
+            Sales for Accounts of Third Parties External Third Countries
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_598_001">
+            <summary>
+            Sales of goods subject to VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationType.E3_598_003">
+            <summary>
+            Sales on behalf of farmers through agricultural cooperatives, etc.
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoiceDetailType">
+            <summary>
+            The detail type enum
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceDetailType.ThirdPartySalesClearance">
+            <summary>
+            Clearance of third party sales
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceDetailType.FeeFromThirdPartySales">
+            <summary>
+            Fee from third party sales
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.InvoiceType">
+            <summary>
+            The invoice type enum
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesInvoice">
+            <summary>
+            Invoice type 1.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesInvoiceForIntraCommunity">
+            <summary>
+            Invoice type 1.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesInvoiceForThirdPartyCountries">
+            <summary>
+            Invoice type 1.3
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesInvoiceForThirdParty">
+            <summary>
+            Invoice type 1.4
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesInvoiceForThirdPartySalesAndClearance">
+            <summary>
+            Invoice type 1.5
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesInvoiceForAdditionalCases">
+            <summary>
+            Invoice type 1.6
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ProvisionOfServicesInvoice">
+            <summary>
+            Invoice type 2.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ProvisionOfServicesInvoiceForIntraCommunity">
+            <summary>
+            Invoice type 2.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ProvisionOfServicesInvoiceForThirdCountries">
+            <summary>
+            Invoice type 2.3
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ProvisionOfServicesInvoiceForAdditionalCases">
+            <summary>
+            Invoice type 2.4
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.DeadOfOwnershipForNonObligatoryIssuer">
+            <summary>
+            Invoice type 3.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.DeadOfOwnershipWithDenialFromObligatoryIssuer">
+            <summary>
+            Invoice type 3.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.CorrelatedDebitInvoice">
+            <summary>
+            Invoice type 5.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.NonCorrelatedDebitInvoice">
+            <summary>
+            Invoice type 5.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SelfDeliveryReceipt">
+            <summary>
+            Invoice type 6.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SelfUseReceipt">
+            <summary>
+            Invoice type 6.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ContractIncome">
+            <summary>
+            Invoice type 7.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.RentIncome">
+            <summary>
+            Invoice type 8.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ReceiptOfAccommodationTaxCollection">
+            <summary>
+            Invoice type 8.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesReceipt">
+            <summary>
+            Invoice type 11.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ProvisionOfServicesReceipt">
+            <summary>
+            Invoice type 11.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SimplifiedInvoice">
+            <summary>
+            Invoice type 11.3
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesDebitReceipt">
+            <summary>
+            Invoice type 11.4
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesReceiptForThirdParty">
+            <summary>
+            Invoice type 11.5
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ExpensesPurchasesAndRetailTransactionsForDomesticAndNonDomestic">
+            <summary>
+            Invoice type 13.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.RetailTransactionsSubmissionForDomesticAndNonDomestic">
+            <summary>
+            Invoice type 13.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SharedCommonExpenses">
+            <summary>
+            Invoice type 13.3
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.Subscriptions">
+            <summary>
+            Invoice type 13.4
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.EntityReceiptAsSpecifiedByTheOriginator">
+            <summary>
+            Invoice type 13.30
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesDebitReceiptForDomesticAndNonDomestic">
+            <summary>
+            Invoice type 13.31
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesInvoiceForIntraCommunityAcquisitions">
+            <summary>
+            Invoice type 14.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.SalesInvoiceForThirdCountriesAcquisitions">
+            <summary>
+            Invoice type 14.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ProvisionOfServicesInvoiceForIntraCommunityAcquisitions">
+            <summary>
+            Invoice type 14.3
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ProvisionOfServicesInvoiceForThirdCountriesAcquisitions">
+            <summary>
+            Invoice type 14.4
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.EFKAAndInsuranceOrganizations">
+            <summary>
+            Invoice type 14.5
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.DebitInvoiceForDomesticAndNonDomestic">
+            <summary>
+            Invoice type 14.31
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.ContractExpense">
+            <summary>
+            Invoice type 15.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.RentExpense">
+            <summary>
+            Invoice type 16.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.Payroll">
+            <summary>
+            Invoice type 17.1
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.Deprecations">
+            <summary>
+            Invoice type 17.2
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.VariousIncomeArrangementsForAccountingBase">
+            <summary>
+            Invoice type 17.3
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.VariousIncomeArrangementsForTaxBase">
+            <summary>
+            Invoice type 17.4
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.VariousExpenseArrangementsForAccountingBase">
+            <summary>
+            Invoice type 17.5
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceType.VariousExpenseArrangementsForTaxBase">
+            <summary>
+            Invoice type 17.6
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.LineItemType">
+            <summary>
+            The line item type enum
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.LineItemType.EndLineWithVAT">
+            <summary>
+            End line iwth VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.LineItemType.OtherTaxLineWithVAT">
+            <summary>
+            Other tax line with VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.LineItemType.Giftcard">
+            <summary>
+            Giftcard
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.LineItemType.NegativeSignOfValues">
+            <summary>
+            Negative sign of values
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.MeasurementUnit">
+            <summary>
+            The measurement unit
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MeasurementUnit.Pieces">
+            <summary>
+            Pieces
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MeasurementUnit.Kilos">
+            <summary>
+            Kilograms
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MeasurementUnit.Liters">
+            <summary>
+            Liters
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.MovePurpose">
+            <summary>
+            The move purpose enum
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MovePurpose.Sale">
+            <summary>
+            Sale
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MovePurpose.SaleforThirdPartyAccount">
+            <summary>
+            Sale for account of third parties
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MovePurpose.Sampling">
+            <summary>
+            Sample
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MovePurpose.Exhibition">
+            <summary>
+            Exhibition
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MovePurpose.Return">
+            <summary>
+            Return
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MovePurpose.Storage">
+            <summary>
+            Storage
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MovePurpose.ProcessingAssembly">
+            <summary>
+            Processing Assembly
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.MovePurpose.BetweenEntityFacilities">
+            <summary>
+            Between entity facilities
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.OtherTaxesPercentageCategory">
+            <summary>
+            The enum for the other taxes percentage category
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.FireInsurancePremiums20To15Percent">
+            <summary>
+            Fire insurance premiums 20-15%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.FireInsurancePremiums20To5Percent">
+            <summary>
+            fire insurance premiums 20-5%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.LifeInsurancePremiums4Percent">
+            <summary>
+            Life insurance premiums 4%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.OtherInsurancePremiums15Percent">
+            <summary>
+            Other insurance premiums 15%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.PremiumTaxExemptions0Percent">
+            <summary>
+            Premium tax exempt 0%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.Hotel1To2Stars0Point50Euro">
+            <summary>
+            Hotels with 1-2 star €0.50
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.Hotel3Stars1Point50Euro">
+            <summary>
+            Hotels with 3 stars €1.50
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.Hotel4Stars3Euro">
+            <summary>
+            Hotels with 4 stars €3
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.Hotel4Stars4Euro">
+            <summary>
+            Hotels with 4 stars €4
+            </summary>
+            
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.RoomsToLetFurnishedRoomsApartments0Point50Euro">
+            <summary>
+            For rent - furnished rooms - flats €0.50
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.EFTV5Percent">
+            <summary>
+            Excise Tax on advertisements that are shown on television (EFTD) 5%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.LuxuryOnTheTaxableValueForIntraCommunityAcquiredAndImportedFromThirdCountries10Percent">
+            <summary>
+            3.1 Luxury tax of 10% on the taxable person value for the 
+            intra-community acquired and imported from third countries 10%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.LuxuryOnTheSalePriceBeforeVATForDomesticallyProducedItems10Percent">
+            <summary>
+            3.2 Luxury tax of 10% on the price sales before VAT 
+            for domestically produced items 10%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.PublicRightToCasinoTickets80Percent">
+            <summary>
+            State's right to casino tickets (80% on the ticket)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.FireInsurancePremiums20Percent">
+            <summary>
+            Fire insurance premiums 20%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.OtherCustomsDutiesTaxes">
+            <summary>
+            Other Customs Duties-Taxes
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.OtherTaxes">
+            <summary>
+            Other Taxes
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.ChargesOfOtherTaxes">
+            <summary>
+            Charges of Other Taxes
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.OtherTaxesPercentageCategory.EFC">
+            <summary>
+            SCT (Special Consumption Tax)
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.PaymentType">
+            <summary>
+            The payment type enum
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.PaymentType.BusinessHomePaymentAccount">
+            <summary>
+            Home Payments Professional Account
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.PaymentType.BusinessForeignPaymentAccount">
+            <summary>
+            Foreigner's Professional Payment Account
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.PaymentType.Cash">
+            <summary>
+            Cash payment
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.PaymentType.Check">
+            <summary>
+            Bank check payment
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.PaymentType.OnCredit">
+            <summary>
+            On credit payment
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.PaymentType.WebBanking">
+            <summary>
+            Online deposit
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.PaymentType.POSOrEPOS">
+            <summary>
+            POS terminal
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.SpecialInvoiceCategoryType.SubsidiesGrants">
+            <summary>
+            Subsidies - grants
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.SpecialInvoiceCategoryType.HotelRetailRevenueChargesRoom">
+            <summary>
+            Hotel retail revenue - charging room
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.SpecialInvoiceCategoryType.AccountingEntry">
+            <summary>
+            Acounting entry
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.SpecialInvoiceCategoryType.TaxFree">
+            <summary>
+            Price valid only for transmission via erp or version 
+            through provider or invoice
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.StampDutyPercentageCategory">
+            <summary>
+            The stamp duty percentage category
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.StampDutyPercentageCategory.Rate1Point2">
+            <summary>
+            Stamp duty factor 1.2%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.StampDutyPercentageCategory.Rate2Point4">
+            <summary>
+            Stam duty factor 2.4%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.StampDutyPercentageCategory.Rate3Point6">
+            <summary>
+            Stam duty factor 3.6%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.StampDutyPercentageCategory.OtherCasesOfStampDuty">
+            <summary>
+            Other cases of Paper Stamp
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.TaxType">
+            <summary>
+            The enum for the tax type
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TaxType.WithholdingTax">
+            <summary>
+            Withholding tax
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TaxType.Fees">
+            <summary>
+            Fees
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TaxType.OtherTaxes">
+            <summary>
+            Other taxes
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TaxType.Stamp">
+            <summary>
+            Stamp duty
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TaxType.Reservations">
+            <summary>
+            Reservations
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.TransmissionFailure">
+            <summary>
+            The transmission failure enum
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TransmissionFailure.ProviderError">
+            <summary>
+            Provider error
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TransmissionFailure.MyDataError">
+            <summary>
+            Mydata error
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.VATCategory">
+            <summary>
+            The VAT category enum
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATCategory.VATRate24">
+            <summary>
+            VAT rate 24%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATCategory.VATRate13">
+            <summary>
+            VAT rate 13%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATCategory.VATRate6">
+            <summary>
+            VAT rate 6%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATCategory.VATRate17">
+            <summary>
+            VAT rate 17%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATCategory.VATRate9">
+            <summary>
+            VAT rate 9%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATCategory.VATRate4">
+            <summary>
+            VAT rate 4%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATCategory.ExcludingVAT">
+            <summary>
+            VAT excluded
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATCategory.EntriesWithoutVAT">
+            <summary>
+            Registrations without VAT
+            </summary>
+            <example>
+            Payroll, Depreciation etc.
+            </example>
+        </member>
+        <member name="T:BratnetProvider.VATExemptionCategory">
+            <summary>
+            The VAT exemption type enum
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Articles2And3">
+            <summary>
+            Without VAT – article 2 and 3 thereof VAT code
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article5">
+            <summary>
+            Without VAT - article 5 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article13">
+            <summary>
+            Without VAT - article 13 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article14">
+            <summary>
+            Without VAT - article 14 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article16">
+            <summary>
+            Without VAT - article 16 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article19">
+            <summary>
+            Without VAT - article 19 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article22">
+            <summary>
+            Without VAT - article 22 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article24">
+            <summary>
+            Without VAT - article 24 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article25">
+            <summary>
+            Without VAT - article 25 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article26">
+            <summary>
+            Without VAT - article 26 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article27">
+            <summary>
+            Without VAT - article 27 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article27ForOpenSeaShips">
+            <summary>
+            Without VAT - article 27 - Ships High Seas of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article27Point1Gamma">
+            <summary>
+            Without VAT - article 27.1.c - Ships High Seas of the VAT Code
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article28">
+            <summary>
+            Without VAT - article 28 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article39">
+            <summary>
+            Without VAT - article 39 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article39A">
+            <summary>
+            Without VAT - article 39a of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article40">
+            <summary>
+            Without VAT - article 40 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article41">
+            <summary>
+            Without VAT - article 41 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article47">
+            <summary>
+            Without VAT - article 47 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article43IncludingVAT">
+            <summary>
+            VAT included - article 43 of VAT code
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article44IncludingVAT">
+            <summary>
+            VAT included - article 44 of VAT code
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article45IncludingVAT">
+            <summary>
+            VAT included - article 45 of VAT code
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article46IncludingVAT">
+            <summary>
+            VAT included - article 46 of VAT code
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article6">
+            <summary>
+            Without VAT - article 6 of the Code VAT
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Policy1029_1995">
+            <summary>
+            Without VAT - Pol1029/1995
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Policy1167_2015">
+            <summary>
+            Without VAT - pol1167/2015
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.OtherVATExemptions">
+            <summary>
+            Other VAT exemptions
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article24b1">
+            <summary>
+            Without VAT - article 24 para. b' para.1 of the VAT Code, (Tax Free)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article47b">
+            <summary>
+            Without VAT – article 47b, of VAT code (OSS non-EU regime)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article47c">
+            <summary>
+            Without VAT - article 47c, of the Code VAT (OSS EU status)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.VATExemptionCategory.Article47d">
+            <summary>
+            Without VAT - article 47d, of the Code VAT (OSS EU status)
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.WithholdingTaxCategory">
+            <summary>
+            The withheld tax percentage category
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.CaseBTax15Percent">
+            <summary>
+            Approx. b'- Interest - 15%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.CaseCRights20Percent">
+            <summary>
+            Approx. c' - Rights - 20%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.CaseDManagementAdviceFees20Percent">
+            <summary>
+            Approx. d' - Management Consulting Fees - 20%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.CaseDTechnicalWorks3Percent">
+            <summary>
+            Approx. d' - Technical Works - 3%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.LiquidFuelsAndTobaccoProducts1Percent">
+            <summary>
+            Liquid fuels and tobacco industry products 1%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.OtherGoods4Percent">
+            <summary>
+            Other Goods 4%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.Services8Percent">
+            <summary>
+            Service Delivery 8%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.AdvancePayment4Percent">
+            <summary>
+            Architects' and Engineers' Prepaid Tax on Contracts Fees, 
+            for Preparation of Studies and Plans 4%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.AdvancePayment10Percent">
+            <summary>
+            Architects' and Engineers' Prepaid Tax on Contracts
+            Fees, related to projects of any other nature 10%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.AdvancePayment15Percent">
+            <summary>
+            Withholding Tax on Attorneys' Fees 15%
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.WithholdingTaxPercent">
+            <summary>
+            Wage Tax withholding para. 1 no. 15 n. 4172/2013
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.WithholdingTax15Percent">
+            <summary>
+            Wage Tax Withholding para. 2 no. 15 Law 4172/2013 -
+            Merchant Marine Officers
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.WithholdingTax10Percent">
+            <summary>
+            Wage Tax Withholding para. 2 no. 15 Law 4172/2013 -
+            Junior Crew of the Merchant Navy
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.WithholdingSpecialSolidarityContribution">
+            <summary>
+            Withholding special solidarity contribution
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.WithholdingTerminationOfEmployment">
+            <summary>
+            Withholding termination of employment
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.WithholdingForeignTransaction">
+            <summary>
+            Withholdings on foreign transactions based on avoidance 
+            agreements double taxation (S.A.D.F.)
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.OtherWithholdingTaxes">
+            <summary>
+            Other Withholding Taxes
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WithholdingTaxCategory.WitholdingTaxDividend">
+            <summary>
+            Withholding Tax Dividends per para. 1 no. 64 n. 4172/2013
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.CountryCodeToStringJsonConverter">
+            <summary>
+            The <see cref="!:CountryCodeToStringJsonConverter&lt;T&gt;"/> that converts a <see cref="T:BratnetProvider.CountryCode"/> to <see cref="T:System.String"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.CountryCodeToStringJsonConverter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.CountryCodeToStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.CountryCode,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.CountryCodeToStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.CountryCode,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:BratnetProvider.CurrencyCodeToStringJsonConverter">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.CurrencyCode"/> to <see cref="T:System.String"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.CurrencyCodeToStringJsonConverter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.CurrencyCodeToStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.CurrencyCode,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.CurrencyCodeToStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.CurrencyCode,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:BratnetProvider.InvoiceTypeToStringJsonConverter">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.InvoiceType"/> to <see cref="T:System.String"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceTypeToStringJsonConverter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceTypeToStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.InvoiceType,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.InvoiceTypeToStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.InvoiceType,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
+        </member>
+        <member name="T:BratnetProvider.MovePurposeToGreekStringJsonConverter">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.MovePurpose"/> to <see cref="T:System.Int32"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.MovePurposeToGreekStringJsonConverter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.MovePurposeToGreekStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.MovePurpose,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.MovePurposeToGreekStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.MovePurpose,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
+        </member>
+        <member name="T:BratnetProvider.MovePurposeToIntJsonConverter">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.MovePurpose"/> to <see cref="T:System.Int32"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.MovePurposeToIntJsonConverter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.MovePurposeToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.MovePurpose,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.MovePurposeToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.MovePurpose,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
+        </member>
+        <member name="T:BratnetProvider.PaymentTypeToGreekStringJsonConverter">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.PaymentType"/> to <see cref="T:System.String"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.PaymentTypeToGreekStringJsonConverter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.PaymentTypeToGreekStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.PaymentType,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.PaymentTypeToGreekStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.PaymentType,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
+        </member>
+        <member name="T:BratnetProvider.PaymentTypeToIntMapper">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.PaymentType"/> to <see cref="T:System.Int32"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.PaymentTypeToIntMapper.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.PaymentTypeToIntMapper.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.PaymentType,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.PaymentTypeToIntMapper.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.PaymentType,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
+        </member>
+        <member name="T:BratnetProvider.VATCategoryToIntJsonConverter">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.VATCategory"/> to <see cref="T:System.Int32"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.VATCategoryToIntJsonConverter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.VATCategoryToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.VATCategory,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.VATCategoryToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.VATCategory,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
+        </member>
+        <member name="T:BratnetProvider.BratnetProviderClientConstants">
+            <summary>
+            Constants related to the bratnet provider client
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.DocumentDeviationTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.DocumentDeviationType"/>s to their related <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.FeesPercentageCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.FeesPercentageCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.FuelCodeCategoryTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.FuelCodeCategoryType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.DetailTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.InvoiceDetailType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.InvoiceTypeToStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.InvoiceType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.LineItemTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.LineItemType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.MeasurementUnitToStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.MeasurementUnit"/>s to their related <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.MeasurementUnitToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.MeasurementUnit"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.MovePurposeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.MovePurpose"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.MovePurposeToGreekStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.MovePurpose"/>s to their related greek <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.OtherTaxesPercentageCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.OtherTaxesPercentageCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.PaymentTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.PaymentType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.PaymentTypeToGreekStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.PaymentType"/>s to their related greek <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.SpecialInvoiceCategotyTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.SpecialInvoiceCategoryType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.StampDutyPercentageCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.StampDutyPercentageCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.TaxTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.TaxType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.TransmissionFailureToStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.TransmissionFailure"/>s to their related <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.VATCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.VATCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.VATExemptionCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.VATExemptionCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.WithholdingTaxCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.WithholdingTaxCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+    </members>
+</doc>

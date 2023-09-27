@@ -2,7 +2,6 @@
 using System.Text.Json.Serialization;
 using Newtonsoft.Json;
 
-
 namespace BratnetProvider
 {
     /// <summary>
@@ -12,6 +11,20 @@ namespace BratnetProvider
     {
         #region Private Members
 
+        /// <summary>
+        /// The member of the <see cref="InvoiceVATAnalysis"/> property
+        /// </summary>
+        private IEnumerable<InvoiceVATAnalysisDataModel>? mInvoiceVATAnalysis;
+
+        /// <summary>
+        /// The member of the <see cref="InvoiceTaxVATAnalysis"/> property
+        /// </summary>
+        private IEnumerable<InvoiceTaxVATAnalysisDataModel>? mInvoiceTaxVATAnalysis;
+
+        /// <summary>
+        /// The member of the <see cref="InvoiceDetails"/> property
+        /// </summary>
+        private IEnumerable<InvoiceDetailDataModel> mInvoiceDetails;
 
         #endregion
 
@@ -21,7 +34,7 @@ namespace BratnetProvider
         /// The unique auto incremented item uid
         /// </summary>
         [JsonProperty("uid")]
-        public uint UId { get; set; }
+        public uint? UId { get; set; }
 
         /// <summary>
         /// The invoice unique mark
@@ -51,7 +64,87 @@ namespace BratnetProvider
         /// The invoice issuer
         /// </summary>
         [JsonProperty("issuer")]
-        public VATNumberDataModel? Issuer { get; set; }
+        public IssuerDetailDataModel? Issuer { get; set; }
+
+        /// <summary>
+        /// The invoice counterpart
+        /// </summary>
+        [JsonProperty("counterpart")]
+        public CounterpartDataModel? Counterpart { get; set; }
+
+        /// <summary>
+        /// The invoice header
+        /// </summary>
+        [JsonProperty("invoiceHeader")]
+        public InvoiceHeaderDataModel? InvoiceHeader { get; set; }
+
+        /// <summary>
+        /// The invoice payment methods
+        /// </summary>
+        [JsonProperty("paymentMethods")]
+        public PaymentMethodDataModel? PaymentMethods { get; set; }
+
+        /// <summary>
+        /// The invoice detail
+        /// </summary>
+        [JsonProperty("invoiceDetails")]
+        public IEnumerable<InvoiceDetailDataModel> InvoiceDetails
+        {
+            get => mInvoiceDetails ?? Enumerable.Empty<InvoiceDetailDataModel>();
+
+            set => mInvoiceDetails = value;
+        }
+
+        /// <summary>
+        /// The invoice taxes totals
+        /// </summary>
+        [JsonProperty("taxesTotals")]
+        public TaxesTotalsDataModel? TaxesTotals { get; set; }
+
+        /// <summary>
+        /// The invoice taxes description
+        /// </summary>
+        [JsonProperty("taxesDescriptions")]
+        public IEnumerable<TaxesDescriptionDataModel>? TaxesDescriptions { get; set; }
+
+        /// <summary>
+        /// The invoice summary
+        /// </summary>
+        [JsonProperty("invoiceSummary")]
+        public InvoiceSummaryDataModel? InvoiceSummary { get; set; }
+
+        /// <summary>
+        /// The invoice total discount
+        /// </summary>
+        public InvoiceTotalDiscountDataModel? InvoiceTotalDiscount { get; set; }
+
+        /// <summary>
+        /// The invoice VAT analysis
+        /// </summary>
+        [JsonProperty("invoiceVatAnalysis")]
+        public IEnumerable<InvoiceVATAnalysisDataModel>? InvoiceVATAnalysis 
+        { 
+            get => mInvoiceVATAnalysis ?? Enumerable.Empty<InvoiceVATAnalysisDataModel>();
+
+            set => mInvoiceVATAnalysis = value;
+        }
+
+        /// <summary>
+        /// The invoice tax VAT analysis
+        /// </summary>
+        [JsonProperty("invoiceTaxVatAnalysis")]
+        public IEnumerable<InvoiceTaxVATAnalysisDataModel> InvoiceTaxVATAnalysis
+        {
+            get => mInvoiceTaxVATAnalysis ?? Enumerable.Empty<InvoiceTaxVATAnalysisDataModel>();
+
+            set => mInvoiceTaxVATAnalysis = value;
+        }
+
+        /// <summary>
+        /// The invoice extras
+        /// </summary>
+        [JsonProperty("extra")]
+        public ExtrasDataModel? Extras { get; set; }
 
         #endregion
 
