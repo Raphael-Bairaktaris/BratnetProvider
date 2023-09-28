@@ -1,10 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
@@ -34,10 +29,10 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("series")]
-        public string Series 
+        public string Series
         {
             get => mSeries ?? string.Empty;
-            
+
             set => mSeries = value;
         }
 
@@ -51,6 +46,7 @@ namespace BratnetProvider
         /// The invoice date of issue
         /// </summary>
         [JsonProperty("issueDate")]
+        [JsonConverter(typeof(DateOnlyToStringJsonConverter))]
         public DateOnly IssueDate { get; set; }
 
         /// <summary>
@@ -76,6 +72,7 @@ namespace BratnetProvider
         /// The exchange rate values0 - 50000
         /// Fraction digits 5
         /// </summary>
+        [JsonProperty("exchangeRate")]
         public decimal? ExchangeRate { get; set; }
 
         /// <summary>
@@ -100,12 +97,14 @@ namespace BratnetProvider
         /// The date of dispatched invoice
         /// </summary>
         [JsonProperty("dispatchDate")]
+        [JsonConverter(typeof(DateOnlyToStringJsonConverter))]
         public DateOnly? DispatchDate { get; set; }
 
         /// <summary>
         /// The time of dispatched invoice
         /// </summary>
         [JsonProperty("dispatchTime")]
+        [JsonConverter(typeof(TimeOnlyToStringJsonConveter))]
         public TimeOnly? DispatchTime { get; set; }
 
         /// <summary>
@@ -118,18 +117,21 @@ namespace BratnetProvider
         /// The move purpose index
         /// </summary>
         [JsonProperty("movePurpose")]
+        [JsonConverter(typeof(MovePurposeToIntJsonConverter))]
         public MovePurpose? MovePurpose { get; set; }
 
         /// <summary>
         /// The fuel used index
         /// </summary>
         [JsonProperty("fuelInvoice")]
-        public FuelCodeCategoryType FuelInvoice { get; set; }
+        [JsonConverter(typeof(FuelCodeCategoryTypeToIntJsonConverter))]
+        public FuelCodeCategoryType? FuelInvoice { get; set; }
 
         /// <summary>
         /// The speific invoice cetegory
         /// </summary>
         [JsonProperty("specialInvoiceCategory")]
+        [JsonConverter(typeof(SpecialInvoiceCategoryTypeToIntJsonConverter))]
         public SpecialInvoiceCategoryType? SpecialInvoiceCategory { get; set; }
 
         #endregion
@@ -141,8 +143,15 @@ namespace BratnetProvider
         /// </summary>
         public InvoiceHeaderDataModel()
         {
-            
+
         }
+
+        #endregion
+
+        #region Public Methods
+
+        /// <inheritdoc/>
+        public override string ToString() => Series + " - " + AA;
 
         #endregion
     }

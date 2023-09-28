@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BratnetProvider
+﻿namespace BratnetProvider
 {
+    /// <summary>
+    /// Special invoice category type enum
+    /// </summary>
     public enum SpecialInvoiceCategoryType
     {
         /// <summary>

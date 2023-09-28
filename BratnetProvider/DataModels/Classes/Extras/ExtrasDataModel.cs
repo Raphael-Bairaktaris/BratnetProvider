@@ -1,10 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
@@ -189,10 +184,10 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("remarks")]
-        public string Remarks 
-        { 
+        public string Remarks
+        {
             get => mRemarks ?? string.Empty;
-            
+
             set => mRemarks = value;
         }
 
@@ -200,6 +195,7 @@ namespace BratnetProvider
         /// Indicates the time
         /// </summary>
         [JsonProperty("time")]
+        [JsonConverter(typeof(TimeOnlyToStringJsonConveter))]
         public TimeOnly? Time { get; set; }
 
         /// <summary>
@@ -213,8 +209,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerName")]
-        public string SalerName 
-        { 
+        public string SalerName
+        {
             get => mSalerName ?? string.Empty;
 
             set => mSalerName = value;
@@ -225,8 +221,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerCompanyName")]
-        public string SalerCompanyName 
-        { 
+        public string SalerCompanyName
+        {
             get => mSalerCompanyName ?? string.Empty;
 
             set => mSalerCompanyName = value;
@@ -237,8 +233,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerActivity")]
-        public string SalerActivity 
-        { 
+        public string SalerActivity
+        {
             get => mSalerActivity ?? string.Empty;
 
             set => mSalerActivity = value;
@@ -249,8 +245,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerStreetName")]
-        public string SalerAddress 
-        { 
+        public string SalerAddress
+        {
             get => mSalerAddress ?? string.Empty;
 
             set => mSalerAddress = value;
@@ -261,10 +257,10 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerAdditionalStreetName")]
-        public string SalerRegion 
-        { 
+        public string SalerRegion
+        {
             get => mSalerRegion ?? string.Empty;
-            
+
             set => mSalerRegion = value;
         }
 
@@ -273,11 +269,11 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerTk")]
-        public string SalerPostalCode 
-        { 
+        public string SalerPostalCode
+        {
             get => mSalerPostalCode ?? string.Empty;
 
-            set => mSalerPostalCode = value; 
+            set => mSalerPostalCode = value;
         }
 
         /// <summary>
@@ -285,11 +281,11 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerCity")]
-        public string SalerCity 
-        { 
+        public string SalerCity
+        {
             get => mSalerCity ?? string.Empty;
 
-            set => mSalerCity = value; 
+            set => mSalerCity = value;
         }
 
         /// <summary>
@@ -297,11 +293,11 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerEmail")]
-        public string SalerEmail 
-        { 
+        public string SalerEmail
+        {
             get => mSalerEmail ?? string.Empty;
 
-            set => mSalerEmail = value; 
+            set => mSalerEmail = value;
         }
 
         /// <summary>
@@ -315,9 +311,9 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerGemh")]
-        public string SalerGCR 
+        public string SalerGCR
         {
-            get => mSalerGCR ?? string.Empty; 
+            get => mSalerGCR ?? string.Empty;
 
             set => mSalerGCR = value;
         }
@@ -327,8 +323,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerVat")]
-        public string SalerVAT 
-        { 
+        public string SalerVAT
+        {
             get => mSalerVAT ?? string.Empty;
 
             set => mSalerVAT = value;
@@ -345,11 +341,11 @@ namespace BratnetProvider
         /// </summary>|
         [AllowNull]
         [JsonProperty("salerDoyName")]
-        public string SalerPFSName 
+        public string SalerPFSName
         {
             get => mSalerPFSName ?? string.Empty;
 
-            set => mSalerPFSName = value; 
+            set => mSalerPFSName = value;
         }
 
         /// <summary>
@@ -357,10 +353,10 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerRepresentative")]
-        public string SalerRepresentative 
-        { 
+        public string SalerRepresentative
+        {
             get => mSalerRepresentative ?? string.Empty;
-            
+
             set => mSalerRepresentative = value;
         }
 
@@ -369,8 +365,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("salerRepresentativeVat")]
-        public string SalerRepresentativeVAT 
-        { 
+        public string SalerRepresentativeVAT
+        {
             get => mSalerRepresentativeVAT ?? string.Empty;
 
             set => mSalerRepresentativeVAT = value;
@@ -387,9 +383,9 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("customerName")]
-        public string CustomerName 
+        public string CustomerName
         {
-            get => mCustomerName ?? string.Empty; 
+            get => mCustomerName ?? string.Empty;
 
             set => mCustomerName = value;
         }
@@ -399,11 +395,11 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("customerActivity")]
-        public string CustomerActivity 
-        { 
+        public string CustomerActivity
+        {
             get => mCustomerActivity ?? string.Empty;
 
-            set => mCustomerActivity = value; 
+            set => mCustomerActivity = value;
         }
 
         /// <summary>
@@ -411,8 +407,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("customerVAT")]
-        public string CustomerVAT 
-        { 
+        public string CustomerVAT
+        {
             get => mCustomerVAT ?? string.Empty;
 
             set => mCustomerVAT = value;
@@ -429,8 +425,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("customerDoyName")]
-        public string CustomerPFSName 
-        { 
+        public string CustomerPFSName
+        {
             get => mCustomerPFSName ?? string.Empty;
 
             set => mCustomerPFSName = value;
@@ -441,8 +437,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("customerStreetName")]
-        public string CustomerAddress 
-        { 
+        public string CustomerAddress
+        {
             get => mCustomerAddress ?? string.Empty;
 
             set => mCustomerAddress = value;
@@ -453,8 +449,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("customerAdditionalStreetName")]
-        public string CustomerRegion 
-        { 
+        public string CustomerRegion
+        {
             get => mCustomerRegion ?? string.Empty;
 
             set => mCustomerRegion = value;
@@ -465,11 +461,11 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("customerTk")]
-        public string CustomerPostalCode 
+        public string CustomerPostalCode
         {
             get => mCustomerPostalCode ?? string.Empty;
 
-            set => mCustomerPostalCode = value; 
+            set => mCustomerPostalCode = value;
         }
 
         /// <summary>
@@ -477,9 +473,9 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("customerCity")]
-        public string CustomerCity 
-        { 
-            get => mCustomerCity ?? string.Empty; 
+        public string CustomerCity
+        {
+            get => mCustomerCity ?? string.Empty;
 
             set => mCustomerCity = value;
         }
@@ -489,8 +485,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("customerEmail")]
-        public string CustomerEmail 
-        { 
+        public string CustomerEmail
+        {
             get => mCustomerEmail ?? string.Empty;
 
             set => mCustomerEmail = value;
@@ -501,11 +497,11 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("shipmentName")]
-        public string ShipmentType 
-        { 
+        public string ShipmentType
+        {
             get => mShipmentType ?? string.Empty;
 
-            set => mShipmentType = value; 
+            set => mShipmentType = value;
         }
 
         /// <summary>
@@ -513,8 +509,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("loadingAddress")]
-        public string LoadingAddress 
-        { 
+        public string LoadingAddress
+        {
             get => mLoadingAddress ?? string.Empty;
 
             set => mLoadingAddress = value;
@@ -525,11 +521,11 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("destinationName")]
-        public string DestinationName 
-        { 
+        public string DestinationName
+        {
             get => mDestinationName ?? string.Empty;
 
-            set => mDestinationName = value; 
+            set => mDestinationName = value;
         }
 
         /// <summary>
@@ -578,22 +574,22 @@ namespace BratnetProvider
         /// </summary>
         [JsonProperty("paymentMethodName")]
         [JsonConverter(typeof(PaymentTypeToGreekStringJsonConverter))]
-        public PaymentType? PaymentMethodName { get; set; }
+        public PaymentType PaymentMethodName { get; set; }
 
         /// <summary>
         /// The move purpose
         /// </summary>
         [JsonProperty("movePurpose")]
         [JsonConverter(typeof(MovePurposeToGreekStringJsonConverter))]
-        public MovePurpose? MovePurpose { get; set; }
+        public MovePurpose MovePurpose { get; set; }
 
         /// <summary>
         /// The vehicle number
         /// </summary>
         [AllowNull]
         [JsonProperty("vehicleNumber")]
-        public string VehicleNumber 
-        { 
+        public string VehicleNumber
+        {
             get => mVehicleNumber ?? string.Empty;
 
             set => mVehicleNumber = value;
@@ -603,12 +599,14 @@ namespace BratnetProvider
         /// The hotel start date
         /// </summary>
         [JsonProperty("hotelStartDate")]
+        [JsonConverter(typeof(DateOnlyToStringJsonConverter))]
         public DateOnly? HotelStartDate { get; set; }
 
         /// <summary>
         /// The hotel end date
         /// </summary>
         [JsonProperty("hotelEndDate")]
+        [JsonConverter(typeof(DateOnlyToStringJsonConverter))]
         public DateOnly? HotelEndDate { get; set; }
 
         /// <summary>
@@ -617,7 +615,7 @@ namespace BratnetProvider
         [AllowNull]
         [JsonProperty("hotelRoom")]
         public string HotelRoom
-        { 
+        {
             get => mHotelRoom ?? string.Empty;
 
             set => mHotelRoom = value;
@@ -656,8 +654,15 @@ namespace BratnetProvider
         /// </summary>
         public ExtrasDataModel()
         {
-            
+
         }
+
+        #endregion
+
+        #region Public Methods
+
+        /// <inheritdoc/>
+        public override string ToString() => SalerName + " - " + SalerActivity + " - " + SalerVAT + " - " + PaymentMethodName + " - " + MovePurpose;
 
         #endregion
     }

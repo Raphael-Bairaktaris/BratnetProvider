@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Text.Json.Serialization;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace BratnetProvider
 {
@@ -24,7 +22,12 @@ namespace BratnetProvider
         /// <summary>
         /// The member of the <see cref="InvoiceDetails"/> property
         /// </summary>
-        private IEnumerable<InvoiceDetailDataModel> mInvoiceDetails;
+        private IEnumerable<InvoiceDetailDataModel>? mInvoiceDetails;
+
+        /// <summary>
+        /// The member of the <see cref="TaxesDescriptions"/> property
+        /// </summary>
+        private IEnumerable<TaxesDescriptionDataModel>? mTaxesDescriptions;
 
         #endregion
 
@@ -105,7 +108,12 @@ namespace BratnetProvider
         /// The invoice taxes description
         /// </summary>
         [JsonProperty("taxesDescriptions")]
-        public IEnumerable<TaxesDescriptionDataModel>? TaxesDescriptions { get; set; }
+        public IEnumerable<TaxesDescriptionDataModel> TaxesDescriptions
+        {
+            get => mTaxesDescriptions ?? Enumerable.Empty<TaxesDescriptionDataModel>();
+
+            set => mTaxesDescriptions = value;
+        }
 
         /// <summary>
         /// The invoice summary
@@ -116,14 +124,15 @@ namespace BratnetProvider
         /// <summary>
         /// The invoice total discount
         /// </summary>
+        [JsonProperty("invoiceTotalDiscount")]
         public InvoiceTotalDiscountDataModel? InvoiceTotalDiscount { get; set; }
 
         /// <summary>
         /// The invoice VAT analysis
         /// </summary>
         [JsonProperty("invoiceVatAnalysis")]
-        public IEnumerable<InvoiceVATAnalysisDataModel>? InvoiceVATAnalysis 
-        { 
+        public IEnumerable<InvoiceVATAnalysisDataModel>? InvoiceVATAnalysis
+        {
             get => mInvoiceVATAnalysis ?? Enumerable.Empty<InvoiceVATAnalysisDataModel>();
 
             set => mInvoiceVATAnalysis = value;
@@ -155,7 +164,7 @@ namespace BratnetProvider
         /// </summary>
         public InvoiceDataModel()
         {
-            
+
         }
 
         #endregion

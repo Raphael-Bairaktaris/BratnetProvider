@@ -3,7 +3,7 @@
 namespace BratnetProvider
 {
     /// <summary>
-    /// Represent an invoice total discount data
+    /// Represents an invoice total discount data
     /// </summary>
     public class InvoiceTotalDiscountDataModel
     {

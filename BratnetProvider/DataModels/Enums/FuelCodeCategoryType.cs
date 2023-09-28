@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BratnetProvider
+﻿namespace BratnetProvider
 {
+    /// <summary>
+    /// Fuel code category type enum
+    /// </summary>
     public enum FuelCodeCategoryType
     {
         //code 999 used only in specific invoice

@@ -1,15 +1,9 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
     /// <summary>
-    /// Represent a counterpart data
+    /// Represent a set of counterpart details
     /// </summary>
     public class CounterpartDataModel
     {
@@ -25,18 +19,16 @@ namespace BratnetProvider
         #region Public Property
 
         /// <summary>
-        /// The counterpart vat number
+        /// The VAT number
         /// </summary>
-        [AllowNull]
         [JsonProperty("vatNumber")]
-        public string VATNumber { get; set; }
+        public string? VATNumber { get; set; }
 
         /// <summary>
-        /// The counterpart country information
+        /// The country information
         /// </summary>
-        [AllowNull]
         [JsonProperty("country")]
-        public CountryCode Country { get; set; }
+        public CountryCode Country { get; set; } = CountryCode.GR;
 
         /// <summary>
         /// The branch
@@ -45,7 +37,7 @@ namespace BratnetProvider
         public uint Branch { get; set; }
 
         /// <summary>
-        /// The address data model
+        /// The address
         /// </summary>
         [JsonProperty("address")]
         public AddressDataModel Address
@@ -64,8 +56,15 @@ namespace BratnetProvider
         /// </summary>
         public CounterpartDataModel()
         {
-            
+
         }
+
+        #endregion
+
+        #region Public Methods
+
+        /// <inheritdoc/>
+        public override string ToString() => VATNumber + " - " + Address;
 
         #endregion
     }

@@ -2,6 +2,9 @@
 
 namespace BratnetProvider
 {
+    /// <summary>
+    /// Represents a taxes totals data
+    /// </summary>
     public class TaxesTotalsDataModel
     {
         #region Private Members
@@ -19,12 +22,12 @@ namespace BratnetProvider
         /// The taxes totals
         /// </summary>
         [JsonProperty("taxesTotals")]
-        public IEnumerable<TaxesDataModel> Taxes 
+        public IEnumerable<TaxesDataModel> Taxes
         {
             get => mTaxDataModel ?? Enumerable.Empty<TaxesDataModel>();
-                 
+
             set => mTaxDataModel = value;
-        } 
+        }
 
         #endregion
 
@@ -35,7 +38,7 @@ namespace BratnetProvider
         /// </summary>
         public TaxesTotalsDataModel()
         {
-            
+
         }
 
         #endregion

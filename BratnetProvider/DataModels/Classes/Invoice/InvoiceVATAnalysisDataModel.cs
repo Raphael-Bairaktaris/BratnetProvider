@@ -23,19 +23,19 @@ namespace BratnetProvider
         /// The vat percent
         /// </summary>
         [JsonProperty("vatPercent")]
-        public decimal? VATPercent { get; set; }
+        public decimal VATPercent { get; set; }
 
         /// <summary>
         /// The net value per vat
         /// </summary>
         [JsonProperty("netValuePerVat")]
-        public decimal? NetAmount { get; set; }
+        public decimal NetAmount { get; set; }
 
         /// <summary>
         /// The vat amount
         /// </summary>
         [JsonProperty("vatAmount")]
-        public decimal? VATAmount { get; set; }
+        public decimal VATAmount { get; set; }
 
         #endregion
 
@@ -46,7 +46,7 @@ namespace BratnetProvider
         /// </summary>
         public InvoiceVATAnalysisDataModel()
         {
-            
+
         }
 
         #endregion

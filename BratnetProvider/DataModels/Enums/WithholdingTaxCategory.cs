@@ -82,7 +82,7 @@
         /// <summary>
         /// Withholding termination of employment
         /// </summary>
-        WithholdingTerminationOfEmployment, 
+        WithholdingTerminationOfEmployment,
 
         /// <summary>
         /// Withholdings on foreign transactions based on avoidance 

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Immutable;
 
 namespace BratnetProvider
 {
@@ -197,7 +192,7 @@ namespace BratnetProvider
             { InvoiceType.VariousExpenseArrangementsForTaxBase, "17.6" }
         }.ToImmutableDictionary();
 
-        
+
 
         /// <summary>
         /// Maps the <see cref="LineItemType"/>s to their related <see cref="int"/>s
@@ -213,11 +208,11 @@ namespace BratnetProvider
         /// <summary>
         /// Maps the <see cref="MeasurementUnit"/>s to their related <see cref="string"/>s
         /// </summary>
-        public static IReadOnlyDictionary<MeasurementUnit, string> MeasurementUnitToStringMapper { get; } = new Dictionary<MeasurementUnit, string>()
+        public static IReadOnlyDictionary<MeasurementUnit, string> MeasurementUnitToGreekStringMapper { get; } = new Dictionary<MeasurementUnit, string>()
         {
-            { MeasurementUnit.Pieces, "pieces" },
-            { MeasurementUnit.Kilos, "kilos" },
-            { MeasurementUnit.Liters, "liters" }
+            { MeasurementUnit.Pieces, "ΤΕΜ" },
+            { MeasurementUnit.Kilos, "" },
+            { MeasurementUnit.Liters, "" }
         }.ToImmutableDictionary();
 
         /// <summary>

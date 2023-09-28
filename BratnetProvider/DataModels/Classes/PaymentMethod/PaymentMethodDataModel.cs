@@ -1,24 +1,33 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
     /// <summary>
-    /// Represent a payment method data
+    /// Represents a payment method data
     /// </summary>
     public class PaymentMethodDataModel
     {
+        #region Private Members
+
+        /// <summary>
+        /// The member of the <see cref="PaymentMethods"/> property
+        /// </summary>
+        private IEnumerable<PaymentMethodDetailsDataModel>? mPaymentMethods;
+
+        #endregion
+
         #region Public Property
 
         /// <summary>
         /// The payment method information
         /// </summary>
         [JsonProperty("paymentMethods")]
-        public PaymentMethodDetailsDataModel? PaymentMethods { get; set; }
+        public IEnumerable<PaymentMethodDetailsDataModel> PaymentMethods
+        {
+            get => mPaymentMethods ?? Enumerable.Empty<PaymentMethodDetailsDataModel>();
+
+            set => mPaymentMethods = value;
+        }
 
         #endregion
 
@@ -29,7 +38,7 @@ namespace BratnetProvider
         /// </summary>
         public PaymentMethodDataModel()
         {
-            
+
         }
 
         #endregion

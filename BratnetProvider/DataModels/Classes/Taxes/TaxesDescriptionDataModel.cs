@@ -1,15 +1,10 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
     /// <summary>
-    /// Represent a taxes descriptio data
+    /// Represent a taxes details descriptio. data
     /// </summary>
     public class TaxesDescriptionDataModel
     {
@@ -35,8 +30,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("taxDescription")]
-        public string TaxDescription 
-        { 
+        public string TaxDescription
+        {
             get => mTaxDescription ?? string.Empty;
 
             set => mTaxDescription = value;
@@ -71,8 +66,15 @@ namespace BratnetProvider
         /// </summary>
         public TaxesDescriptionDataModel()
         {
-            
+
         }
+
+        #endregion
+
+        #region Public Methods
+
+        /// <inheritdoc/>
+        public override string ToString() => TaxDescription;
 
         #endregion
     }

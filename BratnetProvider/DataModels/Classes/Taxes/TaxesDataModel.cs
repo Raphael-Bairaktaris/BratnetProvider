@@ -1,13 +1,10 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
+    /// <summary>
+    /// Represents a taxes data model
+    /// </summary>
     public class TaxesDataModel
     {
         #region Private Members
@@ -24,12 +21,12 @@ namespace BratnetProvider
         /// <summary>
         /// The tax type
         /// </summary>
-        [AllowNull]
         [JsonProperty("taxType")]
-        public IEnumerable<TaxType> TaxType 
-        { 
+        [JsonConverter(typeof(TaxTypeToIntJsonConverter))]
+        public IEnumerable<TaxType> TaxType
+        {
             get => mTaxType ?? Enumerable.Empty<TaxType>();
-            
+
             set => mTaxType = value;
         }
 
@@ -37,6 +34,7 @@ namespace BratnetProvider
         /// The tax category
         /// </summary>
         [JsonProperty("taxCategory")]
+        [JsonConverter(typeof(VATCategoryToIntJsonConverter))]
         public VATCategory TaxCategory { get; set; }
 
         /// <summary>
@@ -45,7 +43,7 @@ namespace BratnetProvider
         /// Fraction digits 2
         /// </summary>
         [JsonProperty("underlyingValue")]
-        public decimal? UnderlyingValue { get; set; }
+        public decimal UnderlyingValue { get; set; }
 
         /// <summary>
         /// The tax amount
@@ -60,7 +58,7 @@ namespace BratnetProvider
         /// Unique tax id
         /// </summary>
         [JsonProperty("id")]
-        public byte? TaxId { get; set; }
+        public byte TaxId { get; set; }
 
         #endregion
 
@@ -71,7 +69,7 @@ namespace BratnetProvider
         /// </summary>
         public TaxesDataModel()
         {
-            
+
         }
 
         #endregion

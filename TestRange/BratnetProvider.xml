@@ -4,111 +4,6 @@
         <name>BratnetProvider</name>
     </assembly>
     <members>
-        <member name="T:BratnetProvider.BratnetProviderClientConstants">
-            <summary>
-            Constants related to the bratnet provider client
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.DocumentDeviationTypeToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.DocumentDeviationType"/>s to their related <see cref="T:System.String"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.FeesPercentageCategoryToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.FeesPercentageCategory"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.FuelCodeCategoryTypeToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.FuelCodeCategoryType"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.DetailTypeToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.InvoiceDetailType"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.InvoiceTypeToStringMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.InvoiceType"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.LineItemTypeToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.LineItemType"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.MeasurementUnitToGreekStringMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.MeasurementUnit"/>s to their related <see cref="T:System.String"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.MeasurementUnitToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.MeasurementUnit"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.MovePurposeToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.MovePurpose"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.MovePurposeToGreekStringMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.MovePurpose"/>s to their related greek <see cref="T:System.String"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.OtherTaxesPercentageCategoryToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.OtherTaxesPercentageCategory"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.PaymentTypeToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.PaymentType"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.PaymentTypeToGreekStringMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.PaymentType"/>s to their related greek <see cref="T:System.String"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.SpecialInvoiceCategotyTypeToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.SpecialInvoiceCategoryType"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.StampDutyPercentageCategoryToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.StampDutyPercentageCategory"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.TaxTypeToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.TaxType"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.TransmissionFailureToStringMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.TransmissionFailure"/>s to their related <see cref="T:System.String"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.VATCategoryToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.VATCategory"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.VATExemptionCategoryToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.VATExemptionCategory"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.WithholdingTaxCategoryToIntMapper">
-            <summary>
-            Maps the <see cref="T:BratnetProvider.WithholdingTaxCategory"/>s to their related <see cref="T:System.Int32"/>s
-            </summary>
-        </member>
         <member name="T:BratnetProvider.ExpenseClassificationDataModel">
             <summary>
             Represent an esxpense classification model
@@ -537,9 +432,6 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.ExtrasDataModel.ToString">
-            <inheritdoc/>
-        </member>
         <member name="T:BratnetProvider.IncomeClassificationDataModel">
             <summary>
             Represents an income classification data
@@ -600,9 +492,6 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.AddressDataModel.ToString">
-            <inheritdoc/>
-        </member>
         <member name="T:BratnetProvider.CounterpartDataModel">
             <summary>
             Represent a counterpart data
@@ -615,12 +504,12 @@
         </member>
         <member name="P:BratnetProvider.CounterpartDataModel.VATNumber">
             <summary>
-            The VAT number
+            The counterpart vat number
             </summary>
         </member>
         <member name="P:BratnetProvider.CounterpartDataModel.Country">
             <summary>
-            The country information
+            The counterpart country information
             </summary>
         </member>
         <member name="P:BratnetProvider.CounterpartDataModel.Branch">
@@ -630,16 +519,13 @@
         </member>
         <member name="P:BratnetProvider.CounterpartDataModel.Address">
             <summary>
-            The address
+            The address data model
             </summary>
         </member>
         <member name="M:BratnetProvider.CounterpartDataModel.#ctor">
             <summary>
             Default constructor
             </summary>
-        </member>
-        <member name="M:BratnetProvider.CounterpartDataModel.ToString">
-            <inheritdoc/>
         </member>
         <member name="T:BratnetProvider.InvoiceDataModel">
             <summary>
@@ -841,7 +727,7 @@
             The vat exemption type
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceDetailDataModel.Conduct">
+        <member name="P:BratnetProvider.InvoiceDetailDataModel.Dienergeia">
             <summary>
             
             </summary>
@@ -961,9 +847,6 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.InvoiceDetailDataModel.ToString">
-            <inheritdoc/>
-        </member>
         <member name="T:BratnetProvider.InvoiceHeaderDataModel">
             <summary>
             Represent an invoice header data
@@ -1059,9 +942,6 @@
             <summary>
             Default constructor
             </summary>
-        </member>
-        <member name="M:BratnetProvider.InvoiceHeaderDataModel.ToString">
-            <inheritdoc/>
         </member>
         <member name="T:BratnetProvider.InvoicesDataModel">
             <summary>
@@ -1243,19 +1123,36 @@
             Represents a vat number data 
             </summary>
         </member>
+        <member name="P:BratnetProvider.IssuerDetailDataModel.VATNumber">
+            <summary>
+            The invoice vat number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IssuerDetailDataModel.Country">
+            <summary>
+            The issuer country information
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IssuerDetailDataModel.Branch">
+            <summary>
+            The issuer branch number
+            </summary>
+        </member>
         <member name="P:BratnetProvider.IssuerDetailDataModel.Name">
             <summary>
-            The name
+            The issuer entity name
             Max lenght = 150
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IssuerDetailDataModel.Address">
+            <summary>
+            The invoice address
             </summary>
         </member>
         <member name="M:BratnetProvider.IssuerDetailDataModel.#ctor">
             <summary>
             Default constructor
             </summary>
-        </member>
-        <member name="M:BratnetProvider.IssuerDetailDataModel.ToString">
-            <inheritdoc/>
         </member>
         <member name="T:BratnetProvider.PaymentMethodDataModel">
             <summary>
@@ -1388,9 +1285,6 @@
             <summary>
             Default constructor
             </summary>
-        </member>
-        <member name="M:BratnetProvider.TaxesDescriptionDataModel.ToString">
-            <inheritdoc/>
         </member>
         <member name="T:BratnetProvider.TaxesTotalsDataModel">
             <summary>
@@ -5382,85 +5276,141 @@
             Withholding Tax Dividends per para. 1 no. 64 n. 4172/2013
             </summary>
         </member>
-        <member name="T:BratnetProvider.BaseEnumToIntJsonConverter`1">
+        <member name="T:BratnetProvider.BratnetProviderClientConstants">
             <summary>
-            The base for all the <see cref="T:Newtonsoft.Json.JsonConverter`1"/>s that are used for converting between an <see cref="T:System.Enum"/> and a <see cref="T:System.Int32"/>.
+            Constants related to the bratnet provider client
             </summary>
         </member>
-        <member name="M:BratnetProvider.BaseEnumToIntJsonConverter`1.#ctor">
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.DocumentDeviationTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.DocumentDeviationType"/>s to their related <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.FeesPercentageCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.FeesPercentageCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.FuelCodeCategoryTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.FuelCodeCategoryType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.DetailTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.InvoiceDetailType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.InvoiceTypeToStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.InvoiceType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.LineItemTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.LineItemType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.MeasurementUnitToGreekStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.MeasurementUnit"/>s to their related <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.MeasurementUnitToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.MeasurementUnit"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.MovePurposeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.MovePurpose"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.MovePurposeToGreekStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.MovePurpose"/>s to their related greek <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.OtherTaxesPercentageCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.OtherTaxesPercentageCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.PaymentTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.PaymentType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.PaymentTypeToGreekStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.PaymentType"/>s to their related greek <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.SpecialInvoiceCategotyTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.SpecialInvoiceCategoryType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.StampDutyPercentageCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.StampDutyPercentageCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.TaxTypeToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.TaxType"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.TransmissionFailureToStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.TransmissionFailure"/>s to their related <see cref="T:System.String"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.VATCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.VATCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.VATExemptionCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.VATExemptionCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.WithholdingTaxCategoryToIntMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.WithholdingTaxCategory"/>s to their related <see cref="T:System.Int32"/>s
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.CountryCodeToStringJsonConverter">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.CountryCode"/> to <see cref="T:System.String"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.CountryCodeToStringJsonConverter.#ctor">
             <summary>
             Default constructor
             </summary>
         </member>
-        <member name="T:BratnetProvider.BaseEnumToStringJsonConverter`1">
-            <summary>
-            The base for all the <see cref="T:Newtonsoft.Json.JsonConverter`1"/>s that are used for converting between an <see cref="T:System.Enum"/> and a <see cref="T:System.String"/>.
-            </summary>
-        </member>
-        <member name="M:BratnetProvider.BaseEnumToStringJsonConverter`1.#ctor">
-            <summary>
-            Default constructor
-            </summary>
-        </member>
-        <member name="T:BratnetProvider.BaseEnumToValueJsonConverter`2">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <typeparam name="TValue"></typeparam>
-        </member>
-        <member name="M:BratnetProvider.BaseEnumToValueJsonConverter`2.#ctor">
-            <summary>
-            Default constructor
-            </summary>
-        </member>
-        <member name="M:BratnetProvider.BaseEnumToValueJsonConverter`2.ReadJson(Newtonsoft.Json.JsonReader,System.Type,`0,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+        <member name="M:BratnetProvider.CountryCodeToStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.CountryCode,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
         </member>
-        <member name="M:BratnetProvider.BaseEnumToValueJsonConverter`2.WriteJson(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)">
-            <inheritdoc/> 
+        <member name="M:BratnetProvider.CountryCodeToStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.CountryCode,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
         </member>
-        <member name="M:BratnetProvider.BaseEnumToValueJsonConverter`2.GetMapper">
+        <member name="T:BratnetProvider.CurrencyCodeToStringJsonConverter">
             <summary>
-            Gets a <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2"/> that maps the values of the <typeparamref name="T"/>
-            to <see cref="T:System.String"/>s
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.CurrencyCode"/> to <see cref="T:System.String"/>
             </summary>
-            <returns></returns>
         </member>
-        <member name="T:BratnetProvider.BaseFormattableValueToStringJsonConverter`1">
-            <summary>
-            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that is used for converting between a value that supports string based formatting
-            </summary>
-            <typeparam name="T">The type of the value.</typeparam>
-        </member>
-        <member name="M:BratnetProvider.BaseFormattableValueToStringJsonConverter`1.#ctor">
+        <member name="M:BratnetProvider.CurrencyCodeToStringJsonConverter.#ctor">
             <summary>
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.BaseFormattableValueToStringJsonConverter`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,`0,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+        <member name="M:BratnetProvider.CurrencyCodeToStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.CurrencyCode,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
         </member>
-        <member name="M:BratnetProvider.BaseFormattableValueToStringJsonConverter`1.WriteJson(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)">
-            <inheritdoc/>
-        </member>
-        <member name="M:BratnetProvider.BaseFormattableValueToStringJsonConverter`1.GetFormat">
-            <summary>
-            Gets the format that is used for serializing and deserializing the value
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:BratnetProvider.BaseFormattableValueToStringJsonConverter`1.FormatProvider.Format">
-            <summary>
-            The format
-            </summary>
-        </member>
-        <member name="M:BratnetProvider.BaseFormattableValueToStringJsonConverter`1.FormatProvider.#ctor(System.String)">
-            <summary>
-            Default constructor
-            </summary>
-        </member>
-        <member name="M:BratnetProvider.BaseFormattableValueToStringJsonConverter`1.FormatProvider.GetFormat(System.Type)">
+        <member name="M:BratnetProvider.CurrencyCodeToStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.CurrencyCode,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
         </member>
         <member name="T:BratnetProvider.DateOnlyToStringJsonConverter">
@@ -5478,12 +5428,15 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.DateOnlyToStringJsonConverter.GetFormat">
+        <member name="M:BratnetProvider.DateOnlyToStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.DateOnly,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.DateOnlyToStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.DateOnly,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
         </member>
         <member name="T:BratnetProvider.FeesPercentageCategoryToIntJsonConverter">
             <summary>
-            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.FeesPercentageCategory"/> to <see cref="T:System.Int32"/>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.FeesPercentageCategory"/> to <see cref="T:System.String"/>
             </summary>
         </member>
         <member name="M:BratnetProvider.FeesPercentageCategoryToIntJsonConverter.#ctor">
@@ -5491,8 +5444,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.FeesPercentageCategoryToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.FeesPercentageCategoryToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.FeesPercentageCategory,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.FeesPercentageCategoryToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.FeesPercentageCategory,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.FuelCodeCategoryTypeToIntJsonConverter">
             <summary>
@@ -5504,8 +5460,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.FuelCodeCategoryTypeToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.FuelCodeCategoryTypeToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.FuelCodeCategoryType,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.FuelCodeCategoryTypeToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.FuelCodeCategoryType,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.InvoiceTypeToStringJsonConverter">
             <summary>
@@ -5517,12 +5476,15 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.InvoiceTypeToStringJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.InvoiceTypeToStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.InvoiceType,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.InvoiceTypeToStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.InvoiceType,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.MeasurementUnitToGreekStringJsonConverter">
             <summary>
-            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.MeasurementUnit"/> to <see cref="T:System.String"/> 
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.MeasurementUnit"/> to <see cref="T:System.Int32"/> 
             </summary>
         </member>
         <member name="M:BratnetProvider.MeasurementUnitToGreekStringJsonConverter.#ctor">
@@ -5530,8 +5492,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.MeasurementUnitToGreekStringJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.MeasurementUnitToGreekStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.MeasurementUnit,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.MeasurementUnitToGreekStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.MeasurementUnit,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.MeasurementUnitToIntJsonConverter">
             <summary>
@@ -5543,12 +5508,15 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.MeasurementUnitToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.MeasurementUnitToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.MeasurementUnit,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.MeasurementUnitToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.MeasurementUnit,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.MovePurposeToGreekStringJsonConverter">
             <summary>
-            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.MovePurpose"/> to <see cref="T:System.String"/>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.MovePurpose"/> to <see cref="T:System.Int32"/>
             </summary>
         </member>
         <member name="M:BratnetProvider.MovePurposeToGreekStringJsonConverter.#ctor">
@@ -5556,8 +5524,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.MovePurposeToGreekStringJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.MovePurposeToGreekStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.MovePurpose,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.MovePurposeToGreekStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.MovePurpose,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.MovePurposeToIntJsonConverter">
             <summary>
@@ -5569,8 +5540,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.MovePurposeToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.MovePurposeToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.MovePurpose,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.MovePurposeToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.MovePurpose,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.OtherTaxesPercentageCategoryToIntJsonConverter">
             <summary>
@@ -5582,8 +5556,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.OtherTaxesPercentageCategoryToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.OtherTaxesPercentageCategoryToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.OtherTaxesPercentageCategory,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.OtherTaxesPercentageCategoryToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.OtherTaxesPercentageCategory,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.PaymentTypeToGreekStringJsonConverter">
             <summary>
@@ -5595,8 +5572,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.PaymentTypeToGreekStringJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.PaymentTypeToGreekStringJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.PaymentType,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.PaymentTypeToGreekStringJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.PaymentType,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.PaymentTypeToIntMapper">
             <summary>
@@ -5608,8 +5588,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.PaymentTypeToIntMapper.GetMapper">
+        <member name="M:BratnetProvider.PaymentTypeToIntMapper.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.PaymentType,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.PaymentTypeToIntMapper.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.PaymentType,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.SpecialInvoiceCategoryTypeToIntJsonConverter">
             <summary>
@@ -5621,12 +5604,15 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.SpecialInvoiceCategoryTypeToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.SpecialInvoiceCategoryTypeToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.SpecialInvoiceCategoryType,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.SpecialInvoiceCategoryTypeToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.SpecialInvoiceCategoryType,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.JsonConverters.StampDutyPercentageCategoryToIntJsonConverter">
             <summary>
-            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.StampDutyPercentageCategory"/> to <see cref="T:System.Int32"/>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.StampDutyPercentageCategory"/> to <see cref="T:System.String"/>
             </summary>
         </member>
         <member name="M:BratnetProvider.JsonConverters.StampDutyPercentageCategoryToIntJsonConverter.#ctor">
@@ -5634,8 +5620,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.JsonConverters.StampDutyPercentageCategoryToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.JsonConverters.StampDutyPercentageCategoryToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.StampDutyPercentageCategory,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.JsonConverters.StampDutyPercentageCategoryToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.StampDutyPercentageCategory,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.JsonConverters.VATExmpetionCategoryToIntJsonConverter">
             <summary>
@@ -5647,8 +5636,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.JsonConverters.VATExmpetionCategoryToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.JsonConverters.VATExmpetionCategoryToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.VATExemptionCategory,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.JsonConverters.VATExmpetionCategoryToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.VATExemptionCategory,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.TaxTypeToIntJsonConverter">
             <summary>
@@ -5660,17 +5652,15 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.TaxTypeToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.TaxTypeToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.TaxType,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.TaxTypeToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.TaxType,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.TimeOnlyToStringJsonConveter">
             <summary>
             The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:System.TimeOnly"/> to <see cref="T:System.String"/>
-            </summary>
-        </member>
-        <member name="F:BratnetProvider.TimeOnlyToStringJsonConveter.TimeFormat">
-            <summary>
-            The format that is used for serializing and deserializing times
             </summary>
         </member>
         <member name="M:BratnetProvider.TimeOnlyToStringJsonConveter.#ctor">
@@ -5678,7 +5668,10 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.TimeOnlyToStringJsonConveter.GetFormat">
+        <member name="M:BratnetProvider.TimeOnlyToStringJsonConveter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.TimeOnly,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.TimeOnlyToStringJsonConveter.WriteJson(Newtonsoft.Json.JsonWriter,System.TimeOnly,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
         </member>
         <member name="T:BratnetProvider.VATCategoryToIntJsonConverter">
@@ -5691,8 +5684,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.VATCategoryToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.VATCategoryToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.VATCategory,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.VATCategoryToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.VATCategory,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
         <member name="T:BratnetProvider.WithholdingTaxCategoryToIntJsonConverter">
             <summary>
@@ -5704,8 +5700,11 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.WithholdingTaxCategoryToIntJsonConverter.GetMapper">
+        <member name="M:BratnetProvider.WithholdingTaxCategoryToIntJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,BratnetProvider.WithholdingTaxCategory,System.Boolean,Newtonsoft.Json.JsonSerializer)">
             <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.WithholdingTaxCategoryToIntJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,BratnetProvider.WithholdingTaxCategory,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
         </member>
     </members>
 </doc>

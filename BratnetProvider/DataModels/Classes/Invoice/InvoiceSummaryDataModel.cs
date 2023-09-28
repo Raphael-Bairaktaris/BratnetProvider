@@ -1,9 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
@@ -32,25 +27,25 @@ namespace BratnetProvider
         /// The total net value
         /// </summary>
         [JsonProperty("totalNetValue")]
-        public decimal? TotalNetValue { get; set; }
+        public decimal TotalNetValue { get; set; }
 
         /// <summary>
         /// The total vat amount
         /// </summary>
         [JsonProperty("totalVatAmount")]
-        public decimal? TotalVATAmount { get; set; }
+        public decimal TotalVATAmount { get; set; }
 
         /// <summary>
         /// The total withhled amount
         /// </summary>
         [JsonProperty("totalWithheldAmount")]
-        public decimal? TotalWithheldAmount { get; set; }
+        public decimal TotalWithheldAmount { get; set; }
 
         /// <summary>
         /// The total fees amount
         /// </summary>
         [JsonProperty("totalFeesAmount")]
-        public decimal? TotalFeesAmount { get; set; }
+        public decimal TotalFeesAmount { get; set; }
 
         /// <summary>
         /// The total stamp duty amount
@@ -74,20 +69,20 @@ namespace BratnetProvider
         /// The total gross value
         /// </summary>
         [JsonProperty("totalGrossValue")]
-        public decimal? TotalGrossValue { get; set; }
+        public decimal TotalGrossValue { get; set; }
 
         /// <summary>
         /// The total print gross value
         /// </summary>
         [JsonProperty("totalPrintGrossValue")]
-        public decimal? PrintGrossValue { get; set; }
+        public decimal PrintGrossValue { get; set; }
 
         /// <summary>
         /// The income classifications
         /// </summary>
         [JsonProperty("incomeClassification")]
         public IEnumerable<IncomeClassificationDataModel> IncomeClassifications
-        { 
+        {
             get => mIncomeClassifications ?? Enumerable.Empty<IncomeClassificationDataModel>();
 
             set => mIncomeClassifications = value;
@@ -113,7 +108,7 @@ namespace BratnetProvider
         /// </summary>
         public InvoiceSummaryDataModel()
         {
-            
+
         }
 
         #endregion

@@ -1,15 +1,9 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
     /// <summary>
-    /// Represent a payment method detail data
+    /// Represents a payment method detail data
     /// </summary>
     public class PaymentMethodDetailsDataModel
     {
@@ -21,7 +15,7 @@ namespace BratnetProvider
         /// </summary>
         [JsonProperty("type")]
         [JsonConverter(typeof(PaymentTypeToGreekStringJsonConverter))]
-        public PaymentType? Type { get; set; }
+        public PaymentType Type { get; set; }
 
         /// <summary>
         /// The payment amount required
@@ -29,7 +23,7 @@ namespace BratnetProvider
         /// Min value 0
         /// </summary>
         [JsonProperty("amount")]
-        public decimal? Amount { get; set; }
+        public decimal Amount { get; set; }
 
         /// <summary>
         /// The payment method information
@@ -46,7 +40,7 @@ namespace BratnetProvider
         /// </summary>
         public PaymentMethodDetailsDataModel()
         {
-            
+
         }
 
         #endregion

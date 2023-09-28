@@ -1,10 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
@@ -34,9 +29,9 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("postalCode")]
-        public string PostalCode 
-        { 
-            get => mPostalCode ?? string.Empty; 
+        public string PostalCode
+        {
+            get => mPostalCode ?? string.Empty;
 
             set => mPostalCode = value;
         }
@@ -46,8 +41,8 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("city")]
-        public string City 
-        { 
+        public string City
+        {
             get => mCity ?? string.Empty;
 
             set => mCity = value;
@@ -62,8 +57,15 @@ namespace BratnetProvider
         /// </summary>
         public AddressDataModel()
         {
-            
+
         }
+
+        #endregion
+
+        #region Public Methods
+
+        /// <inheritdoc/>
+        public override string ToString() => City + " - " + PostalCode;
 
         #endregion
     }

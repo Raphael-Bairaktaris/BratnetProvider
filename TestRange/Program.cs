@@ -1,8 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using BratnetProvider;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Text;
 
 Console.WriteLine("Hello, World!");
 
@@ -12,7 +10,10 @@ Console.WriteLine("Hello, World!");
 
 var json = File.ReadAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Provider.json"));
 
-var result = JsonConvert.DeserializeObject<InvoicesDataModel>(json);
+var result = JsonConvert.DeserializeObject<InvoicesDataModel>(json, new JsonSerializerSettings()
+{
+    NullValueHandling = NullValueHandling.Ignore
+});
 
 //var json = await File.ReadAllTextAsync(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ISO4217.json"));
 

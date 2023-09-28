@@ -1,15 +1,11 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using BratnetProvider.JsonConverters;
+using Newtonsoft.Json;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BratnetProvider
 {
     /// <summary>
-    /// represent an invoice detail data
+    /// Represent an invoice detail data
     /// </summary>
     public class InvoiceDetailDataModel
     {
@@ -20,6 +16,16 @@ namespace BratnetProvider
         /// </summary>
         private string? mName;
 
+        /// <summary>
+        /// The member of the <see cref="IncomeClassifications"/> property
+        /// </summary>
+        private IEnumerable<IncomeClassificationDataModel>? mIncomeClassifications;
+
+        /// <summary>
+        /// The member of the <see cref="ExpenseClassifications"/> property
+        /// </summary>
+        private IEnumerable<ExpenseClassificationDataModel>? mExpenseClassifications;
+
         #endregion
 
         #region Public Property
@@ -29,10 +35,10 @@ namespace BratnetProvider
         /// </summary>
         [AllowNull]
         [JsonProperty("name")]
-        public string Name 
+        public string Name
         {
             get => mName ?? string.Empty;
-            
+
             set => mName = value;
         }
 
@@ -70,6 +76,7 @@ namespace BratnetProvider
         /// The measurment unit
         /// </summary>
         [JsonProperty("measurementUnit")]
+        [JsonConverter(typeof(MeasurementUnitToIntJsonConverter))]
         public MeasurementUnit MeasurementUnit { get; set; }
 
         /// <summary>
@@ -82,19 +89,20 @@ namespace BratnetProvider
         /// Product value before discount
         /// </summary>
         [JsonProperty("netValueBeforeDiscount")]
-        public int? NetValueBeforeDiscount { get; set; }
+        public int NetValueBeforeDiscount { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("netValue")]
-        public int? NetValue { get; set; }
+        public int NetValue { get; set; }
 
         /// <summary>
         /// The vat number category
         /// </summary>
         [JsonProperty("vatCategory")]
-        public VATCategory? VATCategory { get; set; }
+        [JsonConverter(typeof(VATCategoryToIntJsonConverter))]
+        public VATCategory VATCategory { get; set; }
 
         /// <summary>
         /// 
@@ -106,13 +114,14 @@ namespace BratnetProvider
         /// The vat exemption type
         /// </summary>
         [JsonProperty("vatExemptionCategory")]
+        [JsonConverter(typeof(VATExmpetionCategoryToIntJsonConverter))]
         public VATExemptionCategory? VATExemptionCategory { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("dienergeia")]
-        public bool? Dienergeia { get; set; }
+        public bool? Conduct { get; set; }
 
         /// <summary>
         /// The discount optiong discrimination
@@ -132,6 +141,7 @@ namespace BratnetProvider
         /// The withheld percent category
         /// </summary>
         [JsonProperty("withheldPercentCategory")]
+        [JsonConverter(typeof(WithholdingTaxCategoryToIntJsonConverter))]
         public WithholdingTaxCategory? WithheldPercentCategory { get; set; }
 
         /// <summary>
@@ -139,12 +149,14 @@ namespace BratnetProvider
         /// Min value 0
         /// Fraction digits 2
         /// </summary>
+        [JsonProperty("stampDutyAmmount")]
         public decimal? StamDutyAmount { get; set; }
 
         /// <summary>
         /// The stamp duty percent category
         /// </summary>
         [JsonProperty("stampDutyPercentCategory")]
+        [JsonConverter(typeof(StampDutyPercentageCategoryToIntJsonConverter))]
         public StampDutyPercentageCategory? StamputyPercentCategory { get; set; }
 
         /// <summary>
@@ -159,12 +171,14 @@ namespace BratnetProvider
         /// The fees percent category
         /// </summary>
         [JsonProperty("feesPercentCategory")]
+        [JsonConverter(typeof(FeesPercentageCategoryToIntJsonConverter))]
         public FeesPercentageCategory? FeesPercentCategory { get; set; }
 
         /// <summary>
         /// The other taxes percent category
         /// </summary>
         [JsonProperty("otherTaxesPercentCategory")]
+        [JsonConverter(typeof(OtherTaxesPercentageCategoryToIntJsonConverter))]
         public OtherTaxesPercentageCategory? OtherTaxesPercentCategory { get; set; }
 
         /// <summary>
@@ -173,7 +187,7 @@ namespace BratnetProvider
         /// Fraction digits 2
         /// </summary>
         [JsonProperty("otherTaxesAmount")]
-        public decimal? OtherTaxesAmount { get; set; } 
+        public decimal? OtherTaxesAmount { get; set; }
 
         /// <summary>
         /// The deduction amount
@@ -192,16 +206,24 @@ namespace BratnetProvider
         /// <summary>
         /// The income classifications
         /// </summary>
-        [AllowNull]
         [JsonProperty("incomeClassification")]
-        public IEnumerable<IncomeClassificationDataModel> IncomeClassifications { get; set; }
+        public IEnumerable<IncomeClassificationDataModel> IncomeClassifications
+        {
+            get => mIncomeClassifications ?? Enumerable.Empty<IncomeClassificationDataModel>();
+
+            set => mIncomeClassifications = value;
+        }
 
         /// <summary>
         /// The expense classifications
         /// </summary>
-        [AllowNull]
         [JsonProperty("expenseClassification")]
-        public IEnumerable<ExpenseClassificationDataModel> ExpenseClassifications { get; set; }
+        public IEnumerable<ExpenseClassificationDataModel> ExpenseClassifications
+        {
+            get => mExpenseClassifications ?? Enumerable.Empty<ExpenseClassificationDataModel>();
+
+            set => mExpenseClassifications = value;
+        }
 
         /// <summary>
         /// The quantity
@@ -220,7 +242,7 @@ namespace BratnetProvider
         /// The price
         /// </summary>
         [JsonProperty("price")]
-        public decimal? Price { get; set; }
+        public decimal Price { get; set; }
 
         /// <summary>
         /// The amount of discount
@@ -235,15 +257,17 @@ namespace BratnetProvider
         public decimal? DiscountPercent { get; set; }
 
         /// <summary>
-        /// 
+        /// The measurement unit name
         /// </summary>
         [JsonProperty("measurementUnitName")]
+        [JsonConverter(typeof(MeasurementUnitToGreekStringJsonConverter))]
         public MeasurementUnit MeasurementUnitName { get; set; }
 
         /// <summary>
         /// The percentage of VAT
         /// </summary>
-        public decimal? VATPercent { get; set; }
+        [JsonProperty("vatPercent")]
+        public decimal VATPercent { get; set; }
 
         #endregion
 
@@ -256,6 +280,13 @@ namespace BratnetProvider
         {
 
         }
+
+        #endregion
+
+        #region Public Methods
+
+        /// <inheritdoc/>
+        public override string ToString() => Name + " - " + InvoiceDetailType;
 
         #endregion
     }

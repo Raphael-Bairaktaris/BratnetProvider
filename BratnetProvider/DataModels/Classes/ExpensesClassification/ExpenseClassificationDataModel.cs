@@ -12,11 +12,13 @@ namespace BratnetProvider
         /// <summary>
         /// The classification type
         /// </summary>
+        [JsonProperty("classificationType")]
         public ExpenseClassificationType ClassificationType { get; set; }
 
         /// <summary>
         /// The classification category
         /// </summary>
+        [JsonProperty("classificationCategory")]
         public ExpenseClassificationCategory ClassificationCategory { get; set; }
 
         /// <summary>
@@ -25,11 +27,13 @@ namespace BratnetProvider
         /// Min value 0
         /// fraction digits 2
         /// </summary>
+        [JsonProperty("amount")]
         public decimal Amount { get; set; }
 
         /// <summary>
         /// The unique id
         /// </summary>
+        [JsonProperty("id")]
         public byte? Id { get; set; }
 
         #endregion
@@ -41,7 +45,7 @@ namespace BratnetProvider
         /// </summary>
         public ExpenseClassificationDataModel()
         {
-            
+
         }
 
         #endregion

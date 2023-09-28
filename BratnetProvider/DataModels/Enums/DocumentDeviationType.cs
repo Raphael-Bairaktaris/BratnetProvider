@@ -1,5 +1,8 @@
 ﻿namespace BratnetProvider
 {
+    /// <summary>
+    /// Documenta deviation type enum
+    /// </summary>
     public enum DocumentDeviationType
     {
         /// <summary>
