@@ -13,13 +13,13 @@ namespace BratnetProvider
         /// The classification type
         /// </summary>
         [JsonProperty("classificationType")]
-        public IncomeClassificationType ClassificationType { get; set; }
+        public IncomeClassificationType IncomeClassificationType { get; set; }
 
         /// <summary>
         /// The classification category
         /// </summary>
         [JsonProperty("classificationCategory")]
-        public IncomeClassificationCategory ClassificationCategory { get; set; }
+        public IncomeClassificationCategory IncomeClassificationCategory { get; set; }
 
         /// <summary>
         /// The amount

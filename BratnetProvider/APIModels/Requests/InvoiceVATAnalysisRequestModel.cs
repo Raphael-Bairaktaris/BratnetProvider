@@ -1,39 +1,30 @@
-﻿using Newtonsoft.Json;
-using System.Diagnostics.CodeAnalysis;
-
-
-namespace BratnetProvider
+﻿namespace BratnetProvider
 {
     /// <summary>
-    /// Represent an invoice vat analysis data
+    /// Request model used for sending invoice VAT analysis to the Bratnet provider
     /// </summary>
-    public class InvoiceVATAnalysisDataModel
+    public class InvoiceVATAnalysisRequestModel
     {
         #region Public Property
 
         /// <summary>
         /// The vat category
         /// </summary>
-        [JsonProperty("vatCategory")]
-        [JsonConverter(typeof(VATCategoryToIntJsonConverter))]
         public VATCategory VATCategory { get; set; }
 
         /// <summary>
         /// The vat percent
         /// </summary>
-        [JsonProperty("vatPercent")]
         public decimal VATPercent { get; set; }
 
         /// <summary>
         /// The net value per vat
         /// </summary>
-        [JsonProperty("netValuePerVat")]
         public decimal NetAmount { get; set; }
 
         /// <summary>
         /// The vat amount
         /// </summary>
-        [JsonProperty("vatAmount")]
         public decimal VATAmount { get; set; }
 
         #endregion
@@ -43,7 +34,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public InvoiceVATAnalysisDataModel()
+        public InvoiceVATAnalysisRequestModel()
         {
 
         }

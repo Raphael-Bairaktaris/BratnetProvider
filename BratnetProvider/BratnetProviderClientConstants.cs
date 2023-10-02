@@ -108,7 +108,7 @@ namespace BratnetProvider
         /// <summary>
         /// Maps the <see cref="InvoiceDetailType"/>s to their related <see cref="int"/>s
         /// </summary>
-        public static IReadOnlyDictionary<InvoiceDetailType, int> DetailTypeToIntMapper { get; } = new Dictionary<InvoiceDetailType, int>()
+        public static IReadOnlyDictionary<InvoiceDetailType, int> InvoiceDetailTypeToIntMapper { get; } = new Dictionary<InvoiceDetailType, int>()
         {
             { InvoiceDetailType.ThirdPartySalesClearance, 1 },
             { InvoiceDetailType.FeeFromThirdPartySales, 2 }

@@ -5,7 +5,12 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BratnetProvider", "BratnetProvider\BratnetProvider.csproj", "{0F654C08-E8B2-4DE0-B631-4AE6F929A9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRange", "TestRange\TestRange.csproj", "{0EC19D97-9734-4D8A-A4BB-9B96483ED3BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestRange", "TestRange\TestRange.csproj", "{0EC19D97-9734-4D8A-A4BB-9B96483ED3BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{971DD339-E316-4D0E-8B41-6B16F7572AE7}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

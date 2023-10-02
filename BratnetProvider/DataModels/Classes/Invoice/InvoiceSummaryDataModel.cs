@@ -51,19 +51,19 @@ namespace BratnetProvider
         /// The total stamp duty amount
         /// </summary>
         [JsonProperty("totalStampDutyAmount")]
-        public decimal? TotalStampDutyAmount { get; set; }
+        public decimal TotalStampDutyAmount { get; set; }
 
         /// <summary>
         /// The total of other taxes amount
         /// </summary>
         [JsonProperty("totalOtherTaxesAmount")]
-        public decimal? TotalOtherTaxesAmount { get; set; }
+        public decimal TotalOtherTaxesAmount { get; set; }
 
         /// <summary>
         /// The total deduction amount
         /// </summary>
         [JsonProperty("totalDeductionsAmount")]
-        public decimal? TotalDeductionsAmount { get; set; }
+        public decimal TotalDeductionsAmount { get; set; }
 
         /// <summary>
         /// The total gross value

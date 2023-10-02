@@ -1,13 +1,11 @@
-﻿using Newtonsoft.Json;
-using System.Diagnostics.CodeAnalysis;
-
-namespace BratnetProvider
+﻿namespace BratnetProvider
 {
     /// <summary>
-    /// Represent a taxes details descriptio. data
+    /// Request model used for taxes description invoices to the Bratnet provider
     /// </summary>
-    public class TaxesDescriptionDataModel
+    public class TaxesDescriptionRequestModel
     {
+
         #region Private Members
 
         /// <summary>
@@ -22,14 +20,11 @@ namespace BratnetProvider
         /// <summary>
         /// The line id
         /// </summary>
-        [JsonProperty("lineid")]
         public int LineId { get; set; }
 
         /// <summary>
         /// The tax description
         /// </summary>
-        [AllowNull]
-        [JsonProperty("taxDescription")]
         public string TaxDescription
         {
             get => mTaxDescription ?? string.Empty;
@@ -40,31 +35,26 @@ namespace BratnetProvider
         /// <summary>
         /// The tax amount
         /// </summary>
-        [JsonProperty("taxAmount")]
         public decimal TaxAmount { get; set; }
 
         /// <summary>
         /// The tax vat amount
         /// </summary>
-        [JsonProperty("taxVatAmount")]
         public decimal TaxVATAmount { get; set; }
 
         /// <summary>
         /// The vat category
         /// </summary>
-        [AllowNull]
-        [JsonProperty("VatCategory")]
-        [JsonConverter(typeof(VATCategoryToIntJsonConverter))]
         public VATCategory VATCategory { get; set; }
 
         #endregion
 
-        #region Constructor
+        #region Constructors
 
         /// <summary>
         /// Default constructor
         /// </summary>
-        public TaxesDescriptionDataModel()
+        public TaxesDescriptionRequestModel()
         {
 
         }
@@ -73,8 +63,22 @@ namespace BratnetProvider
 
         #region Public Methods
 
-        /// <inheritdoc/>
-        public override string ToString() => TaxDescription;
+        /// <summary>
+        /// Creates and returns a <see cref="TaxDataModel"/> from the current <see cref="TaxRequestModel"/>
+        /// </summary>
+        /// <returns></returns>
+        public TaxDescriptionDataModel TaxDescriptionDataModel()
+        {
+            var result = new TaxDescriptionDataModel()
+            {
+                TaxDescription = TaxDescription,
+                TaxAmount = TaxAmount,
+                TaxVATAmount = TaxVATAmount,
+                VATCategory = VATCategory
+            };
+
+            return result;
+        }
 
         #endregion
     }

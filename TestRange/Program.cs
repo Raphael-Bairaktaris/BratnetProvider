@@ -8,6 +8,186 @@ Console.WriteLine("Hello, World!");
 
 //var s = BratnetProviderClientConstants.InvoiceTypeToStringMapper[invoiceType];
 
+var client = new BratnetProviderClient("asdfgfgasvjxnsfgsifg324123");
+
+var request = new InvoiceRequestModel()
+{
+    Taxes = new List<TaxRequestModel>()
+    {
+         new TaxRequestModel()
+         {
+              TaxAmount = 50,
+              TaxCategory = VATCategory.VATRate9,
+         },
+         new TaxRequestModel()
+         {
+              TaxAmount = 50,
+              TaxCategory = VATCategory.VATRate9,
+         },
+    },
+    PaymentMethods = new List<PaymentMethodDetailDataModel>()
+    {
+        new PaymentMethodDetailDataModel()
+        {
+             Amount = 100,
+             PaymentMethodInfo = "Μετρητα",
+             Type = PaymentType.WebBanking
+        }
+    },
+    InvoiceDetails = new List<InvoiceDetailRequestModel>()
+    {
+       new InvoiceDetailRequestModel()
+       {
+           Name = "Νερο",
+           Quantity = 1,
+           IncomeClassificationType = IncomeClassificationType.E3_106,
+           IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
+           IncomeClassificationAmount = 100
+       }
+    }
+};
+
+
+var a = await client.SendInvoicesAsync(request);
+
+var r = await client.SendInvoicesAsync(new InvoicesDataModel()
+{
+    Invoices = new List<InvoiceDataModel>()
+    {
+        new InvoiceDataModel()
+        {
+            InvoiceHeader = new InvoiceHeaderDataModel()
+            {
+                InvoiceType = InvoiceType.ProvisionOfServicesReceipt,
+            },
+            Counterpart = new CounterpartDataModel()
+            {
+                VATNumber = "123123123123"
+            },
+            Extras = new ExtrasDataModel()
+            {
+                 CustomerAddress = "Zakinthou 35 Patra"
+            },
+            InvoiceDetails = new List<InvoiceDetailDataModel>()
+            {
+                new InvoiceDetailDataModel()
+                {
+                    Name = "Νερο",
+                    Quantity = 1,
+                    LineNumber = 0,
+                    IncomeClassifications = new List<IncomeClassificationDataModel>()
+                    {
+                         new IncomeClassificationDataModel()
+                         {
+                              IncomeClassificationType = IncomeClassificationType.E3_880_002,
+                              IncomeClassificationCategory= IncomeClassificationCategory.Category1_3,
+                              Amount = 100,
+                         },
+                    }
+                },
+                new InvoiceDetailDataModel()
+                {
+                    Name = "Νερο",
+                    Quantity = 1,
+                    LineNumber = 1,
+                    IncomeClassifications = new List<IncomeClassificationDataModel>()
+                    {
+                         new IncomeClassificationDataModel()
+                         {
+                              IncomeClassificationType = IncomeClassificationType.E3_880_003,
+                              IncomeClassificationCategory= IncomeClassificationCategory.Category1_3,
+                              Amount = 100,
+                              Id = 12
+                         }
+                    }
+                },
+                new InvoiceDetailDataModel()
+                {
+                    Name = "Νερο",
+                    Quantity = 1,
+                    LineNumber = 2,
+                    IncomeClassifications = new List<IncomeClassificationDataModel>()
+                    {
+                         new IncomeClassificationDataModel()
+                         {
+                              IncomeClassificationType = IncomeClassificationType.E3_880_003,
+                              IncomeClassificationCategory= IncomeClassificationCategory.Category1_2,
+                              Amount = 100,
+                         }
+                    }
+                }
+            },
+            TaxTotals = new TaxTotalsDataModel()
+            {
+                Taxes = new List<TaxDataModel>()
+                {
+                     new TaxDataModel()
+                     {
+                          TaxAmount = 50,
+                          TaxCategory = VATCategory.VATRate9,
+                          TaxId = 1,
+                     },
+                     new TaxDataModel()
+                     {
+                          TaxAmount = 50,
+                          TaxCategory = VATCategory.VATRate9,
+                          TaxId = 1,
+                     },
+                }
+            },
+            PaymentMethods = new PaymentMethodDetailsDataModel()
+            {
+                PaymentMethods = new List<PaymentMethodDetailDataModel>()
+                {
+                    new PaymentMethodDetailDataModel()
+                    {
+                         Amount = 100,
+                         PaymentMethodInfo = "Μετρητα",
+                         Type = PaymentType.WebBanking
+                    }
+                }
+            },
+            InvoiceSummary = new InvoiceSummaryDataModel()
+            {
+                TotalNetValue = 300,
+                 TotalGrossValue = 300,
+                 IncomeClassifications = new List<IncomeClassificationDataModel>()
+                 {
+                     new IncomeClassificationDataModel()
+                     {
+                          IncomeClassificationType = IncomeClassificationType.E3_880_002,
+                          IncomeClassificationCategory= IncomeClassificationCategory.Category1_3,
+                          Amount = 100
+                     },
+                     new IncomeClassificationDataModel()
+                     {
+                          IncomeClassificationType = IncomeClassificationType.E3_880_003,
+                          IncomeClassificationCategory= IncomeClassificationCategory.Category1_3,
+                          Amount = 100
+                     },
+                     new IncomeClassificationDataModel()
+                     {
+                          IncomeClassificationType = IncomeClassificationType.E3_880_003,
+                          IncomeClassificationCategory= IncomeClassificationCategory.Category1_2,
+                          Amount = 100
+                     },
+                 },
+            }
+        }
+    }
+});
+
+if (!r.IsSuccessful)
+{
+    // Show error
+    
+
+    return;
+}
+
+
+
+
 var json = File.ReadAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Provider.json"));
 
 var result = JsonConvert.DeserializeObject<InvoicesDataModel>(json, new JsonSerializerSettings()

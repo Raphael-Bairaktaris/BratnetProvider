@@ -13,25 +13,22 @@ namespace BratnetProvider
         /// The classification type
         /// </summary>
         [JsonProperty("classificationType")]
-        public ExpenseClassificationType ClassificationType { get; set; }
+        public ExpenseClassificationType ExpenseClassificationType { get; set; }
 
         /// <summary>
         /// The classification category
         /// </summary>
         [JsonProperty("classificationCategory")]
-        public ExpenseClassificationCategory ClassificationCategory { get; set; }
+        public ExpenseClassificationCategory ExpenseClassificationCategory { get; set; }
 
         /// <summary>
         /// The amount
-        /// Required
-        /// Min value 0
-        /// fraction digits 2
         /// </summary>
         [JsonProperty("amount")]
         public decimal Amount { get; set; }
 
         /// <summary>
-        /// The unique id
+        /// The TaxId
         /// </summary>
         [JsonProperty("id")]
         public byte? Id { get; set; }

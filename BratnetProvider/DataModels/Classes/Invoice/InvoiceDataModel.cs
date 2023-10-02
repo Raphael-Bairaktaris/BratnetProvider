@@ -25,9 +25,9 @@ namespace BratnetProvider
         private IEnumerable<InvoiceDetailDataModel>? mInvoiceDetails;
 
         /// <summary>
-        /// The member of the <see cref="TaxesDescriptions"/> property
+        /// The member of the <see cref="TaxDescriptions"/> property
         /// </summary>
-        private IEnumerable<TaxesDescriptionDataModel>? mTaxesDescriptions;
+        private IEnumerable<TaxDescriptionDataModel>? mTaxDescriptions;
 
         #endregion
 
@@ -85,7 +85,7 @@ namespace BratnetProvider
         /// The invoice payment methods
         /// </summary>
         [JsonProperty("paymentMethods")]
-        public PaymentMethodDataModel? PaymentMethods { get; set; }
+        public PaymentMethodDetailsDataModel? PaymentMethods { get; set; }
 
         /// <summary>
         /// The invoice detail
@@ -102,17 +102,17 @@ namespace BratnetProvider
         /// The invoice taxes totals
         /// </summary>
         [JsonProperty("taxesTotals")]
-        public TaxesTotalsDataModel? TaxesTotals { get; set; }
+        public TaxTotalsDataModel? TaxTotals { get; set; }
 
         /// <summary>
         /// The invoice taxes description
         /// </summary>
         [JsonProperty("taxesDescriptions")]
-        public IEnumerable<TaxesDescriptionDataModel> TaxesDescriptions
+        public IEnumerable<TaxDescriptionDataModel> TaxDescriptions
         {
-            get => mTaxesDescriptions ?? Enumerable.Empty<TaxesDescriptionDataModel>();
+            get => mTaxDescriptions ?? Enumerable.Empty<TaxDescriptionDataModel>();
 
-            set => mTaxesDescriptions = value;
+            set => mTaxDescriptions = value;
         }
 
         /// <summary>

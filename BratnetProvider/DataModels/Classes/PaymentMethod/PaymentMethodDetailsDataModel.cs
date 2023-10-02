@@ -3,40 +3,38 @@
 namespace BratnetProvider
 {
     /// <summary>
-    /// Represents a payment method detail data
+    /// Represents a set of payment method details
     /// </summary>
     public class PaymentMethodDetailsDataModel
     {
+        #region Private Members
+
+        /// <summary>
+        /// The member of the <see cref="PaymentMethods"/> property
+        /// </summary>
+        private IEnumerable<PaymentMethodDetailDataModel>? mPaymentMethods;
+
+        #endregion
 
         #region Public Property
 
         /// <summary>
-        /// The payment method type
-        /// </summary>
-        [JsonProperty("type")]
-        [JsonConverter(typeof(PaymentTypeToGreekStringJsonConverter))]
-        public PaymentType Type { get; set; }
-
-        /// <summary>
-        /// The payment amount required
-        /// Fraction digits 2
-        /// Min value 0
-        /// </summary>
-        [JsonProperty("amount")]
-        public decimal Amount { get; set; }
-
-        /// <summary>
         /// The payment method information
         /// </summary>
-        [JsonProperty("paymentMethodInfo")]
-        public string? PaymentMethodInfo { get; set; }
+        [JsonProperty("paymentMethods")]
+        public IEnumerable<PaymentMethodDetailDataModel> PaymentMethods
+        {
+            get => mPaymentMethods ?? Enumerable.Empty<PaymentMethodDetailDataModel>();
+
+            set => mPaymentMethods = value;
+        }
 
         #endregion
 
-        #region Constructor
+        #region Constructors
 
         /// <summary>
-        /// Default constructor
+        /// Default Constructor
         /// </summary>
         public PaymentMethodDetailsDataModel()
         {

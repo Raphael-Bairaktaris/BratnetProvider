@@ -37,7 +37,7 @@ namespace BratnetProvider
         }
 
         /// <summary>
-        /// The invoice serial number
+        /// The invoice increasing serial number
         /// </summary>
         [JsonProperty("aa")]
         public uint AA { get; set; }

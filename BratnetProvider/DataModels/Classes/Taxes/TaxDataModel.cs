@@ -5,17 +5,8 @@ namespace BratnetProvider
     /// <summary>
     /// Represents a taxes data model
     /// </summary>
-    public class TaxesDataModel
+    public class TaxDataModel
     {
-        #region Private Members
-
-        /// <summary>
-        /// The member of the <see cref="TaxType"/> property
-        /// </summary>
-        private IEnumerable<TaxType>? mTaxType;
-
-        #endregion
-
         #region Public Property
 
         /// <summary>
@@ -23,12 +14,7 @@ namespace BratnetProvider
         /// </summary>
         [JsonProperty("taxType")]
         [JsonConverter(typeof(TaxTypeToIntJsonConverter))]
-        public IEnumerable<TaxType> TaxType
-        {
-            get => mTaxType ?? Enumerable.Empty<TaxType>();
-
-            set => mTaxType = value;
-        }
+        public TaxType TaxType { get; set; }
 
         /// <summary>
         /// The tax category
@@ -67,7 +53,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public TaxesDataModel()
+        public TaxDataModel()
         {
 
         }

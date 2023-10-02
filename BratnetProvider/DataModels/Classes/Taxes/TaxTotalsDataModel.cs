@@ -5,14 +5,14 @@ namespace BratnetProvider
     /// <summary>
     /// Represents a taxes totals data
     /// </summary>
-    public class TaxesTotalsDataModel
+    public class TaxTotalsDataModel
     {
         #region Private Members
 
         /// <summary>
-        /// The member of the <see cref="TaxesDataModel"/> property
+        /// The member of the <see cref="TaxDataModel"/> property
         /// </summary>
-        private IEnumerable<TaxesDataModel>? mTaxDataModel;
+        private IEnumerable<TaxDataModel>? mTaxDataModel;
 
         #endregion
 
@@ -22,9 +22,9 @@ namespace BratnetProvider
         /// The taxes totals
         /// </summary>
         [JsonProperty("taxesTotals")]
-        public IEnumerable<TaxesDataModel> Taxes
+        public IEnumerable<TaxDataModel> Taxes
         {
-            get => mTaxDataModel ?? Enumerable.Empty<TaxesDataModel>();
+            get => mTaxDataModel ?? Enumerable.Empty<TaxDataModel>();
 
             set => mTaxDataModel = value;
         }
@@ -36,7 +36,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public TaxesTotalsDataModel()
+        public TaxTotalsDataModel()
         {
 
         }

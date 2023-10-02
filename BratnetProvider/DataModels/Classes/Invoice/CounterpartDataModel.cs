@@ -10,6 +10,11 @@ namespace BratnetProvider
         #region Private Members
 
         /// <summary>
+        /// The member of the <see cref="VATNumber"/> property
+        /// </summary>
+        private string? mVATNumber;
+
+        /// <summary>
         /// The member of the <see cref="Address"/> property
         /// </summary>
         private AddressDataModel? mAddress;
@@ -22,7 +27,12 @@ namespace BratnetProvider
         /// The VAT number
         /// </summary>
         [JsonProperty("vatNumber")]
-        public string? VATNumber { get; set; }
+        public string VATNumber 
+        {
+            get => mVATNumber ?? string.Empty;
+
+            set => mVATNumber = value;
+        }
 
         /// <summary>
         /// The country information

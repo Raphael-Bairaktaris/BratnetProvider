@@ -1,13 +1,11 @@
-﻿using BratnetProvider.JsonConverters;
-using Newtonsoft.Json;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 
 namespace BratnetProvider
 {
     /// <summary>
-    /// Represent an invoice detail
+    /// Request model used for sending detail invoices to the Bratnet provider
     /// </summary>
-    public class InvoiceDetailDataModel
+    public class InvoiceDetailRequestModel
     {
         #region Private Members
 
@@ -16,26 +14,14 @@ namespace BratnetProvider
         /// </summary>
         private string? mName;
 
-        /// <summary>
-        /// The member of the <see cref="IncomeClassifications"/> property
-        /// </summary>
-        private IEnumerable<IncomeClassificationDataModel>? mIncomeClassifications;
-
-        /// <summary>
-        /// The member of the <see cref="ExpenseClassifications"/> property
-        /// </summary>
-        private IEnumerable<ExpenseClassificationDataModel>? mExpenseClassifications;
-
         #endregion
 
-        #region Public Property
+        #region Public Properties
 
         /// <summary>
-        /// Indicates the name of product
+        /// The name
         /// </summary>
-        [AllowNull]
-        [JsonProperty("name")]
-        public string Name
+        public string Name 
         {
             get => mName ?? string.Empty;
 
@@ -43,91 +29,68 @@ namespace BratnetProvider
         }
 
         /// <summary>
-        /// Indicates the product code
+        /// The code
         /// </summary>
-        [JsonProperty("code")]
         public int Code { get; set; }
-
-        /// <summary>
-        /// The line number
-        /// </summary>
-        [JsonProperty("lineNumber")]
-        public int LineNumber { get; set; }
 
         /// <summary>
         /// The rec type
         /// </summary>
-        [JsonProperty("recType")]
         public string? RecType { get; set; }
 
         /// <summary>
         /// The fuel code
         /// </summary>
-        [JsonProperty("fuelCode")]
         public FuelCodeCategoryType? FuelCode { get; set; }
 
         /// <summary>
-        /// The product quantity
+        /// The quantity
         /// </summary>
-        [JsonProperty("quantity")]
-        public double Quantity { get; set; }
+        public uint Quantity { get; set; }
 
         /// <summary>
         /// The measurment unit
         /// </summary>
-        [JsonProperty("measurementUnit")]
-        [JsonConverter(typeof(MeasurementUnitToIntJsonConverter))]
         public MeasurementUnit MeasurementUnit { get; set; }
 
         /// <summary>
         /// The type of invoice
         /// </summary>
-        [JsonProperty("invoiceDetailType")]
-        [JsonConverter(typeof(InvoiceDetailTypeToIntJsonConverter))]
         public InvoiceDetailType? InvoiceDetailType { get; set; }
 
         /// <summary>
         /// Product value before discount
         /// </summary>
-        [JsonProperty("netValueBeforeDiscount")]
         public decimal NetValueBeforeDiscount { get; set; }
 
         /// <summary>
         /// The net value
         /// </summary>
-        [JsonProperty("netValue")]
         public decimal NetValue { get; set; }
 
         /// <summary>
         /// The vat number category
         /// </summary>
-        [JsonProperty("vatCategory")]
-        [JsonConverter(typeof(VATCategoryToIntJsonConverter))]
         public VATCategory VATCategory { get; set; }
 
         /// <summary>
         /// The VAT amount
         /// </summary>
-        [JsonProperty("vatAmount")]
         public decimal VATAmount { get; set; }
 
         /// <summary>
         /// The vat exemption type
         /// </summary>
-        [JsonProperty("vatExemptionCategory")]
-        [JsonConverter(typeof(VATExmpetionCategoryToIntJsonConverter))]
         public VATExemptionCategory? VATExemptionCategory { get; set; }
 
         /// <summary>
         /// The conduct
         /// </summary>
-        [JsonProperty("dienergeia")]
         public bool? Conduct { get; set; }
 
         /// <summary>
         /// The discount optiong discrimination
         /// </summary>
-        [JsonProperty("discountOption")]
         public bool? DiscountOption { get; set; }
 
         /// <summary>
@@ -135,14 +98,11 @@ namespace BratnetProvider
         /// Min value 0 
         /// Fraction digits 2
         /// </summary>
-        [JsonProperty("withheldAmount")]
         public decimal? WithheldAmmount { get; set; }
 
         /// <summary>
         /// The withheld percent category
         /// </summary>
-        [JsonProperty("withheldPercentCategory")]
-        [JsonConverter(typeof(WithholdingTaxCategoryToIntJsonConverter))]
         public WithholdingTaxCategory? WithheldPercentCategory { get; set; }
 
         /// <summary>
@@ -150,14 +110,11 @@ namespace BratnetProvider
         /// Min value 0
         /// Fraction digits 2
         /// </summary>
-        [JsonProperty("stampDutyAmmount")]
         public decimal? StamDutyAmount { get; set; }
 
         /// <summary>
         /// The stamp duty percent category
         /// </summary>
-        [JsonProperty("stampDutyPercentCategory")]
-        [JsonConverter(typeof(StampDutyPercentageCategoryToIntJsonConverter))]
         public StampDutyPercentageCategory? StamputyPercentCategory { get; set; }
 
         /// <summary>
@@ -165,21 +122,16 @@ namespace BratnetProvider
         /// Min value 0
         /// Fraction digits
         /// </summary>
-        [JsonProperty("feesAmount")]
         public decimal? FeesAmount { get; set; }
 
         /// <summary>
         /// The fees percent category
         /// </summary>
-        [JsonProperty("feesPercentCategory")]
-        [JsonConverter(typeof(FeesPercentageCategoryToIntJsonConverter))]
         public FeesPercentageCategory? FeesPercentCategory { get; set; }
 
         /// <summary>
         /// The other taxes percent category
         /// </summary>
-        [JsonProperty("otherTaxesPercentCategory")]
-        [JsonConverter(typeof(OtherTaxesPercentageCategoryToIntJsonConverter))]
         public OtherTaxesPercentageCategory? OtherTaxesPercentCategory { get; set; }
 
         /// <summary>
@@ -187,7 +139,6 @@ namespace BratnetProvider
         /// Min value 0
         /// Fraction digits 2
         /// </summary>
-        [JsonProperty("otherTaxesAmount")]
         public decimal? OtherTaxesAmount { get; set; }
 
         /// <summary>
@@ -195,89 +146,87 @@ namespace BratnetProvider
         /// Min value 0
         /// Fraction digits 2
         /// </summary>
-        [JsonProperty("deductionsAmount")]
         public decimal? DeductionsAmount { get; set; }
 
         /// <summary>
         /// The comns for the line
         /// </summary>
-        [JsonProperty("lineComments")]
         public string? LineComments { get; set; }
 
         /// <summary>
-        /// The income classifications
+        /// The classification type
         /// </summary>
-        [JsonProperty("incomeClassification")]
-        public IEnumerable<IncomeClassificationDataModel> IncomeClassifications
-        {
-            get => mIncomeClassifications ?? Enumerable.Empty<IncomeClassificationDataModel>();
-
-            set => mIncomeClassifications = value;
-        }
+        public IncomeClassificationType IncomeClassificationType { get; set; }
 
         /// <summary>
-        /// The expense classifications
+        /// The classification category
         /// </summary>
-        [JsonProperty("expenseClassification")]
-        public IEnumerable<ExpenseClassificationDataModel> ExpenseClassifications
-        {
-            get => mExpenseClassifications ?? Enumerable.Empty<ExpenseClassificationDataModel>();
+        public IncomeClassificationCategory IncomeClassificationCategory { get; set; }
 
-            set => mExpenseClassifications = value;
-        }
+        /// <summary>
+        /// The amount
+        /// </summary>
+        public decimal IncomeClassificationAmount { get; set; }
+
+        /// <summary>
+        /// The classification type
+        /// </summary>
+        public ExpenseClassificationType ExpenseClassificationType { get; set; }
+
+        /// <summary>
+        /// The classification category
+        /// </summary>
+        public ExpenseClassificationCategory ExpenseClassificationCategory { get; set; }
+
+        /// <summary>
+        /// The amount
+        /// </summary>
+        public decimal ExpenseClassificationAmount { get; set; }
 
         /// <summary>
         /// The quantity
         /// </summary>
-        [JsonProperty("quantity15")]
         public uint? Quantity15 { get; set; }
 
         /// <summary>
         /// The item's description 
         /// </summary>
         [AllowNull]
-        [JsonProperty("itemDescr")]
         public string ItemDespcription { get; set; }
 
         /// <summary>
         /// The price
         /// </summary>
-        [JsonProperty("price")]
         public decimal Price { get; set; }
 
         /// <summary>
         /// The amount of discount
         /// </summary>
-        [JsonProperty("discountAmount")]
         public decimal? DiscountAmount { get; set; }
 
         /// <summary>
         /// The percentage of discount
         /// </summary>
-        [JsonProperty("discountPercent")]
         public decimal? DiscountPercent { get; set; }
 
         /// <summary>
         /// The measurement unit name
         /// </summary>
-        [JsonProperty("measurementUnitName")]
-        [JsonConverter(typeof(MeasurementUnitToGreekStringJsonConverter))]
         public MeasurementUnit MeasurementUnitName { get; set; }
 
         /// <summary>
         /// The percentage of VAT
         /// </summary>
-        [JsonProperty("vatPercent")]
         public decimal VATPercent { get; set; }
 
         #endregion
 
-        #region Constructor
+        #region Constructors
 
         /// <summary>
         /// Default constructor
         /// </summary>
-        public InvoiceDetailDataModel()
+        public InvoiceDetailRequestModel()
         {
 
         }
@@ -286,8 +235,51 @@ namespace BratnetProvider
 
         #region Public Methods
 
-        /// <inheritdoc/>
-        public override string ToString() => Name + " - " + InvoiceDetailType;
+        /// <summary>
+        /// Creates and returns a <see cref="InvoiceDetailDataModel"/> from the current <see cref="InvoiceDetailRequestModel"/>
+        /// </summary>
+        /// <returns></returns>
+        public InvoiceDetailDataModel ToInvoiceDetailDataModel()
+        {
+            var result = new InvoiceDetailDataModel()
+            {
+                Name = Name,
+                RecType = RecType,
+                FuelCode = FuelCode,
+                Quantity = Quantity,
+                Code = Code,
+                MeasurementUnit = MeasurementUnit,
+                InvoiceDetailType = InvoiceDetailType,
+                NetValueBeforeDiscount = NetValueBeforeDiscount,
+                NetValue = NetValue,
+                VATCategory = VATCategory,
+                VATAmount = VATAmount,
+                VATExemptionCategory = VATExemptionCategory,
+                Conduct = Conduct,
+                DiscountOption = DiscountOption,
+                WithheldAmmount = WithheldAmmount,
+                WithheldPercentCategory = WithheldPercentCategory,
+                StamDutyAmount = StamDutyAmount,
+                StamputyPercentCategory = StamputyPercentCategory,
+                FeesAmount = FeesAmount,
+                FeesPercentCategory = FeesPercentCategory,
+                OtherTaxesPercentCategory = OtherTaxesPercentCategory,
+                OtherTaxesAmount = OtherTaxesAmount,
+                DeductionsAmount = DeductionsAmount,
+                LineComments = LineComments,
+                
+                Quantity15 = Quantity15,
+                ItemDespcription = ItemDespcription,
+                Price = Price,
+                DiscountAmount = DiscountAmount,
+                DiscountPercent = DiscountPercent,
+                MeasurementUnitName = MeasurementUnitName,
+                VATPercent = VATPercent
+
+            };
+
+            return result;
+        }
 
         #endregion
     }
