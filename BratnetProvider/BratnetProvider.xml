@@ -4,6 +4,507 @@
         <name>BratnetProvider</name>
     </assembly>
     <members>
+        <member name="T:BratnetProvider.InvoiceDetailRequestModel">
+            <summary>
+            Request model used for sending detail invoices to the Bratnet provider
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceDetailRequestModel.mName">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceDetailRequestModel.Name"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceDetailRequestModel.mItemDescription">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceDetailRequestModel.ItemDespcription"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.Name">
+            <summary>
+            The name
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.Code">
+            <summary>
+            The code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.RecType">
+            <summary>
+            The rec type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.FuelCode">
+            <summary>
+            The fuel code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.Quantity">
+            <summary>
+            The quantity
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.MeasurementUnit">
+            <summary>
+            The measurment unit
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.InvoiceDetailType">
+            <summary>
+            The type of invoice
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.NetValueBeforeDiscount">
+            <summary>
+            Product value before discount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.NetValue">
+            <summary>
+            The net value
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.VATCategory">
+            <summary>
+            The vat number category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.VATAmount">
+            <summary>
+            The VAT amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.VATExemptionCategory">
+            <summary>
+            The vat exemption type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.Conduct">
+            <summary>
+            The conduct
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.DiscountOption">
+            <summary>
+            The discount optiong discrimination
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.WithheldAmmount">
+            <summary>
+            The tax withholding amount
+            Min value 0 
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.WithheldPercentCategory">
+            <summary>
+            The withheld percent category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.StamDutyAmount">
+            <summary>
+            The stamp duty amount
+            Min value 0
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.StamputyPercentCategory">
+            <summary>
+            The stamp duty percent category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.FeesAmount">
+            <summary>
+            The fees amount
+            Min value 0
+            Fraction digits
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.FeesPercentCategory">
+            <summary>
+            The fees percent category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.OtherTaxesPercentCategory">
+            <summary>
+            The other taxes percent category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.OtherTaxesAmount">
+            <summary>
+            The other taxes amount
+            Min value 0
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.DeductionsAmount">
+            <summary>
+            The deduction amount
+            Min value 0
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.LineComments">
+            <summary>
+            The comns for the line
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.IncomeClassificationType">
+            <summary>
+            The classification type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.IncomeClassificationCategory">
+            <summary>
+            The classification category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.IncomeClassificationAmount">
+            <summary>
+            The amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.ExpenseClassificationType">
+            <summary>
+            The classification type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.ExpenseClassificationCategory">
+            <summary>
+            The classification category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.ExpenseClassificationAmount">
+            <summary>
+            The amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.Quantity15">
+            <summary>
+            The quantity
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.ItemDespcription">
+            <summary>
+            The item's description 
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.Price">
+            <summary>
+            The price
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.DiscountAmount">
+            <summary>
+            The amount of discount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.DiscountPercent">
+            <summary>
+            The percentage of discount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.VATPercent">
+            <summary>
+            The percentage of VAT
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceDetailRequestModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceDetailRequestModel.ToInvoiceDetailDataModel">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.InvoiceDetailDataModel"/> from the current <see cref="T:BratnetProvider.InvoiceDetailRequestModel"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BratnetProvider.InvoiceRequestModel">
+            <summary>
+            Request model used for sending invoices to the Bratnet provider
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mSeries">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceRequestModel.Series"/> property 
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mCorrelatedInvoices">
+            <summary>
+            The member of the <see cref="F:BratnetProvider.InvoiceRequestModel.mCorrelatedInvoices"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mPaymentMethods">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceRequestModel.PaymentMethods"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mTaxDataModel">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceRequestModel.Taxes"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mInvoiceDetails">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceRequestModel.InvoiceDetails"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mIssuerVATNumber">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceRequestModel.IssuerVATNumber"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mIssuerAddress">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceRequestModel.IssuerAddress"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mCounterpartVATNumber">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceRequestModel.CounterpartVATNumber"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mCounterpartAddress">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.InvoiceRequestModel.CounterpartAddress"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.IssuerName">
+            <summary>
+            The issuer name
+            Max length = 150
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.IssuerVATNumber">
+            <summary>
+            The issuer VAT number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.IssuerCountry">
+            <summary>
+            The country information
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.IssuerBranch">
+            <summary>
+            The issuer branch
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.IssuerAddress">
+            <summary>
+            The issuer address
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.CounterpartVATNumber">
+            <summary>
+            The counterpart VAT number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.CounterpartCountry">
+            <summary>
+            The counterpart country information
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.CounterpartBranch">
+            <summary>
+            The counterpart branch
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.CounterpartAddress">
+            <summary>
+            The counterpart address
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.Series">
+            <summary>
+            The invoice series number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.AA">
+            <summary>
+            The invoice increasing serial number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.IssueDate">
+            <summary>
+            The invoice date of issue
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.InvoiceType">
+            <summary>
+            The invoice type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.VATPaymentSuspension">
+            <summary>
+            The vat payment suspension indication
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.Currency">
+            <summary>
+            The type of currency
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.ExchangeRate">
+            <summary>
+            The exchange rate values0 - 50000
+            Fraction digits 5
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.CorrelatedInvoices">
+            <summary>
+            The correlated invoice
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.SelfPricing">
+            <summary>
+            The self pricing indication
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.DispatchDate">
+            <summary>
+            The date of dispatched invoice
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.DispatchTime">
+            <summary>
+            The time of dispatched invoice
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.VehicleNumber">
+            <summary>
+            The vehicle license plate number
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.MovePurpose">
+            <summary>
+            The move purpose index
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.FuelInvoice">
+            <summary>
+            The fuel used index
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.SpecialInvoiceCategory">
+            <summary>
+            The speific invoice cetegory
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.PaymentMethods">
+            <summary>
+            The payment methods
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.Taxes">
+            <summary>
+            The taxes totals
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.InvoiceDetails">
+            <summary>
+            The invoice details
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceRequestModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceRequestModel.ToInvoiceDataModel">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.InvoiceDataModel"/> from the current <see cref="T:BratnetProvider.InvoiceRequestModel"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BratnetProvider.TaxesDescriptionRequestModel">
+            <summary>
+            Request model used for taxes description invoices to the Bratnet provider
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.TaxesDescriptionRequestModel.mTaxDescription">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.TaxesDescriptionRequestModel.TaxDescription"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionRequestModel.LineId">
+            <summary>
+            The line id
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionRequestModel.TaxDescription">
+            <summary>
+            The tax description
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionRequestModel.TaxAmount">
+            <summary>
+            The tax amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionRequestModel.TaxVATAmount">
+            <summary>
+            The tax vat amount
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxesDescriptionRequestModel.VATCategory">
+            <summary>
+            The vat category
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.TaxesDescriptionRequestModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.TaxesDescriptionRequestModel.ToTaxDescriptionDataModel">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.TaxDataModel"/> from the current <see cref="T:BratnetProvider.TaxRequestModel"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BratnetProvider.TaxRequestModel">
+            <summary>
+            Request model used for sending invoice taxes to the Bratnet provider
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxRequestModel.TaxType">
+            <summary>
+            The tax type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxRequestModel.TaxCategory">
+            <summary>
+            The tax category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxRequestModel.UnderlyingValue">
+            <summary>
+            The underlying value
+            Min Value 0
+            Fraction digits 2
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.TaxRequestModel.TaxAmount">
+            <summary>
+            The tax amount
+            Min value 0
+            Fraction digits 2
+            Required
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.TaxRequestModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.TaxRequestModel.ToTaxDataModel">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.TaxDataModel"/> from the current <see cref="T:BratnetProvider.TaxRequestModel"/>
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BratnetProvider.BratnetProviderClientConstants">
             <summary>
             Constants related to the bratnet provider client
@@ -24,7 +525,7 @@
             Maps the <see cref="T:BratnetProvider.FuelCodeCategoryType"/>s to their related <see cref="T:System.Int32"/>s
             </summary>
         </member>
-        <member name="P:BratnetProvider.BratnetProviderClientConstants.DetailTypeToIntMapper">
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.InvoiceDetailTypeToIntMapper">
             <summary>
             Maps the <see cref="T:BratnetProvider.InvoiceDetailType"/>s to their related <see cref="T:System.Int32"/>s
             </summary>
@@ -114,12 +615,12 @@
             Represent an esxpense classification model
             </summary>
         </member>
-        <member name="P:BratnetProvider.ExpenseClassificationDataModel.ClassificationType">
+        <member name="P:BratnetProvider.ExpenseClassificationDataModel.ExpenseClassificationType">
             <summary>
             The classification type
             </summary>
         </member>
-        <member name="P:BratnetProvider.ExpenseClassificationDataModel.ClassificationCategory">
+        <member name="P:BratnetProvider.ExpenseClassificationDataModel.ExpenseClassificationCategory">
             <summary>
             The classification category
             </summary>
@@ -127,14 +628,11 @@
         <member name="P:BratnetProvider.ExpenseClassificationDataModel.Amount">
             <summary>
             The amount
-            Required
-            Min value 0
-            fraction digits 2
             </summary>
         </member>
         <member name="P:BratnetProvider.ExpenseClassificationDataModel.Id">
             <summary>
-            The unique id
+            The TaxId
             </summary>
         </member>
         <member name="M:BratnetProvider.ExpenseClassificationDataModel.#ctor">
@@ -545,12 +1043,12 @@
             Represents an income classification data
             </summary>
         </member>
-        <member name="P:BratnetProvider.IncomeClassificationDataModel.ClassificationType">
+        <member name="P:BratnetProvider.IncomeClassificationDataModel.IncomeClassificationType">
             <summary>
             The classification type
             </summary>
         </member>
-        <member name="P:BratnetProvider.IncomeClassificationDataModel.ClassificationCategory">
+        <member name="P:BratnetProvider.IncomeClassificationDataModel.IncomeClassificationCategory">
             <summary>
             The classification category
             </summary>
@@ -605,7 +1103,12 @@
         </member>
         <member name="T:BratnetProvider.CounterpartDataModel">
             <summary>
-            Represent a counterpart data
+            Represent a set of counterpart details
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.CounterpartDataModel.mVATNumber">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.CounterpartDataModel.VATNumber"/> property
             </summary>
         </member>
         <member name="F:BratnetProvider.CounterpartDataModel.mAddress">
@@ -661,9 +1164,9 @@
             The member of the <see cref="P:BratnetProvider.InvoiceDataModel.InvoiceDetails"/> property
             </summary>
         </member>
-        <member name="F:BratnetProvider.InvoiceDataModel.mTaxesDescriptions">
+        <member name="F:BratnetProvider.InvoiceDataModel.mTaxDescriptions">
             <summary>
-            The member of the <see cref="P:BratnetProvider.InvoiceDataModel.TaxesDescriptions"/> property
+            The member of the <see cref="P:BratnetProvider.InvoiceDataModel.TaxDescriptions"/> property
             </summary>
         </member>
         <member name="P:BratnetProvider.InvoiceDataModel.UId">
@@ -716,12 +1219,12 @@
             The invoice detail
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceDataModel.TaxesTotals">
+        <member name="P:BratnetProvider.InvoiceDataModel.TaxTotals">
             <summary>
             The invoice taxes totals
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceDataModel.TaxesDescriptions">
+        <member name="P:BratnetProvider.InvoiceDataModel.TaxDescriptions">
             <summary>
             The invoice taxes description
             </summary>
@@ -758,7 +1261,7 @@
         </member>
         <member name="T:BratnetProvider.InvoiceDetailDataModel">
             <summary>
-            Represent an invoice detail data
+            Represent an invoice detail
             </summary>
         </member>
         <member name="F:BratnetProvider.InvoiceDetailDataModel.mName">
@@ -788,7 +1291,7 @@
         </member>
         <member name="P:BratnetProvider.InvoiceDetailDataModel.LineNumber">
             <summary>
-            The type of line
+            The line number
             </summary>
         </member>
         <member name="P:BratnetProvider.InvoiceDetailDataModel.RecType">
@@ -823,7 +1326,7 @@
         </member>
         <member name="P:BratnetProvider.InvoiceDetailDataModel.NetValue">
             <summary>
-            
+            The net value
             </summary>
         </member>
         <member name="P:BratnetProvider.InvoiceDetailDataModel.VATCategory">
@@ -833,7 +1336,7 @@
         </member>
         <member name="P:BratnetProvider.InvoiceDetailDataModel.VATAmount">
             <summary>
-            
+            The VAT amount
             </summary>
         </member>
         <member name="P:BratnetProvider.InvoiceDetailDataModel.VATExemptionCategory">
@@ -843,7 +1346,7 @@
         </member>
         <member name="P:BratnetProvider.InvoiceDetailDataModel.Conduct">
             <summary>
-            
+            The conduct
             </summary>
         </member>
         <member name="P:BratnetProvider.InvoiceDetailDataModel.DiscountOption">
@@ -986,7 +1489,7 @@
         </member>
         <member name="P:BratnetProvider.InvoiceHeaderDataModel.AA">
             <summary>
-            The invoice serial number
+            The invoice increasing serial number
             </summary>
         </member>
         <member name="P:BratnetProvider.InvoiceHeaderDataModel.IssueDate">
@@ -1163,26 +1666,6 @@
             Represent an invoice tax analysis data
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceTaxVATAnalysisDataModel.VATCategory">
-            <summary>
-            The vat category
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.InvoiceTaxVATAnalysisDataModel.VATPercent">
-            <summary>
-            The vat percent
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.InvoiceTaxVATAnalysisDataModel.NetAmount">
-            <summary>
-            The net value per vat
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.InvoiceTaxVATAnalysisDataModel.VATAmount">
-            <summary>
-            The vat amount
-            </summary>
-        </member>
         <member name="M:BratnetProvider.InvoiceTaxVATAnalysisDataModel.#ctor">
             <summary>
             Default constructor
@@ -1240,7 +1723,7 @@
         </member>
         <member name="T:BratnetProvider.IssuerDetailDataModel">
             <summary>
-            Represents a vat number data 
+            Represents a set of issuer details 
             </summary>
         </member>
         <member name="P:BratnetProvider.IssuerDetailDataModel.Name">
@@ -1254,84 +1737,81 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.IssuerDetailDataModel.ToString">
-            <inheritdoc/>
-        </member>
-        <member name="T:BratnetProvider.PaymentMethodDataModel">
+        <member name="T:BratnetProvider.PaymentMethodDetailDataModel">
             <summary>
-            Represents a payment method data
+            Represents a payment method detail
             </summary>
         </member>
-        <member name="F:BratnetProvider.PaymentMethodDataModel.mPaymentMethods">
+        <member name="F:BratnetProvider.PaymentMethodDetailDataModel.mPaymentMethodInfo">
             <summary>
-            The member of the <see cref="P:BratnetProvider.PaymentMethodDataModel.PaymentMethods"/> property
+            The member of the <see cref="P:BratnetProvider.PaymentMethodDetailDataModel.PaymentMethodInfo"/> property
             </summary>
         </member>
-        <member name="P:BratnetProvider.PaymentMethodDataModel.PaymentMethods">
-            <summary>
-            The payment method information
-            </summary>
-        </member>
-        <member name="M:BratnetProvider.PaymentMethodDataModel.#ctor">
-            <summary>
-            Default Constructor
-            </summary>
-        </member>
-        <member name="T:BratnetProvider.PaymentMethodDetailsDataModel">
-            <summary>
-            Represents a payment method detail data
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.PaymentMethodDetailsDataModel.Type">
+        <member name="P:BratnetProvider.PaymentMethodDetailDataModel.Type">
             <summary>
             The payment method type
             </summary>
         </member>
-        <member name="P:BratnetProvider.PaymentMethodDetailsDataModel.Amount">
+        <member name="P:BratnetProvider.PaymentMethodDetailDataModel.Amount">
             <summary>
             The payment amount required
             Fraction digits 2
             Min value 0
             </summary>
         </member>
-        <member name="P:BratnetProvider.PaymentMethodDetailsDataModel.PaymentMethodInfo">
+        <member name="P:BratnetProvider.PaymentMethodDetailDataModel.PaymentMethodInfo">
+            <summary>
+            The payment method information
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.PaymentMethodDetailDataModel.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.PaymentMethodDetailsDataModel">
+            <summary>
+            Represents a set of payment method details
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.PaymentMethodDetailsDataModel.mPaymentMethods">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.PaymentMethodDetailsDataModel.PaymentMethods"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.PaymentMethodDetailsDataModel.PaymentMethods">
             <summary>
             The payment method information
             </summary>
         </member>
         <member name="M:BratnetProvider.PaymentMethodDetailsDataModel.#ctor">
             <summary>
-            Default constructor
+            Default Constructor
             </summary>
         </member>
-        <member name="T:BratnetProvider.TaxesDataModel">
+        <member name="T:BratnetProvider.TaxDataModel">
             <summary>
             Represents a taxes data model
             </summary>
         </member>
-        <member name="F:BratnetProvider.TaxesDataModel.mTaxType">
-            <summary>
-            The member of the <see cref="P:BratnetProvider.TaxesDataModel.TaxType"/> property
-            </summary>
-        </member>
-        <member name="P:BratnetProvider.TaxesDataModel.TaxType">
+        <member name="P:BratnetProvider.TaxDataModel.TaxType">
             <summary>
             The tax type
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesDataModel.TaxCategory">
+        <member name="P:BratnetProvider.TaxDataModel.TaxCategory">
             <summary>
             The tax category
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesDataModel.UnderlyingValue">
+        <member name="P:BratnetProvider.TaxDataModel.UnderlyingValue">
             <summary>
             The underlying value
             Min Value 0
             Fraction digits 2
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesDataModel.TaxAmount">
+        <member name="P:BratnetProvider.TaxDataModel.TaxAmount">
             <summary>
             The tax amount
             Min value 0
@@ -1339,75 +1819,75 @@
             Required
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesDataModel.TaxId">
+        <member name="P:BratnetProvider.TaxDataModel.TaxId">
             <summary>
             Unique tax id
             </summary>
         </member>
-        <member name="M:BratnetProvider.TaxesDataModel.#ctor">
+        <member name="M:BratnetProvider.TaxDataModel.#ctor">
             <summary>
             Default constructor
             </summary>
         </member>
-        <member name="T:BratnetProvider.TaxesDescriptionDataModel">
+        <member name="T:BratnetProvider.TaxDescriptionDataModel">
             <summary>
             Represent a taxes details descriptio. data
             </summary>
         </member>
-        <member name="F:BratnetProvider.TaxesDescriptionDataModel.mTaxDescription">
+        <member name="F:BratnetProvider.TaxDescriptionDataModel.mTaxDescription">
             <summary>
-            The member of the <see cref="P:BratnetProvider.TaxesDescriptionDataModel.TaxDescription"/> property
+            The member of the <see cref="P:BratnetProvider.TaxDescriptionDataModel.TaxDescription"/> property
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesDescriptionDataModel.LineId">
+        <member name="P:BratnetProvider.TaxDescriptionDataModel.LineId">
             <summary>
             The line id
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesDescriptionDataModel.TaxDescription">
+        <member name="P:BratnetProvider.TaxDescriptionDataModel.TaxDescription">
             <summary>
             The tax description
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesDescriptionDataModel.TaxAmount">
+        <member name="P:BratnetProvider.TaxDescriptionDataModel.TaxAmount">
             <summary>
             The tax amount
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesDescriptionDataModel.TaxVATAmount">
+        <member name="P:BratnetProvider.TaxDescriptionDataModel.TaxVATAmount">
             <summary>
             The tax vat amount
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesDescriptionDataModel.VATCategory">
+        <member name="P:BratnetProvider.TaxDescriptionDataModel.VATCategory">
             <summary>
             The vat category
             </summary>
         </member>
-        <member name="M:BratnetProvider.TaxesDescriptionDataModel.#ctor">
+        <member name="M:BratnetProvider.TaxDescriptionDataModel.#ctor">
             <summary>
             Default constructor
             </summary>
         </member>
-        <member name="M:BratnetProvider.TaxesDescriptionDataModel.ToString">
+        <member name="M:BratnetProvider.TaxDescriptionDataModel.ToString">
             <inheritdoc/>
         </member>
-        <member name="T:BratnetProvider.TaxesTotalsDataModel">
+        <member name="T:BratnetProvider.TaxTotalsDataModel">
             <summary>
             Represents a taxes totals data
             </summary>
         </member>
-        <member name="F:BratnetProvider.TaxesTotalsDataModel.mTaxDataModel">
+        <member name="F:BratnetProvider.TaxTotalsDataModel.mTaxDataModel">
             <summary>
-            The member of the <see cref="T:BratnetProvider.TaxesDataModel"/> property
+            The member of the <see cref="T:BratnetProvider.TaxDataModel"/> property
             </summary>
         </member>
-        <member name="P:BratnetProvider.TaxesTotalsDataModel.Taxes">
+        <member name="P:BratnetProvider.TaxTotalsDataModel.Taxes">
             <summary>
             The taxes totals
             </summary>
         </member>
-        <member name="M:BratnetProvider.TaxesTotalsDataModel.#ctor">
+        <member name="M:BratnetProvider.TaxTotalsDataModel.#ctor">
             <summary>
             Default constructor
             </summary>
@@ -3468,6 +3948,31 @@
             Allowed types documents: 11.3, 11.4, 13.1, and 13.31
             </summary>
         </member>
+        <member name="T:BratnetProvider.ErrorType">
+            <summary>
+            Provides enumeration over the error types
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ErrorType.Error">
+            <summary>
+            A standard error
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ErrorType.Warning">
+            <summary>
+            A warning
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ErrorType.Information">
+            <summary>
+            An informative message
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ErrorType.Hidden">
+            <summary>
+            An error that should get hidden
+            </summary>
+        </member>
         <member name="T:BratnetProvider.ExpenseClassificationCategory">
             <summary>
             The enum for the expenses classification category type
@@ -5382,6 +5887,638 @@
             Withholding Tax Dividends per para. 1 no. 64 n. 4172/2013
             </summary>
         </member>
+        <member name="T:BratnetProvider.ExtensionMethods">
+            <summary>
+            Extension methods
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.AggregateExceptionMessages(System.Exception)">
+            <summary>
+            Aggregates the <see cref="P:System.Exception.Message"/> in the <paramref name="exception"/> exception stack trace
+            </summary>
+            <param name="exception">The exception</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.IsNullOrEmpty(System.String)">
+            <summary>
+            Checks whether the string is null or empty
+            </summary>
+            <param name="value">The value</param>
+            <returns>Returns true if the string is null or empty, false otherwise</returns>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.IsNullOrEmpty(System.Collections.IEnumerable)">
+            <summary>
+            Checks if the specified <paramref name="enumerable"/> is <see cref="!:null"/> or 
+            if it doesn't have any items.
+            </summary>
+            <param name="enumerable">The enumerable</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.AggregateString``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.Func{System.String,System.String,System.String})">
+            <summary>
+            Aggregates the specified <paramref name="source"/> into a <see cref="T:System.String"/>
+            </summary>
+            <typeparam name="T">The type of the items</typeparam>
+            <param name="source">The source</param>
+            <param name="extractor">The string extractor that is used to convert an item to a string</param>
+            <param name="func">Delegate that places the extracted strings in order</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.AggregateString``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)">
+            <summary>
+            Aggregates the specified <paramref name="source"/> into a <see cref="T:System.String"/>
+            </summary>
+            <typeparam name="T">The type of the items</typeparam>
+            <param name="source">The source</param>
+            <param name="extractor">The string extractor that is used to convert an item to a string</param>
+            <param name="separator">The separator</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.AggregateString``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.String,System.String,System.String})">
+            <summary>
+            Aggregates the specified <paramref name="source"/> into a <see cref="T:System.String"/>.
+            NOTE: This method converts the items of the <paramref name="source"/> to <see cref="T:System.String"/>
+                  using the <see cref="M:System.Object.ToString"/> method!
+            </summary>
+            <typeparam name="T">The type of the items</typeparam>
+            <param name="source">The source</param>
+            <param name="func">Delegate that places the extracted strings in order</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.AggregateString``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Aggregates the specified <paramref name="source"/> into a <see cref="T:System.String"/>.
+            NOTE: This method converts the items of the <paramref name="source"/> to <see cref="T:System.String"/>
+                  using the <see cref="M:System.Object.ToString"/> method!
+            NOTE: This method uses ", " as the items separator!
+            </summary>
+            <typeparam name="T">The type of the items</typeparam>
+            <param name="source">The source</param>
+            <param name="separator">The separator</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.CreateWebRequestResultAsync(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            Returns a <see cref="T:BratnetProvider.WebRequestResult"/> pre-populated with the <see cref="T:System.Net.HttpWebResponse"/> information
+            </summary>
+            <param name="serverResponse">The server response</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.CreateWebRequestResultFromStreamAsync(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            Returns a <see cref="T:BratnetProvider.WebRequestResult`1"/> pre-populated with the <see cref="T:System.Net.HttpWebResponse"/> information
+            read as stream
+            </summary>
+            <param name="serverResponse">The server response</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.ExtensionMethods.CreateWebRequestResultAsync``1(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            Returns a <see cref="T:BratnetProvider.WebRequestResult`1"/> pre-populated with the <see cref="T:System.Net.HttpWebResponse"/> information
+            </summary>
+            <typeparam name="TResponse">The type of response to create</typeparam>
+            <param name="serverResponse">The server response</param>
+            <returns></returns>
+        </member>
+        <member name="T:BratnetProvider.Failable">
+            <summary>
+            The default implementation of the <see cref="T:BratnetProvider.IFailable"/> interface
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.Failable.mException">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.Failable.Exception"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.Failable.Exception">
+            <summary>
+            The exception that was thrown
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.Failable.ErrorType">
+            <summary>
+            The error type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.Failable.ErrorMessage">
+            <summary>
+            The error message
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.Failable.IsSuccessful">
+            <summary>
+            A flag indicating whether the task was successful or not
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.Failable.Success">
+            <summary>
+            The instance of the <see cref="T:BratnetProvider.Failable"/> that indicates a successful operation
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.Failable.OperationAbortedErrorMessage">
+            <summary>
+            Error message indicating that the operation was aborted
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.Failable.OperationAborted">
+            <summary>
+            The instance of the <see cref="T:BratnetProvider.Failable"/> that is used for indicating an operation
+            that was aborted with a hidden error
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.Failable.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.Failable.#ctor(System.Exception)">
+            <summary>
+            Exception based constructor
+            </summary>
+            <param name="ex">The exception</param>
+        </member>
+        <member name="M:BratnetProvider.Failable.FromException(System.Exception)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.Failable"/> from the specified <paramref name="ex"/>
+            </summary>
+            <param name="ex">The exception</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.Failable.FromErrorMessage(System.String)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.Failable"/> from the specified <paramref name="errorMessage"/>
+            </summary>
+            <param name="errorMessage">The error message</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.Failable.FromResult``1(``0)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.Failable`1"/> that represents the specified <paramref name="result"/>
+            </summary>
+            <typeparam name="T">The type of the result</typeparam>
+            <param name="result">The result</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.Failable.FromException``1(System.Exception)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.Failable`1"/> that represents the specified <paramref name="ex"/>
+            </summary>
+            <typeparam name="T">The type of the result</typeparam>
+            <param name="ex">The exception</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.Failable.FromErrorMessage``1(System.String)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.Failable`1"/> that represents the specified <paramref name="errorMessage"/>
+            </summary>
+            <typeparam name="T">The type of the result</typeparam>
+            <param name="errorMessage">The error message</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.Failable.FromAbortedOperation``1">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.Failable`1"/> that represents an aborted operation
+            </summary>
+            <typeparam name="T">The type of the result</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.Failable.ToString">
+            <summary>
+            Returns a string that represents the current object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.Failable.op_Implicit(System.String)~BratnetProvider.Failable">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.Failable"/> using the specified string as its error message
+            </summary>
+            <param name="s">The string</param>
+        </member>
+        <member name="M:BratnetProvider.Failable.op_Implicit(System.Exception)~BratnetProvider.Failable">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.Failable"/> using the message of the specified ex and its inner exceptions
+            as its error message
+            </summary>
+            <param name="ex">The exception</param>
+        </member>
+        <member name="T:BratnetProvider.SuccessOnlyFailable">
+            <summary>
+            An internal implementation of the <see cref="T:BratnetProvider.Failable"/> that always has
+            a successful state
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.SuccessOnlyFailable.ErrorMessage">
+            <summary>
+            The error message
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.SuccessOnlyFailable.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.OperationAbortedOnlyFailable">
+            <summary>
+            An internal implementation of the <see cref="T:BratnetProvider.Failable"/> that is used for 
+            indicating an aborted operation
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.OperationAbortedOnlyFailable.ErrorMessage">
+            <summary>
+            The error message
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.OperationAbortedOnlyFailable.ErrorType">
+            <summary>
+            The error type
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.OperationAbortedOnlyFailable.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.Failable`1">
+            <summary>
+            The default implementation of the <see cref="T:BratnetProvider.IFailable`1"/> interface
+            </summary>
+            <typeparam name="TResult">The type of the result</typeparam>
+        </member>
+        <member name="F:BratnetProvider.Failable`1.ExceptionMessage">
+            <summary>
+            The error message for the exception
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.Failable`1.mResult">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.Failable`1.Result"/>
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.Failable`1.Result">
+            <summary>
+            The result
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.Failable`1.OperationAborted">
+            <summary>
+            The instance of the <see cref="T:BratnetProvider.Failable`1"/> that is used for indicating an operation
+            that was aborted with a hidden error
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.Failable`1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.Failable`1.#ctor(`0)">
+            <summary>
+            Result based constructor
+            </summary>
+            <param name="result">The result</param>
+        </member>
+        <member name="M:BratnetProvider.Failable`1.#ctor(System.Exception)">
+            <summary>
+            Exception based constructor
+            </summary>
+            <param name="ex">The exception</param>
+        </member>
+        <member name="M:BratnetProvider.Failable`1.ToString">
+            <summary>
+            Returns a string that represents the current object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.Failable`1.op_Implicit(System.String)~BratnetProvider.Failable{`0}">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.Failable`1"/> using the specified string as its error message
+            </summary>
+            <param name="s">The string</param>
+        </member>
+        <member name="M:BratnetProvider.Failable`1.op_Implicit(System.Exception)~BratnetProvider.Failable{`0}">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.Failable`1"/> using the message of the specified ex and its inner exceptions
+            as its error message
+            </summary>
+            <param name="ex">The exception</param>
+        </member>
+        <member name="M:BratnetProvider.Failable`1.op_Implicit(`0)~BratnetProvider.Failable{`0}">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.Failable`1"/> using the specified result as its result
+            </summary>
+            <param name="result">The result</param>
+        </member>
+        <member name="T:BratnetProvider.OperationAbortedOnlyFailable`1">
+            <summary>
+            An internal implementation of the <see cref="T:BratnetProvider.Failable`1"/> that is used for 
+            indicating an aborted operation
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.OperationAbortedOnlyFailable`1.ErrorMessage">
+            <summary>
+            The error message
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.OperationAbortedOnlyFailable`1.ErrorType">
+            <summary>
+            The error type
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.OperationAbortedOnlyFailable`1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.IFailable">
+            <summary>
+            Provides abstractions for an object that can fail its task
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IFailable.Success">
+            <summary>
+            The instance of the <see cref="T:BratnetProvider.IFailable"/> that indicates a successful operation
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IFailable.OperationAborted">
+            <summary>
+            The instance of the <see cref="T:BratnetProvider.IFailable"/> that is used for indicating an operation
+            that was aborted with a hidden error
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IFailable.Exception">
+            <summary>
+            The exception that was thrown
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IFailable.ErrorType">
+            <summary>
+            The error type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IFailable.ErrorMessage">
+            <summary>
+            The error message
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IFailable.IsSuccessful">
+            <summary>
+            A flag indicating whether the task was successful or not
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.IFailable.FromException(System.Exception)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.IFailable"/> from the specified <paramref name="ex"/>
+            </summary>
+            <param name="ex">The exception</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.IFailable.FromErrorMessage(System.String)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.IFailable"/> from the specified <paramref name="errorMessage"/>
+            </summary>
+            <param name="errorMessage">The error message</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.IFailable.FromResult``1(``0)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.IFailable`1"/> that represents the specified <paramref name="result"/>
+            </summary>
+            <typeparam name="T">The type of the result</typeparam>
+            <param name="result">The result</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.IFailable.FromException``1(System.Exception)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.IFailable`1"/> that represents the specified <paramref name="ex"/>
+            </summary>
+            <typeparam name="T">The type of the result</typeparam>
+            <param name="ex">The exception</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.IFailable.FromErrorMessage``1(System.String)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.Failable`1"/> that represents the specified <paramref name="errorMessage"/>
+            </summary>
+            <typeparam name="T">The type of the result</typeparam>
+            <param name="errorMessage">The error message</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.IFailable.FromAbortedOperation``1">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.IFailable`1"/> that represents an aborted operation
+            </summary>
+            <typeparam name="T">The type of the result</typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:BratnetProvider.IFailable`1">
+            <summary>
+            A <see cref="T:BratnetProvider.IFailable"/> that contains a result
+            </summary>
+            <typeparam name="TResult">The type of the result</typeparam>
+        </member>
+        <member name="P:BratnetProvider.IFailable`1.OperationAborted">
+            <summary>
+            The instance of the <see cref="T:BratnetProvider.IFailable`1"/> that is used for indicating an operation
+            that was aborted with a hidden error
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IFailable`1.Result">
+            <summary>
+            The result
+            </summary>
+        </member>
+        <member name="T:BratnetProvider.WebRequestResult">
+            <summary>
+            A web response from a call to get generic object data from a HTTP server
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WebRequestResult.DefaultHeaders">
+            <summary>
+            The default headers
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WebRequestResult.ExceptionMessage">
+            <summary>
+            The error message for the exception
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WebRequestResult.mException">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.WebRequestResult.Exception"/> property
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WebRequestResult.mResult">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.WebRequestResult.Result"/>
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.Exception">
+            <summary>
+            The exception that was thrown
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.ErrorType">
+            <summary>
+            The error type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.ErrorMessage">
+            <summary>
+            If something failed, this is the error message.
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.IsSuccessful">
+            <summary>
+            A flag indicating whether the request was successful 
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.StatusCode">
+            <summary>
+            The status code
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.StatusDescription">
+            <summary>
+            The status description
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.ContentType">
+            <summary>
+            The type of content returned by the server
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.Headers">
+            <summary>
+            All the response headers
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.RawServerResponse">
+            <summary>
+            The raw server response body
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult.Result">
+            <summary>
+            The actual server response as an object
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult.#ctor(System.Exception)">
+            <summary>
+            Exception based constructor
+            </summary>
+            <param name="ex">The exception</param>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult.ToString">
+            <summary>
+            Returns a string that represents the current object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult.op_Implicit(System.String)~BratnetProvider.WebRequestResult">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.WebRequestResult"/> using the specified string as its error message
+            </summary>
+            <param name="s">The string</param>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult.op_Implicit(System.Exception)~BratnetProvider.WebRequestResult">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.Failable"/> using the message of the specified ex and its inner exceptions
+            as its error message
+            </summary>
+            <param name="ex">The exception</param>
+        </member>
+        <member name="T:BratnetProvider.WebRequestResult`1">
+            <summary>
+            A web response from a call to get specific data from a HTTP server
+            </summary>
+            <typeparam name="TResult">The type of data to deserialize the raw body into</typeparam>
+        </member>
+        <member name="P:BratnetProvider.WebRequestResult`1.Result">
+            <summary>
+            Casts the underlying object to the specified type
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult`1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult`1.#ctor(`0)">
+            <summary>
+            Result based constructor
+            </summary>
+            <param name="result">The result</param>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult`1.#ctor(System.Exception)">
+            <summary>
+            Exception based constructor
+            </summary>
+            <param name="ex">The exception</param>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult`1.ToUnsuccessfulWebRequestResult``1(System.String)">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.WebRequestResult`1"/> from the current object
+            </summary>
+            <typeparam name="T">The type of the failable</typeparam>
+            <param name="customErrorMessage">The custom error message</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult`1.ToSuccessfulWebRequestResult``1(System.Func{`0,``0})">
+            <summary>
+            Creates and returns a <see cref="T:BratnetProvider.WebRequestResult`1"/> from the current object
+            </summary>
+            <typeparam name="T">The type of the failable</typeparam>
+            <param name="valueConverter">The method that converts an instance of type <typeparamref name="TResult"/> to <typeparamref name="T"/></param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult`1.ToString">
+            <summary>
+            Returns a string that represents the current object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult`1.op_Implicit(System.String)~BratnetProvider.WebRequestResult{`0}">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.WebRequestResult`1"/> using the specified string as its error message
+            </summary>
+            <param name="s">The string</param>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult`1.op_Implicit(System.Exception)~BratnetProvider.WebRequestResult{`0}">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.WebRequestResult`1"/> using the message of the specified ex and its inner exceptions
+            as its error message
+            </summary>
+            <param name="ex">The exception</param>
+        </member>
+        <member name="M:BratnetProvider.WebRequestResult`1.op_Implicit(`0)~BratnetProvider.WebRequestResult{`0}">
+            <summary>
+            Creates a <see cref="T:BratnetProvider.WebRequestResult`1"/> using the specified result as its result
+            </summary>
+            <param name="result">The result</param>
+        </member>
+        <member name="T:BratnetProvider.IFailableHelpers">
+            <summary>
+            Helper methods for <see cref="T:BratnetProvider.IFailable"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.IFailableHelpers.GetStringRepresentation(BratnetProvider.IFailable)">
+            <summary>
+            Gets the string representation of the specified <paramref name="failable"/>
+            </summary>
+            <param name="failable">The failable</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.IFailableHelpers.GetStringRepresentation``1(BratnetProvider.IFailable{``0})">
+            <summary>
+            Gets the string representation of the specified <paramref name="failable"/>
+            </summary>
+            <param name="failable">The failable</param>
+            <returns></returns>
+        </member>
         <member name="T:BratnetProvider.BaseEnumToIntJsonConverter`1">
             <summary>
             The base for all the <see cref="T:Newtonsoft.Json.JsonConverter`1"/>s that are used for converting between an <see cref="T:System.Enum"/> and a <see cref="T:System.Int32"/>.
@@ -5505,6 +6642,19 @@
             </summary>
         </member>
         <member name="M:BratnetProvider.FuelCodeCategoryTypeToIntJsonConverter.GetMapper">
+            <inheritdoc/>
+        </member>
+        <member name="T:BratnetProvider.InvoiceDetailTypeToIntJsonConverter">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.InvoiceDetailType"/> to <see cref="T:System.Int32"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceDetailTypeToIntJsonConverter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.InvoiceDetailTypeToIntJsonConverter.GetMapper">
             <inheritdoc/>
         </member>
         <member name="T:BratnetProvider.InvoiceTypeToStringJsonConverter">
@@ -5706,6 +6856,286 @@
         </member>
         <member name="M:BratnetProvider.WithholdingTaxCategoryToIntJsonConverter.GetMapper">
             <inheritdoc/>
+        </member>
+        <member name="T:BratnetProvider.BratnetProviderClient">
+            <summary>
+            An agent that can make web requests to the Branet provider API
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClient.APIKey">
+            <summary>
+            The API key
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.BratnetProviderClient.#ctor(System.String)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="apiKey">The API key</param>
+        </member>
+        <member name="M:BratnetProvider.BratnetProviderClient.SendInvoicesAsync(BratnetProvider.InvoicesDataModel)">
+            <summary>
+            Sends the specified <paramref name="model"/> to the Bratnet provider.
+            </summary>
+            <param name="model">The models.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.BratnetProviderClient.SendInvoicesAsync(System.Collections.Generic.IEnumerable{BratnetProvider.InvoiceRequestModel})">
+            <summary>
+            Sends the specified <paramref name="models"/> to the Bratnet provider.
+            </summary>
+            <param name="models">The models.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.BratnetProviderClient.SendInvoicesAsync(BratnetProvider.InvoiceRequestModel)">
+            <summary>
+            Sends the specified <paramref name="model"/> to the Bratnet provider.
+            </summary>
+            <param name="model">The models.</param>
+            <returns></returns>
+        </member>
+        <member name="T:BratnetProvider.WebRequestsClient`1">
+            <summary>
+            Client that provides HTTP calls for sending and receiving information from a HTTP server
+            </summary>
+            <typeparam name="TAuthenticationArgs">
+            The type of the authentication args.
+            NOTE: The authentication args determine the authentication scheme that will be used against the server!
+            </typeparam>
+        </member>
+        <member name="F:BratnetProvider.WebRequestsClient`1.PATCH">
+            <summary>
+            The name of the PATCH HTTP method
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WebRequestsClient`1.MediaTypeJson">
+            <summary>
+            The json request and response preferred media type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestsClient`1.DeserializationErrorMessage">
+            <summary>
+            The standard deserialization error message
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WebRequestsClient`1.mClient">
+            <summary>
+            THe member of the <see cref="P:BratnetProvider.WebRequestsClient`1.Client"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestsClient`1.Client">
+            <summary>
+            The HTTP client that is used for sending the HTTP requests
+            NOTE: HTTP client is recommended to be injected as a Singleton in DI
+                  https://stackoverflow.com/questions/4015324/how-to-make-http-post-web-request
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.PostAsync(System.String,System.Object,`0)">
+            <summary>
+            POSTs a web request to an URL that contains the specified <paramref name="content"/> and returns a <see cref="T:System.Net.Http.HttpResponseMessage"/>
+            </summary>
+            <param name="url">The URL</param>
+            <param name="content">The content to post</param>
+            <param name="authenticationArgs">If specified, provides the Authorization header is set</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.PostBytesAsync(System.String,System.Object,`0)">
+            <summary>
+            POSTs a web request to an URL that contains the specified <paramref name="content"/> and returns a <see cref="T:BratnetProvider.WebRequestResult`1"/>
+            </summary>
+            <param name="url">The URL</param>
+            <param name="content">The content to post</param>
+            <param name="authenticationArgs">If specified, provides the Authorization header is set</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.GetAsync(System.String,`0)">
+            <summary>
+            GETs a web request to a URL and returns a <see cref="T:System.Net.Http.HttpResponseMessage"/>
+            </summary>
+            <param name="url">The URL</param>
+            <param name="authenticationArgs">If specified, provides the Authorization header is set</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.GetBytesAsync(System.String,`0)">
+            <summary>
+            GETs the bytes that are returned in the <see cref="T:System.Net.Http.HttpResponseMessage"/>
+            </summary>
+            <param name="url">The URL</param>
+            <param name="authenticationArgs">If specified, provides the Authorization header is set</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.DownloadFileAsync(System.String,System.String,`0)">
+            <summary>
+            Downloads the file from the specified <paramref name="url"/> and saves it at the specified <paramref name="fileName"/>
+            </summary>
+            <param name="url">The URL</param>
+            <param name="fileName">The file path combined with the file name</param>
+            <param name="authenticationArgs">If specified, provides the Authorization header is set</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.PostAsync``1(System.String,System.Object,`0)">
+            <summary>
+            POSTs a web request to an URL that contains the specified <paramref name="content"/> and returns a <see cref="T:BratnetProvider.WebRequestResult`1"/>
+            </summary>
+            <typeparam name="TResponse">The type of the response</typeparam>
+            <param name="url">The URL</param>
+            <param name="content">The content to post</param>
+            <param name="authenticationArgs">If specified, provides the Authorization header is set</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.GetAsync``1(System.String,`0)">
+            <summary>
+            GETs a web request to a URL and returns a <see cref="T:BratnetProvider.WebRequestResult`1"/>
+            </summary>
+            <param name="url">The URL</param>
+            <param name="authenticationArgs">If specified, provides the Authorization header is set</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.ShouldLogRequests">
+            <summary>
+            Gets a flag indicating whether the requests should be logged or not
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.CreateClient">
+            <summary>
+            Creates and returns an <see cref="T:System.Net.Http.HttpClient"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.ConfigureClient(System.Net.Http.HttpClient)">
+            <summary>
+            Configures the specified <paramref name="client"/>
+            </summary>
+            <param name="client">The client</param>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.ConfigureStringContent(System.Net.Http.StringContent)">
+            <summary>
+            Configures the specified <paramref name="stringContent"/>
+            </summary>
+            <param name="stringContent">The content</param>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.Serialize(System.Object)">
+            <summary>
+            Serializes the specified <paramref name="obj"/> to a string
+            before sending the request
+            </summary>
+            <param name="obj">The object</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.Deserialize``1(System.String)">
+            <summary>
+            Deserializes the specified <paramref name="rawServerResponse"/> to the requested type
+            </summary>
+            <typeparam name="TResponse">The type to deserialize to</typeparam>
+            <param name="rawServerResponse">The raw server response</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.GetMediaType">
+            <summary>
+            Gets the media type header that is attached to the request before sending it
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.GetEncoding">
+            <summary>
+            Gets the encoding that is attached to the request before sending it
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.CreateAuthenticationHeader(`0)">
+            <summary>
+            Creates and returns a <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue"/> using the
+            specified <paramref name="authenticationArgs"/>
+            </summary>
+            <param name="authenticationArgs">The authentication arguments</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.ParseErrorMessage(BratnetProvider.WebRequestResult)">
+            <summary>
+            Attempts to parse the error message contained in the <paramref name="result"/>
+            </summary>
+            <param name="result">The result</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.ParseDeserializationErrorMessage(BratnetProvider.WebRequestResult,System.Type,System.Exception)">
+            <summary>
+            Attempts to parse the error message contained in the specified <paramref name="deserializationException"/>
+            that was thrown when attempting to deserialize the <paramref name="result"/> to the specified <paramref name="deserializationType"/>
+            </summary>
+            <param name="deserializationType">The type that response should have been deserialized to</param>
+            <param name="deserializationException">The deserialization exception that was thrown</param>
+            <param name="result">The result</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.HandleNullAuthenticationArgs">
+            <summary>
+            Handles the null arguments
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.CreateStringContent(System.Object)">
+            <summary>
+            Creates and returns the <see cref="T:System.Net.Http.StringContent"/> that represents
+            the specified <paramref name="content"/>
+            </summary>
+            <param name="content">The content</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.ParseErrorMessageCore(BratnetProvider.WebRequestResult)">
+            <summary>
+            Attempts to parse the error message contained in the <paramref name="response"/>
+            </summary>
+            <param name="response">The Web request result</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.ParseErrorMessageCore(BratnetProvider.WebRequestResult,System.Type,System.Exception)">
+            <summary>
+            Attempts to parse the error message contained in the specified <paramref name="deserializationException"/>
+            that was thrown when attempting to deserialize the <paramref name="response"/> to the specified <paramref name="deserializationType"/>
+            </summary>
+            <param name="deserializationType">The type that response should have been deserialized to</param>
+            <param name="deserializationException">The deserialization exception that was thrown</param>
+            <param name="response">The Web request result</param>
+            <returns></returns>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient`1.SetAuthorizationHeader(`0)">
+            <summary>
+            Sets the specified <paramref name="authentication"/> if any to the <see cref="P:BratnetProvider.WebRequestsClient`1.Client"/>
+            </summary>
+            <param name="authentication">The token</param>
+        </member>
+        <member name="T:BratnetProvider.WebRequestsClient">
+            <summary>
+            The JWT token based implementation of the <see cref="T:BratnetProvider.WebRequestsClient`1"/>
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.WebRequestsClient.mInstance">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.WebRequestsClient.Instance"/>
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.WebRequestsClient.Instance">
+            <summary>
+            A single instance of the <see cref="T:BratnetProvider.WebRequestsClient"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.WebRequestsClient.CreateAuthenticationHeader(System.String)">
+            <summary>
+            Creates and returns a <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue"/> using the
+            specified <paramref name="authenticationArgs"/>
+            </summary>
+            <param name="authenticationArgs">The authentication arguments</param>
+            <returns></returns>
         </member>
     </members>
 </doc>

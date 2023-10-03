@@ -54,18 +54,15 @@ namespace BratnetProvider
         /// Creates and returns a <see cref="TaxDataModel"/> from the current <see cref="TaxRequestModel"/>
         /// </summary>
         /// <returns></returns>
-        public TaxDataModel TaxDataModel()
+        public TaxDataModel ToTaxDataModel()
         {
-            var result = new TaxDataModel()
+            return new TaxDataModel()
             {
                 TaxType = TaxType,
                 TaxCategory = TaxCategory,
                 UnderlyingValue = UnderlyingValue,
                 TaxAmount = TaxAmount
-
             };
-
-            return result;
         }
 
         #endregion

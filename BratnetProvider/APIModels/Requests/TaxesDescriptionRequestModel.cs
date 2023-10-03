@@ -67,7 +67,7 @@
         /// Creates and returns a <see cref="TaxDataModel"/> from the current <see cref="TaxRequestModel"/>
         /// </summary>
         /// <returns></returns>
-        public TaxDescriptionDataModel TaxDescriptionDataModel()
+        public TaxDescriptionDataModel ToTaxDescriptionDataModel()
         {
             var result = new TaxDescriptionDataModel()
             {

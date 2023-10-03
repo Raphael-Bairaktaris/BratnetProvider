@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography.X509Certificates;
 
 namespace BratnetProvider
 {
@@ -254,6 +255,11 @@ namespace BratnetProvider
             set => mInvoiceDetails = value;
         }
 
+        /// <summary>
+        /// Extra information
+        /// </summary>
+        public ExtrasDataModel Extras { get; set; }
+
         #endregion
 
         #region Constructors
@@ -261,7 +267,7 @@ namespace BratnetProvider
         /// <summary>
         /// Default constructor
         /// </summary>
-        public InvoiceRequestModel()
+        public InvoiceRequestModel() : base()
         {
                 
         }
@@ -311,7 +317,49 @@ namespace BratnetProvider
                     Branch = CounterpartBranch,
                     Address = CounterpartAddress,
                 },
+                PaymentMethods = new PaymentMethodDetailsDataModel()
+                {
+                    PaymentMethods = PaymentMethods
+                },
+                Extras = Extras,
             };
+
+            var taxes = new List<TaxDataModel>();
+
+            var index = 0;
+
+            foreach(var tax in Taxes)
+            {
+                index++;
+
+                var d = tax.ToTaxDataModel();
+
+                d.TaxId = index;
+
+                taxes.Add(d);
+            }
+
+            result.TaxTotals = new TaxTotalsDataModel()
+            {
+                Taxes = taxes
+            };
+
+            var invoiceDetails = new List<InvoiceDetailDataModel>();
+
+            index = 0;
+
+            foreach (var invoiceDetail in InvoiceDetails)
+            {
+                index++;
+
+                var d = invoiceDetail.ToInvoiceDetailDataModel();
+
+                d.LineNumber = index;
+
+                invoiceDetails.Add(d);
+            }
+
+            result.InvoiceDetails = invoiceDetails;
 
             return result;
         }

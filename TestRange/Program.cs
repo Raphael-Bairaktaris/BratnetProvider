@@ -43,10 +43,67 @@ var request = new InvoiceRequestModel()
            IncomeClassificationType = IncomeClassificationType.E3_106,
            IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
            IncomeClassificationAmount = 100
-       }
+       },
+       new InvoiceDetailRequestModel()
+       {
+           Name = "Νερο",
+           Quantity = 1,
+           IncomeClassificationType = IncomeClassificationType.E3_106,
+           IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
+           IncomeClassificationAmount = 100
+       },
+       new InvoiceDetailRequestModel()
+       {
+           Name = "Νερο",
+           Quantity = 1,
+           IncomeClassificationType = IncomeClassificationType.E3_106,
+           IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
+           IncomeClassificationAmount = 100
+       },
+       new InvoiceDetailRequestModel()
+       {
+           Name = "Νερο",
+           Quantity = 1,
+           IncomeClassificationType = IncomeClassificationType.E3_106,
+           IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
+           IncomeClassificationAmount = 100
+       },
+       new InvoiceDetailRequestModel()
+       {
+           Name = "Νερο",
+           Quantity = 1,
+           IncomeClassificationType = IncomeClassificationType.E3_106,
+           IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
+           IncomeClassificationAmount = 100
+       },
+       new InvoiceDetailRequestModel()
+       {
+           Name = "Νερο",
+           Quantity = 1,
+           IncomeClassificationType = IncomeClassificationType.E3_106,
+           IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
+           IncomeClassificationAmount = 100
+       },
+       new InvoiceDetailRequestModel()
+       {
+           Name = "Νερο",
+           Quantity = 1,
+           IncomeClassificationType = IncomeClassificationType.E3_106,
+           IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
+           IncomeClassificationAmount = 100
+       },
+       new InvoiceDetailRequestModel()
+       {
+           Name = "Νερο",
+           Quantity = 1,
+           IncomeClassificationType = IncomeClassificationType.E3_106,
+           IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
+           IncomeClassificationAmount = 100
+       },
     }
 };
 
+var dataModel = request.ToInvoiceDataModel();
 
 var a = await client.SendInvoicesAsync(request);
 

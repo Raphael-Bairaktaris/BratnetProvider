@@ -14,6 +14,11 @@ namespace BratnetProvider
         /// </summary>
         private string? mName;
 
+        /// <summary>
+        /// The member of the <see cref="ItemDespcription"/> property
+        /// </summary>
+        private string? mItemDescription;
+
         #endregion
 
         #region Public Properties
@@ -171,17 +176,17 @@ namespace BratnetProvider
         /// <summary>
         /// The classification type
         /// </summary>
-        public ExpenseClassificationType ExpenseClassificationType { get; set; }
+        public ExpenseClassificationType? ExpenseClassificationType { get; set; }
 
         /// <summary>
         /// The classification category
         /// </summary>
-        public ExpenseClassificationCategory ExpenseClassificationCategory { get; set; }
+        public ExpenseClassificationCategory? ExpenseClassificationCategory { get; set; }
 
         /// <summary>
         /// The amount
         /// </summary>
-        public decimal ExpenseClassificationAmount { get; set; }
+        public decimal? ExpenseClassificationAmount { get; set; }
 
         /// <summary>
         /// The quantity
@@ -192,7 +197,12 @@ namespace BratnetProvider
         /// The item's description 
         /// </summary>
         [AllowNull]
-        public string ItemDespcription { get; set; }
+        public string ItemDespcription 
+        { 
+            get => mItemDescription ?? string.Empty;
+            
+            set => mItemDescription = value;
+        }
 
         /// <summary>
         /// The price
@@ -208,11 +218,6 @@ namespace BratnetProvider
         /// The percentage of discount
         /// </summary>
         public decimal? DiscountPercent { get; set; }
-
-        /// <summary>
-        /// The measurement unit name
-        /// </summary>
-        public MeasurementUnit MeasurementUnitName { get; set; }
 
         /// <summary>
         /// The percentage of VAT
@@ -249,6 +254,7 @@ namespace BratnetProvider
                 Quantity = Quantity,
                 Code = Code,
                 MeasurementUnit = MeasurementUnit,
+                MeasurementUnitName = MeasurementUnit,
                 InvoiceDetailType = InvoiceDetailType,
                 NetValueBeforeDiscount = NetValueBeforeDiscount,
                 NetValue = NetValue,
@@ -267,20 +273,38 @@ namespace BratnetProvider
                 OtherTaxesAmount = OtherTaxesAmount,
                 DeductionsAmount = DeductionsAmount,
                 LineComments = LineComments,
-                
                 Quantity15 = Quantity15,
                 ItemDespcription = ItemDespcription,
                 Price = Price,
                 DiscountAmount = DiscountAmount,
                 DiscountPercent = DiscountPercent,
-                MeasurementUnitName = MeasurementUnitName,
-                VATPercent = VATPercent
-
+                VATPercent = VATPercent,
+                IncomeClassifications = new List<IncomeClassificationDataModel>()
+                {
+                    new IncomeClassificationDataModel()
+                    {
+                        Id = 1,
+                        Amount = IncomeClassificationAmount,
+                        IncomeClassificationCategory = IncomeClassificationCategory,
+                        IncomeClassificationType = IncomeClassificationType
+                    }
+                }
             };
+
+            if (ExpenseClassificationAmount is not null && ExpenseClassificationType is not null && ExpenseClassificationCategory is not null)
+                result.ExpenseClassifications = new List<ExpenseClassificationDataModel>()
+                {
+                    new ExpenseClassificationDataModel()
+                    {
+                        Id = 1,
+                        ExpenseClassificationCategory = ExpenseClassificationCategory.Value,
+                        ExpenseClassificationType = ExpenseClassificationType.Value,
+                        Amount = ExpenseClassificationAmount.Value
+                    }
+                };
 
             return result;
         }
-
         #endregion
     }
 }

@@ -44,7 +44,7 @@ namespace BratnetProvider
         /// Unique tax id
         /// </summary>
         [JsonProperty("id")]
-        public byte TaxId { get; set; }
+        public int TaxId { get; set; }
 
         #endregion
 
