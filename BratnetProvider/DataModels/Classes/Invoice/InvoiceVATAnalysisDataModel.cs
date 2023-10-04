@@ -28,7 +28,7 @@ namespace BratnetProvider
         /// The net value per vat
         /// </summary>
         [JsonProperty("netValuePerVat")]
-        public decimal NetAmount { get; set; }
+        public decimal NetAmountPerVat { get; set; }
 
         /// <summary>
         /// The vat amount

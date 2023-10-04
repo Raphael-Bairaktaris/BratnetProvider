@@ -49,7 +49,7 @@ var request = new InvoiceRequestModel()
            Name = "Νερο",
            Quantity = 1,
            IncomeClassificationType = IncomeClassificationType.E3_106,
-           IncomeClassificationCategory = IncomeClassificationCategory.Category1_2,
+           IncomeClassificationCategory = IncomeClassificationCategory.Category1_3,
            IncomeClassificationAmount = 100
        },
        new InvoiceDetailRequestModel()
@@ -206,8 +206,8 @@ var r = await client.SendInvoicesAsync(new InvoicesDataModel()
             },
             InvoiceSummary = new InvoiceSummaryDataModel()
             {
-                TotalNetValue = 300,
-                 TotalGrossValue = 300,
+                TotalNetAmount = 300,
+                 TotalGrossAmount = 300,
                  IncomeClassifications = new List<IncomeClassificationDataModel>()
                  {
                      new IncomeClassificationDataModel()

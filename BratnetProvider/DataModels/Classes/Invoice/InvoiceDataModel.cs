@@ -17,7 +17,7 @@ namespace BratnetProvider
         /// <summary>
         /// The member of the <see cref="InvoiceTaxVATAnalysis"/> property
         /// </summary>
-        private IEnumerable<InvoiceTaxVATAnalysisDataModel>? mInvoiceTaxVATAnalysis;
+        private IEnumerable<InvoiceVATAnalysisDataModel>? mInvoiceTaxVATAnalysis;
 
         /// <summary>
         /// The member of the <see cref="InvoiceDetails"/> property
@@ -142,9 +142,9 @@ namespace BratnetProvider
         /// The invoice tax VAT analysis
         /// </summary>
         [JsonProperty("invoiceTaxVatAnalysis")]
-        public IEnumerable<InvoiceTaxVATAnalysisDataModel> InvoiceTaxVATAnalysis
+        public IEnumerable<InvoiceVATAnalysisDataModel> InvoiceTaxVATAnalysis
         {
-            get => mInvoiceTaxVATAnalysis ?? Enumerable.Empty<InvoiceTaxVATAnalysisDataModel>();
+            get => mInvoiceTaxVATAnalysis ?? Enumerable.Empty<InvoiceVATAnalysisDataModel>();
 
             set => mInvoiceTaxVATAnalysis = value;
         }

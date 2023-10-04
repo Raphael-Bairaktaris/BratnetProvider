@@ -54,12 +54,12 @@
             The type of invoice
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceDetailRequestModel.NetValueBeforeDiscount">
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.NetAmountBeforeDiscount">
             <summary>
             Product value before discount
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceDetailRequestModel.NetValue">
+        <member name="P:BratnetProvider.InvoiceDetailRequestModel.NetAmount">
             <summary>
             The net value
             </summary>
@@ -270,6 +270,11 @@
             The member of the <see cref="P:BratnetProvider.InvoiceRequestModel.CounterpartAddress"/> property
             </summary>
         </member>
+        <member name="F:BratnetProvider.InvoiceRequestModel.mExtras">
+            <summary>
+            The property of <see cref="T:BratnetProvider.ExtrasDataModel"/> property
+            </summary>
+        </member>
         <member name="P:BratnetProvider.InvoiceRequestModel.IssuerName">
             <summary>
             The issuer name
@@ -405,6 +410,11 @@
         <member name="P:BratnetProvider.InvoiceRequestModel.InvoiceDetails">
             <summary>
             The invoice details
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.InvoiceRequestModel.Extras">
+            <summary>
+            Extra information
             </summary>
         </member>
         <member name="M:BratnetProvider.InvoiceRequestModel.#ctor">
@@ -1601,7 +1611,7 @@
             The member of the <see cref="P:BratnetProvider.InvoiceSummaryDataModel.ExpenseClassifications"/> property
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalNetValue">
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalNetAmount">
             <summary>
             The total net value
             </summary>
@@ -1636,12 +1646,12 @@
             The total deduction amount
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalGrossValue">
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.TotalGrossAmount">
             <summary>
             The total gross value
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceSummaryDataModel.PrintGrossValue">
+        <member name="P:BratnetProvider.InvoiceSummaryDataModel.PrintGrossAmount">
             <summary>
             The total print gross value
             </summary>
@@ -1657,16 +1667,6 @@
             </summary>
         </member>
         <member name="M:BratnetProvider.InvoiceSummaryDataModel.#ctor">
-            <summary>
-            Default constructor
-            </summary>
-        </member>
-        <member name="T:BratnetProvider.InvoiceTaxVATAnalysisDataModel">
-            <summary>
-            Represent an invoice tax analysis data
-            </summary>
-        </member>
-        <member name="M:BratnetProvider.InvoiceTaxVATAnalysisDataModel.#ctor">
             <summary>
             Default constructor
             </summary>
@@ -1706,7 +1706,7 @@
             The vat percent
             </summary>
         </member>
-        <member name="P:BratnetProvider.InvoiceVATAnalysisDataModel.NetAmount">
+        <member name="P:BratnetProvider.InvoiceVATAnalysisDataModel.NetAmountPerVat">
             <summary>
             The net value per vat
             </summary>

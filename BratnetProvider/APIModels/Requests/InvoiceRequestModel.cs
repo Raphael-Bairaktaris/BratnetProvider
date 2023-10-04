@@ -1,5 +1,6 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Security.Cryptography.X509Certificates;
+﻿using Newtonsoft.Json;
+using System.Diagnostics.CodeAnalysis;
+using System.IO.IsolatedStorage;
 
 namespace BratnetProvider
 {
@@ -54,6 +55,11 @@ namespace BratnetProvider
         /// The member of the <see cref="CounterpartAddress"/> property
         /// </summary>
         private AddressDataModel? mCounterpartAddress;
+
+        /// <summary>
+        /// The property of <see cref="ExtrasDataModel"/> property
+        /// </summary>
+        private ExtrasDataModel? mExtras;
 
         #endregion
 
@@ -258,7 +264,12 @@ namespace BratnetProvider
         /// <summary>
         /// Extra information
         /// </summary>
-        public ExtrasDataModel Extras { get; set; }
+        public ExtrasDataModel Extras 
+        {
+            get => mExtras ??= new();
+
+            set => mExtras = value;
+        }
 
         #endregion
 
@@ -321,9 +332,9 @@ namespace BratnetProvider
                 {
                     PaymentMethods = PaymentMethods
                 },
-                Extras = Extras,
+                Extras = Extras
             };
-
+                       
             var taxes = new List<TaxDataModel>();
 
             var index = 0;
@@ -361,9 +372,43 @@ namespace BratnetProvider
 
             result.InvoiceDetails = invoiceDetails;
 
+            var invoiceSummary = new InvoiceSummaryDataModel();
+
+            foreach (var invoiceDetail in InvoiceDetails)
+            {
+                invoiceSummary.TotalNetAmount += invoiceDetail.NetAmount;
+                invoiceSummary.TotalVATAmount += invoiceDetail.VATAmount;
+                invoiceSummary.TotalStampDutyAmount += invoiceDetail.StamDutyAmount ?? 0;
+                invoiceSummary.TotalDeductionsAmount += invoiceDetail.DeductionsAmount ?? 0;
+                invoiceSummary.TotalOtherTaxesAmount += invoiceDetail.OtherTaxesAmount ?? 0;
+                invoiceSummary.TotalWithheldAmount += invoiceDetail.WithheldAmmount ?? 0;
+                invoiceSummary.TotalFeesAmount += invoiceDetail.FeesAmount ?? 0;
+            }
+
+            var totalTaxesAmount = 0m;
+
+            foreach (var tax in taxes)
+                totalTaxesAmount += tax.TaxAmount;
+
+            invoiceSummary.TotalDeductionsAmount += totalTaxesAmount;
+
+            invoiceSummary.TotalGrossAmount = invoiceSummary.TotalNetAmount + invoiceSummary.TotalVATAmount - invoiceSummary.TotalWithheldAmount - invoiceSummary.TotalDeductionsAmount;
+
+            invoiceSummary.IncomeClassifications = InvoiceDetails
+                .GroupBy(x => new { x.IncomeClassificationType, x.IncomeClassificationCategory })
+                .Select(x => new IncomeClassificationDataModel() { Amount = x.Sum(y => y.IncomeClassificationAmount), IncomeClassificationType = x.Key.IncomeClassificationType, IncomeClassificationCategory = x.Key.IncomeClassificationCategory })
+                .ToList();
+
+            invoiceSummary.ExpenseClassifications = InvoiceDetails
+                .Where(x => x.ExpenseClassificationType is not null && x.ExpenseClassificationCategory is not null)
+                .GroupBy(x => new { ExpenseClassificationType = x.ExpenseClassificationType!.Value, ExpenseClassificationCategory = x.ExpenseClassificationCategory!.Value })
+                .Select(x => new ExpenseClassificationDataModel() { Amount = x.Sum(y => y.ExpenseClassificationAmount ?? 0), ExpenseClassificationType = x.Key.ExpenseClassificationType, ExpenseClassificationCategory = x.Key.ExpenseClassificationCategory })
+                .ToList();
+
+            result.InvoiceSummary = invoiceSummary;
+
             return result;
         }
-
         #endregion
     }
 }

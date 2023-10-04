@@ -66,12 +66,12 @@ namespace BratnetProvider
         /// <summary>
         /// Product value before discount
         /// </summary>
-        public decimal NetValueBeforeDiscount { get; set; }
+        public decimal NetAmountBeforeDiscount { get; set; }
 
         /// <summary>
         /// The net value
         /// </summary>
-        public decimal NetValue { get; set; }
+        public decimal NetAmount { get; set; }
 
         /// <summary>
         /// The vat number category
@@ -256,8 +256,8 @@ namespace BratnetProvider
                 MeasurementUnit = MeasurementUnit,
                 MeasurementUnitName = MeasurementUnit,
                 InvoiceDetailType = InvoiceDetailType,
-                NetValueBeforeDiscount = NetValueBeforeDiscount,
-                NetValue = NetValue,
+                NetValueBeforeDiscount = NetAmountBeforeDiscount,
+                NetValue = NetAmount,
                 VATCategory = VATCategory,
                 VATAmount = VATAmount,
                 VATExemptionCategory = VATExemptionCategory,

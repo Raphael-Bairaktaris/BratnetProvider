@@ -52,7 +52,6 @@ namespace BratnetProvider
         /// <summary>
         /// The vat category
         /// </summary>
-        [AllowNull]
         [JsonProperty("VatCategory")]
         [JsonConverter(typeof(VATCategoryToIntJsonConverter))]
         public VATCategory VATCategory { get; set; }

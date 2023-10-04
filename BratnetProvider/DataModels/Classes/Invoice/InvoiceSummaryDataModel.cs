@@ -27,7 +27,7 @@ namespace BratnetProvider
         /// The total net value
         /// </summary>
         [JsonProperty("totalNetValue")]
-        public decimal TotalNetValue { get; set; }
+        public decimal TotalNetAmount { get; set; }
 
         /// <summary>
         /// The total vat amount
@@ -69,13 +69,13 @@ namespace BratnetProvider
         /// The total gross value
         /// </summary>
         [JsonProperty("totalGrossValue")]
-        public decimal TotalGrossValue { get; set; }
+        public decimal TotalGrossAmount { get; set; }
 
         /// <summary>
         /// The total print gross value
         /// </summary>
         [JsonProperty("totalPrintGrossValue")]
-        public decimal PrintGrossValue { get; set; }
+        public decimal PrintGrossAmount { get; set; }
 
         /// <summary>
         /// The income classifications
