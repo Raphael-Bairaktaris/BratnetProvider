@@ -1,12 +1,40 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using BratnetProvider;
 using Newtonsoft.Json;
+using System.Diagnostics;
+using System.Text;
+
+BuildString();
+
+BuildStringBuilder();
+
+var string1 = "LabrosRaphael";
+var string2 = new StringBuilder().Append("Labros").Append("Raphael").ToString();
+
+var isEqual = string1 == string2;
 
 Console.WriteLine("Hello, World!");
 
 //var invoiceType = InvoiceType.SalesInvoice;
 
 //var s = BratnetProviderClientConstants.InvoiceTypeToStringMapper[invoiceType];
+
+var currency1 = new CurrencyInfo()
+{
+    Code = "EUR",
+    Name = "Euro",
+    Symbol = "E"
+};
+
+var currency2 = new CurrencyInfo()
+{
+    Code = "EUR",
+    Name = "Euro",
+    Symbol = "E"
+};
+
+var areEqual = currency1 == currency2;
+
 
 var client = new BratnetProviderClient("asdfgfgasvjxnsfgsifg324123");
 
@@ -314,11 +342,50 @@ Console.ReadLine();
 
 
 
-public record class CurrencyInfo
+void BuildString()
+{
+    var resultString = "test";
+
+    resultString += "1";
+    resultString += "2";
+    resultString += "3";
+
+    Console.WriteLine(resultString);
+}
+
+void BuildStringBuilder()
+{
+    var sb = new StringBuilder();
+
+    sb.Append("test");
+    sb.Append("1");
+    sb.Append("2");
+    sb.Append("3");
+
+    var resultString = sb.ToString();
+
+    Console.WriteLine(sb);
+}
+
+public class CurrencyInfo
 {
     public required string Code { get; init; }
 
     public required string Name { get; init; }
 
     public required string Symbol { get; init; }
+
+    public override bool Equals(object? obj)
+    {
+        if (obj is CurrencyInfo currencyInfo)
+            return Code == currencyInfo.Code && Name == currencyInfo.Name && Symbol == currencyInfo.Symbol;
+
+        return false;
+    }
+
+    //public static bool operator ==(object? first, object? second) => ReferenceEquals(first, second);
+
+    //public static bool operator !=(object first, object second) => !ReferenceEquals(first, second);
+
 }
+

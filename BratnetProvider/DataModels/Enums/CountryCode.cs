@@ -162,7 +162,7 @@
         /// </summary>
         CC = 38,
         /// <summary>
-        /// Democratic Republicofthe Congo
+        /// Democratic Republic of MZ{Hthe Congo
         /// </summary>
         CD = 39,
         /// <summary>
