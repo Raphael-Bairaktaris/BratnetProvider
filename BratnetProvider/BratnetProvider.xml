@@ -620,6 +620,16 @@
             Maps the <see cref="T:BratnetProvider.WithholdingTaxCategory"/>s to their related <see cref="T:System.Int32"/>s
             </summary>
         </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.CountryCodeToStringMapper">
+            <summary>
+            Maps the <see cref="T:BratnetProvider.CountryCode"/> to their related <see cref="T:System.String"/>
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.BratnetProviderClientConstants.ExpenseClassificationCategoriesPerInvoiceType">
+            <summary>
+            Contains all possible combinations of <see cref="T:BratnetProvider.ExpenseClassificationCategory"/> and <see cref="T:BratnetProvider.ExpenseClassificationType"/>
+            </summary>
+        </member>
         <member name="T:BratnetProvider.ExpenseClassificationDataModel">
             <summary>
             Represent an esxpense classification model
@@ -2094,7 +2104,7 @@
         </member>
         <member name="F:BratnetProvider.CountryCode.CD">
             <summary>
-            Democratic Republicofthe Congo
+            Democratic Republic of MZ{Hthe Congo
             </summary>
         </member>
         <member name="F:BratnetProvider.CountryCode.CF">
@@ -5887,6 +5897,126 @@
             Withholding Tax Dividends per para. 1 no. 64 n. 4172/2013
             </summary>
         </member>
+        <member name="T:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo">
+            <summary>
+            Contains all the <see cref="T:BratnetProvider.ExpenseClassificationType"/>s that can be used in combination with an <see cref="P:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo.ExpenseClassificationCategory"/>
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo.mExpenseClassificationTypes">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo.ExpenseClassificationTypes"/>
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo.ExpenseClassificationCategory">
+            <summary>
+            The expense classification category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo.ExpenseClassificationTypes">
+            <summary>
+            The expense classification types linked to the <see cref="P:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo.ExpenseClassificationCategory"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo.#ctor(BratnetProvider.ExpenseClassificationCategory,System.Collections.Generic.IEnumerable{BratnetProvider.ExpenseClassificationType})">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="expenseClassificationCategory">The expense classification category</param>
+            <param name="expenseClassificationTypes">The expense classification type linkedd to the <see cref="P:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo.ExpenseClassificationCategory"/> </param>
+        </member>
+        <member name="M:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:BratnetProvider.ExpenseClassificationCategoriesPerInvoiceTypeInfo">
+            <summary>
+            Contains all the <see cref="T:BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo"/> that can be used in combination with an <see cref="P:BratnetProvider.ExpenseClassificationCategoriesPerInvoiceTypeInfo.InvoiceType"/>
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.ExpenseClassificationCategoriesPerInvoiceTypeInfo.mExpenseClassificationCategories">
+            <summary>
+            The member of the <see cref="T:BratnetProvider.ExpenseClassificationCategory"/>
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExpenseClassificationCategoriesPerInvoiceTypeInfo.InvoiceType">
+            <summary>
+            The invoice type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.ExpenseClassificationCategoriesPerInvoiceTypeInfo.ExpenseClassificationCategories">
+            <summary>
+            The expense classification categories linked to the <see cref="P:BratnetProvider.ExpenseClassificationCategoriesPerInvoiceTypeInfo.InvoiceType"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.ExpenseClassificationCategoriesPerInvoiceTypeInfo.#ctor(BratnetProvider.InvoiceType,System.Collections.Generic.IEnumerable{BratnetProvider.ExpenseClassificationTypesPerExpenseClassificationCategoryInfo})">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="invoiceType">The invoice type</param>
+            <param name="expenseClassificationCategories">The expense classification categories linked to the <see cref="P:BratnetProvider.ExpenseClassificationCategoriesPerInvoiceTypeInfo.InvoiceType"/></param>
+        </member>
+        <member name="M:BratnetProvider.ExpenseClassificationCategoriesPerInvoiceTypeInfo.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo">
+            <summary>
+            Contains all the <see cref="T:BratnetProvider.IncomeClassificationType"/>s that can be used in combination with a <see cref="!:Atom.Billing.MyData.IncomeClassificationCategory"/>
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo.mIncomeClassificationTypes">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo.IncomeClassificationCategory"/> property
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo.IncomeClassificationCategory">
+            <summary>
+            The income classification category
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo.IncomeClassificationTypes">
+            <summary>
+            The income classification types linked to the <see cref="P:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo.IncomeClassificationCategory"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo.#ctor(BratnetProvider.IncomeClassificationCategory,System.Collections.Generic.IEnumerable{BratnetProvider.IncomeClassificationType})">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="incomeClassificationTypes">The income classification category</param>
+            <param name="incomeClassificationCategory">The income classification types linked to the <see cref="P:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo.IncomeClassificationCategory"/></param>
+        </member>
+        <member name="M:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:BratnetProvider.IncomeClassificationCategoriesPerInvoceTypeInfo">
+            <summary>
+            Contains all the <see cref="T:BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo"/> that can be used in combination with an <see cref="!:Atom.Billing.MyData.InvoiceType"/>
+            </summary>
+        </member>
+        <member name="F:BratnetProvider.IncomeClassificationCategoriesPerInvoceTypeInfo.mIncomeClassificationCategories">
+            <summary>
+            The member of the <see cref="P:BratnetProvider.IncomeClassificationCategoriesPerInvoceTypeInfo.IncomeClassificationCategories"/> properties
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IncomeClassificationCategoriesPerInvoceTypeInfo.InvoiceType">
+            <summary>
+            The invoice type
+            </summary>
+        </member>
+        <member name="P:BratnetProvider.IncomeClassificationCategoriesPerInvoceTypeInfo.IncomeClassificationCategories">
+            <summary>
+            The income classification categories linked to the <see cref="P:BratnetProvider.IncomeClassificationCategoriesPerInvoceTypeInfo.InvoiceType"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.IncomeClassificationCategoriesPerInvoceTypeInfo.#ctor(BratnetProvider.InvoiceType,System.Collections.Generic.IEnumerable{BratnetProvider.IncomeClassificationTypesPerIncomeClassificationCategoryInfo})">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="invoiceType">The invoice type</param>
+            <param name="incomeClassificationCategories">The income classification categories linked to the <see cref="P:BratnetProvider.IncomeClassificationCategoriesPerInvoceTypeInfo.InvoiceType"/></param>
+        </member>
+        <member name="M:BratnetProvider.IncomeClassificationCategoriesPerInvoceTypeInfo.ToString">
+            <inheritdoc/>
+        </member>
         <member name="T:BratnetProvider.ExtensionMethods">
             <summary>
             Extension methods
@@ -6519,6 +6649,29 @@
             <param name="failable">The failable</param>
             <returns></returns>
         </member>
+        <member name="T:BratnetProvider.BaseEnumEnumerableJsonConverter`1">
+            <summary>
+            The base for all the <see cref="T:Newtonsoft.Json.JsonConverter`1"/>s that are used for converting between an enumerable of <see cref="T:System.Enum"/>s and a <see cref="T:System.String"/>.
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.BaseEnumEnumerableJsonConverter`1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.BaseEnumEnumerableJsonConverter`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Collections.Generic.IEnumerable{`0},System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:BratnetProvider.BaseEnumEnumerableJsonConverter`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Collections.Generic.IEnumerable{`0},Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/> 
+        </member>
+        <member name="M:BratnetProvider.BaseEnumEnumerableJsonConverter`1.GetMapper">
+            <summary>
+            Gets a <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2"/> that maps the values of the <typeparamref name="T"/>
+            to <see cref="T:System.String"/>s
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BratnetProvider.BaseEnumToIntJsonConverter`1">
             <summary>
             The base for all the <see cref="T:Newtonsoft.Json.JsonConverter`1"/>s that are used for converting between an <see cref="T:System.Enum"/> and a <see cref="T:System.Int32"/>.
@@ -6598,6 +6751,19 @@
             </summary>
         </member>
         <member name="M:BratnetProvider.BaseFormattableValueToStringJsonConverter`1.FormatProvider.GetFormat(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="T:BratnetProvider.CountryCodeEnumerableToStringConverter">
+            <summary>
+            The <see cref="T:Newtonsoft.Json.JsonConverter`1"/> that converts a <see cref="T:BratnetProvider.CountryCode"/> to <see cref="T:System.String"/>
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.CountryCodeEnumerableToStringConverter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BratnetProvider.CountryCodeEnumerableToStringConverter.GetMapper">
             <inheritdoc/>
         </member>
         <member name="T:BratnetProvider.DateOnlyToStringJsonConverter">

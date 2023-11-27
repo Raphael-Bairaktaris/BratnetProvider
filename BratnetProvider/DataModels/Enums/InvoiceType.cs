@@ -64,12 +64,12 @@
         /// <summary>
         /// Invoice type 3.1
         /// </summary>
-        DeadOfOwnershipForNonObligatoryIssuer = 31,
+        DeedOfOwnershipForNonObligatoryIssuer = 31,
 
         /// <summary>
         /// Invoice type 3.2
         /// </summary>
-        DeadOfOwnershipWithDenialFromObligatoryIssuer = 32,
+        DeedOfOwnershipWithDenialFromObligatoryIssuer = 32,
 
         // Debit invoices (5)
 

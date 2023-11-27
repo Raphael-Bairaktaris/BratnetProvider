@@ -136,8 +136,8 @@ namespace BratnetProvider
             { InvoiceType.ProvisionOfServicesInvoiceForAdditionalCases, "2.4" },
 
             // Deeds of ownership
-            { InvoiceType.DeadOfOwnershipForNonObligatoryIssuer, "3.1" },
-            { InvoiceType.DeadOfOwnershipWithDenialFromObligatoryIssuer, "3.2" },
+            { InvoiceType.DeedOfOwnershipForNonObligatoryIssuer, "3.1" },
+            { InvoiceType.DeedOfOwnershipWithDenialFromObligatoryIssuer, "3.2" },
 
             // Correlated debit invoice
             { InvoiceType.CorrelatedDebitInvoice, "5.1" },
@@ -732,5 +732,1991 @@ namespace BratnetProvider
 
 
         }.ToImmutableDictionary();
+
+        public static IReadOnlyCollection<IncomeClassificationCategoriesPerInvoceTypeInfo> IncomeClassificationCategoriesPerInvoiceTypes { get; } = new List<IncomeClassificationCategoriesPerInvoceTypeInfo>()
+{
+            // 1.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesInvoice,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_1, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_2, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_4, new []
+                    {
+                        IncomeClassificationType.E3_880_001,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_563,
+                        IncomeClassificationType.E3_564,
+                        IncomeClassificationType.E3_565,
+                        IncomeClassificationType.E3_566,
+                        IncomeClassificationType.E3_567,
+                        IncomeClassificationType.E3_568,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, new []
+                    {
+                        IncomeClassificationType.E3_596,
+                        IncomeClassificationType.E3_597,
+                    })
+                }),
+
+            // 1.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesInvoiceForIntraCommunity,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_1, new []
+                    {
+                        IncomeClassificationType.E3_561_005,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_2, new []
+                    {
+                        IncomeClassificationType.E3_561_005,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_005,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_4, new []
+                    {
+                        IncomeClassificationType.E3_880_003,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 1.3
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesInvoiceForThirdPartyCountries,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_1, new []
+                    {
+                        IncomeClassificationType.E3_561_006,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_2, new []
+                    {
+                        IncomeClassificationType.E3_561_006,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_006,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_4, new []
+                    {
+                        IncomeClassificationType.E3_880_004,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_7, new []
+                    {
+                        IncomeClassificationType.E3_881_004,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 1.4
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesInvoiceForThirdParty,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_7, new []
+                    {
+                        IncomeClassificationType.E3_881_001,
+                        IncomeClassificationType.E3_881_003
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 1.5
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesInvoiceForThirdPartySalesAndClearance,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_1, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_2, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_007
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_007
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_4, new []
+                    {
+                        IncomeClassificationType.E3_880_001,
+                        IncomeClassificationType.E3_880_003,
+                        IncomeClassificationType.E3_880_004
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                }),
+            
+            // 1.6
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesInvoiceForAdditionalCases,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 2.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoice,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_563,
+                        IncomeClassificationType.E3_564,
+                        IncomeClassificationType.E3_565,
+                        IncomeClassificationType.E3_566,
+                        IncomeClassificationType.E3_567,
+                        IncomeClassificationType.E3_568,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 2.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForIntraCommunity,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 2.3
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForThirdCountries,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_006,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 2.4
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForAdditionalCases,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 3.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.DeedOfOwnershipForNonObligatoryIssuer,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                }),
+
+            // 3.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.DeedOfOwnershipWithDenialFromObligatoryIssuer,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_1, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_2, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_4, new []
+                    {
+                        IncomeClassificationType.E3_880_001,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_563,
+                        IncomeClassificationType.E3_564,
+                        IncomeClassificationType.E3_565,
+                        IncomeClassificationType.E3_566,
+                        IncomeClassificationType.E3_567,
+                        IncomeClassificationType.E3_568,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 5.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.CorrelatedDebitInvoice,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 5.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.NonCorrelatedDebitInvoice,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_1, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_2, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_4, new []
+                    {
+                        IncomeClassificationType.E3_880_001,
+                        IncomeClassificationType.E3_880_003,
+                        IncomeClassificationType.E3_880_004,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_563,
+                        IncomeClassificationType.E3_564,
+                        IncomeClassificationType.E3_565,
+                        IncomeClassificationType.E3_566,
+                        IncomeClassificationType.E3_567,
+                        IncomeClassificationType.E3_568,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_7, new []
+                    {
+                        IncomeClassificationType.E3_881_001,
+                        IncomeClassificationType.E3_881_003,
+                        IncomeClassificationType.E3_881_004,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 6.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SelfDeliveryReceipt,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_6, new []
+                    {
+                        IncomeClassificationType.E3_595,
+                    }),
+                }),
+
+            // 6.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SelfUseReceipt,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_6, new []
+                    {
+                        IncomeClassificationType.E3_595,
+                    }),
+                }),
+
+            // 7.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ContractIncome,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_1, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_2, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_007,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_4, new []
+                    {
+                        IncomeClassificationType.E3_880_001,
+                        IncomeClassificationType.E3_880_003,
+                        IncomeClassificationType.E3_880_004,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 8.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.RentIncome,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 8.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ReceiptOfAccommodationTaxCollection,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_7, new []
+                    {
+                        IncomeClassificationType.E3_881_001,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 11.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesReceipt,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_1, new []
+                    {
+                        IncomeClassificationType.E3_561_003,
+                        IncomeClassificationType.E3_561_004,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_2, new []
+                    {
+                        IncomeClassificationType.E3_561_003,
+                        IncomeClassificationType.E3_561_004,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_003,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_4, new []
+                    {
+                        IncomeClassificationType.E3_880_002,
+                        IncomeClassificationType.E3_880_003,
+                        IncomeClassificationType.E3_880_004,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 11.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ProvisionOfServicesReceipt,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_003,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 11.3
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SimplifiedInvoice,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_1, new []
+                    {
+                        IncomeClassificationType.E3_561_003,
+                        IncomeClassificationType.E3_561_004,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_2, new []
+                    {
+                        IncomeClassificationType.E3_561_003,
+                        IncomeClassificationType.E3_561_004,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_003,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_4, new []
+                    {
+                        IncomeClassificationType.E3_880_002,
+                        IncomeClassificationType.E3_880_003,
+                        IncomeClassificationType.E3_880_004,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_5, new []
+                    {
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 11.4
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesDebitReceipt,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_3, new []
+                    {
+                        IncomeClassificationType.E3_561_006
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_7, new []
+                    {
+                        IncomeClassificationType.E3_881_002,
+                        IncomeClassificationType.E3_881_003,
+                        IncomeClassificationType.E3_881_004
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 11.5
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesReceiptForThirdParty,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_7, new []
+                    {
+                        IncomeClassificationType.E3_881_002,
+                        IncomeClassificationType.E3_881_003,
+                        IncomeClassificationType.E3_881_004
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 13.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ExpensesPurchasesAndRetailTransactionsForDomesticAndNonDomestic,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 13.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.RetailTransactionsSubmissionForDomesticAndNonDomestic,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 13.3
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SharedCommonExpenses,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 13.4
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.Subscriptions,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 13.30
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.EntityReceiptAsSpecifiedByTheOriginator,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 13.31
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesDebitReceiptForDomesticAndNonDomestic,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 14.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesInvoiceForIntraCommunityAcquisitions,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 14.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.SalesInvoiceForThirdCountriesAcquisitions,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 14.3
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForIntraCommunityAcquisitions,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 14.4
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForThirdCountriesAcquisitions,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 14.5
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.EFKAAndInsuranceOrganizations,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 14.30
+
+            // 14.31
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.DebitInvoiceForDomesticAndNonDomestic,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 15.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.ContractExpense,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 16.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.RentExpense,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 17.1
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.Payroll,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 17.2
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.Deprecations,
+                Array.Empty<IncomeClassificationTypesPerIncomeClassificationCategoryInfo>()),
+
+            // 17.3
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.VariousIncomeArrangementsForAccountingBase,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_8, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_9, Array.Empty<IncomeClassificationType>()),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_10, new []
+                    {
+                        IncomeClassificationType.E3_561_001,
+                        IncomeClassificationType.E3_561_002,
+                        IncomeClassificationType.E3_561_003,
+                        IncomeClassificationType.E3_561_004,
+                        IncomeClassificationType.E3_561_005,
+                        IncomeClassificationType.E3_561_006,
+                        IncomeClassificationType.E3_561_007,
+
+                        IncomeClassificationType.E3_562,
+                        IncomeClassificationType.E3_563,
+                        IncomeClassificationType.E3_595,
+                        IncomeClassificationType.E3_596,
+                        IncomeClassificationType.E3_597,
+
+                        IncomeClassificationType.E3_880_001,
+                        IncomeClassificationType.E3_880_002,
+                        IncomeClassificationType.E3_880_003,
+                        IncomeClassificationType.E3_880_004,
+
+                        IncomeClassificationType.E3_881_001,
+                        IncomeClassificationType.E3_881_002,
+                        IncomeClassificationType.E3_881_003,
+                        IncomeClassificationType.E3_881_004,
+
+                        IncomeClassificationType.E3_564,
+                        IncomeClassificationType.E3_565,
+                        IncomeClassificationType.E3_566,
+                        IncomeClassificationType.E3_567,
+                        IncomeClassificationType.E3_568,
+                        IncomeClassificationType.E3_570,
+                    }),
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 17.4
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.VariousIncomeArrangementsForTaxBase,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 17.5
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.VariousExpenseArrangementsForAccountingBase,
+                new[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+
+            // 17.6
+            new IncomeClassificationCategoriesPerInvoceTypeInfo(
+                InvoiceType.VariousExpenseArrangementsForTaxBase,
+                new IncomeClassificationTypesPerIncomeClassificationCategoryInfo[]
+                {
+                    new IncomeClassificationTypesPerIncomeClassificationCategoryInfo(IncomeClassificationCategory.Category1_95, Array.Empty<IncomeClassificationType>())
+                }),
+        }.ToImmutableArray();
+
+        /// <summary>
+        /// Contains all possible combinations of <see cref="ExpenseClassificationCategory"/> and <see cref="ExpenseClassificationType"/>
+        /// </summary>
+        public static IReadOnlyCollection<ExpenseClassificationCategoriesPerInvoiceTypeInfo> ExpenseClassificationCategoriesPerInvoiceType { get; } = new List<ExpenseClassificationCategoriesPerInvoiceTypeInfo>()
+        {
+            // 1.1 Sales invoice
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesInvoice,
+                new []
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new []
+                    {
+                        ExpenseClassificationType.E3_102_001,
+                        ExpenseClassificationType.E3_102_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new []
+                    {
+                        ExpenseClassificationType.E3_202_001,
+                        ExpenseClassificationType.E3_302_001,
+                        ExpenseClassificationType.E3_313_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_012,
+                        ExpenseClassificationType.E3_585_013,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_012,
+                        ExpenseClassificationType.E3_585_013,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_001,
+                        ExpenseClassificationType.E3_883_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+            // 1.3 Sales invoice for third party countries
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesInvoiceForThirdPartyCountries,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+            // 1.4 Sales invoice for third party
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesInvoiceForThirdParty,
+                new []
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_001,
+                        ExpenseClassificationType.E3_102_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_001,
+                        ExpenseClassificationType.E3_302_001,
+                        ExpenseClassificationType.E3_313_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_001,
+                        ExpenseClassificationType.E3_883_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>())
+                }),
+
+            // 1.5 Sales invoice for third party sales and clearance
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesInvoiceForThirdPartySalesAndClearance,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_009
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_009
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_009
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_9, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 1.6 Sales invoice for additional cases
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesInvoiceForAdditionalCases,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+            // 2.1 Provision of services invoice
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoice,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_001,
+                        ExpenseClassificationType.E3_102_003,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_001,
+                        ExpenseClassificationType.E3_302_001,
+                        ExpenseClassificationType.E3_313_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_012,
+                        ExpenseClassificationType.E3_585_013,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_012,
+                        ExpenseClassificationType.E3_585_013,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 2.2 Provision of services invoice for intra community
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForIntraCommunity,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+            // 2.3 Provision of services invoice for third countries
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForThirdCountries,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+            // 2.4 Provision of services invoice for additional cases
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForAdditionalCases,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+            // 3.1 Deed of ownership for non obligatory issuer
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.DeedOfOwnershipForNonObligatoryIssuer,
+                new []
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_001,
+                        ExpenseClassificationType.E3_102_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_001,
+                        ExpenseClassificationType.E3_302_001,
+                        ExpenseClassificationType.E3_313_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new []
+                    {
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new []
+                    {
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_001,
+                        ExpenseClassificationType.E3_883_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>())
+                }),
+
+            // 3.2 Deed of ownership with denial from obligatory issuer
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.DeedOfOwnershipWithDenialFromObligatoryIssuer,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_001,
+                        ExpenseClassificationType.E3_102_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_001,
+                        ExpenseClassificationType.E3_302_001,
+                        ExpenseClassificationType.E3_313_001,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_016,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_001,
+                        ExpenseClassificationType.E3_883_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>())
+                }),
+
+            // 5.1 Correlated debit invoice
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.CorrelatedDebitInvoice,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+            // 5.2 Non correlated debit invoice
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.NonCorrelatedDebitInvoice,
+                new []
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_001, 
+                        ExpenseClassificationType.E3_102_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_001,
+                        ExpenseClassificationType.E3_302_001,
+                        ExpenseClassificationType.E3_313_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_016,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_013,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_013,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_001,
+                        ExpenseClassificationType.E3_883_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>())
+                }),
+
+            // 6.1 Self delivery receipt
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SelfDeliveryReceipt,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+            // 6.2 Self use receipt
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SelfUseReceipt,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+            // 7.1 Contract income
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ContractIncome,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_001,
+                        ExpenseClassificationType.E3_102_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_001,
+                        ExpenseClassificationType.E3_302_001,
+                        ExpenseClassificationType.E3_313_001
+                    }),
+
+                     new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                     new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                     {
+                         ExpenseClassificationType.E3_585_001,
+                         ExpenseClassificationType.E3_585_002,
+                         ExpenseClassificationType.E3_585_004,
+                         ExpenseClassificationType.E3_585_005,
+                         ExpenseClassificationType.E3_585_006,
+                         ExpenseClassificationType.E3_585_008,
+                         ExpenseClassificationType.E3_585_009,
+                         ExpenseClassificationType.E3_585_011,
+                         ExpenseClassificationType.E3_585_012,
+                         ExpenseClassificationType.E3_585_013,
+                         ExpenseClassificationType.E3_585_015,
+                         ExpenseClassificationType.E3_585_016,
+                         ExpenseClassificationType.E3_586
+                     }),
+
+                     new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                     {
+                         ExpenseClassificationType.E3_585_001,
+                         ExpenseClassificationType.E3_585_002,
+                         ExpenseClassificationType.E3_585_004,
+                         ExpenseClassificationType.E3_585_005,
+                         ExpenseClassificationType.E3_585_006,
+                         ExpenseClassificationType.E3_585_008,
+                         ExpenseClassificationType.E3_585_009,
+                         ExpenseClassificationType.E3_585_011,
+                         ExpenseClassificationType.E3_585_012,
+                         ExpenseClassificationType.E3_585_013,
+                         ExpenseClassificationType.E3_585_015,
+                         ExpenseClassificationType.E3_585_016,
+                         ExpenseClassificationType.E3_586
+                     }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_001,
+                        ExpenseClassificationType.E3_883_001
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 8.1 Rent income
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.RentIncome,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_004,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_004
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 8.2 Receipt of accommodation tax collection
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ReceiptOfAccommodationTaxCollection,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_008
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 11.1 Sales receipt
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesReceipt,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+            // 11.2 Provision of services receipt
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ProvisionOfServicesReceipt,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+             // 11.3 Simplified invoice
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SimplifiedInvoice,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+             // 11.4 Sales debit receipt
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesDebitReceipt,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+            
+             // 11.5 Provision of services receipt
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesReceiptForThirdParty,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+             // 13.1 Expenses purchases and retail transactions for domestic and non domestic
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ExpensesPurchasesAndRetailTransactionsForDomesticAndNonDomestic,
+                new []
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_002,
+                        ExpenseClassificationType.E3_102_006
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_002,
+                        ExpenseClassificationType.E3_302_002,
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_002,
+                        ExpenseClassificationType.E3_883_002
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 13.2 Retail transactions submission for domestic and non domestic
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.RetailTransactionsSubmissionForDomesticAndNonDomestic,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 13.3 Shared common expenses
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SharedCommonExpenses,
+                new []
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016,
+                    }),
+
+                     new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 13.4 Subscriptions
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.Subscriptions,
+                new []
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016,
+                    }),
+
+                     new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+             // 13.4 Entity receipt as specified by the originator
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.EntityReceiptAsSpecifiedByTheOriginator,
+                new []
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016,
+                    }),
+
+                     new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 13.31 Sales debit receipt for domestic and non domestic 
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesDebitReceiptForDomesticAndNonDomestic,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_002,
+                        ExpenseClassificationType.E3_102_006
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_002,
+                        ExpenseClassificationType.E3_302_002
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_002,
+                        ExpenseClassificationType.E3_883_002
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 14.1
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesInvoiceForIntraCommunityAcquisitions,
+                new []
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_004,
+                        ExpenseClassificationType.E3_102_006,
+                        ExpenseClassificationType.E3_313_003,
+                        ExpenseClassificationType.E3_313_005
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_003,
+                        ExpenseClassificationType.E3_202_005,
+                        ExpenseClassificationType.E3_302_003,
+                        ExpenseClassificationType.E3_302_005
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_882_003,
+                        ExpenseClassificationType.E3_883_003,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_003,
+                        ExpenseClassificationType.E3_883_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 14.2 
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.SalesInvoiceForThirdCountriesAcquisitions,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_005,
+                        ExpenseClassificationType.E3_102_006,
+                        ExpenseClassificationType.E3_313_004,
+                        ExpenseClassificationType.E3_313_005,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_004,
+                        ExpenseClassificationType.E3_202_005,
+                        ExpenseClassificationType.E3_302_004,
+                        ExpenseClassificationType.E3_302_005,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_882_004,
+                        ExpenseClassificationType.E3_883_004
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_004,
+                        ExpenseClassificationType.E3_883_004
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 14.3 Provision of services invoice for intra community acquisitions
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForIntraCommunityAcquisitions,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586,
+                        ExpenseClassificationType.E3_882_003,
+                        ExpenseClassificationType.E3_883_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_003,
+                        ExpenseClassificationType.E3_883_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 14.3 Provision of services invoice for third countries acquisitions
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ProvisionOfServicesInvoiceForThirdCountriesAcquisitions,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586,
+                        ExpenseClassificationType.E3_882_004,
+                        ExpenseClassificationType.E3_883_004
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_004,
+                        ExpenseClassificationType.E3_883_004
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 14.5 EFKA and insurance organizations
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.EFKAAndInsuranceOrganizations,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_007
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 14.30
+
+            //14.31 Debit invoice for domestic and non domestic
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.DebitInvoiceForDomesticAndNonDomestic,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_004,
+                        ExpenseClassificationType.E3_102_005,
+                        ExpenseClassificationType.E3_102_006,
+                        ExpenseClassificationType.E3_313_003,
+                        ExpenseClassificationType.E3_313_004,
+                        ExpenseClassificationType.E3_313_005,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_003,
+                        ExpenseClassificationType.E3_202_004,
+                        ExpenseClassificationType.E3_202_005,
+                        ExpenseClassificationType.E3_302_003,
+                        ExpenseClassificationType.E3_302_004,
+                        ExpenseClassificationType.E3_302_005,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_012,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_4, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_012,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_012,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586,
+                        ExpenseClassificationType.E3_882_003,
+                        ExpenseClassificationType.E3_882_004,
+                        ExpenseClassificationType.E3_883_003,
+                        ExpenseClassificationType.E3_883_004
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_003,
+                        ExpenseClassificationType.E3_882_004,
+                        ExpenseClassificationType.E3_883_003,
+                        ExpenseClassificationType.E3_883_004
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 15.1 Contract expense
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.ContractExpense,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_1, new[]
+                    {
+                        ExpenseClassificationType.E3_102_002,
+                        ExpenseClassificationType.E3_102_006,
+                        ExpenseClassificationType.E3_313_002,
+                        ExpenseClassificationType.E3_313_005,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_2, new[]
+                    {
+                        ExpenseClassificationType.E3_202_002,
+                        ExpenseClassificationType.E3_202_005,
+                        ExpenseClassificationType.E3_202_002,
+                        ExpenseClassificationType.E3_302_005,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_3, new[]
+                    {
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_016
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_7, new[]
+                    {
+                        ExpenseClassificationType.E3_882_002,
+                        ExpenseClassificationType.E3_883_002
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 16.1 Rent expense
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.RentExpense,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_5, new[]
+                    {
+                        ExpenseClassificationType.E3_585_014
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 17.1 Payroll
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.Payroll,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_6, new[]
+                    {
+                        ExpenseClassificationType.E3_581_001,
+                        ExpenseClassificationType.E3_581_002,
+                        ExpenseClassificationType.E3_581_003
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 17.2 Deprecations
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.Deprecations,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_6, new[]
+                    {
+                        ExpenseClassificationType.E3_587
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 17.3 Various expense arrangements for accounting base
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.VariousExpenseArrangementsForAccountingBase,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 17.4 Various income arrangements for tax base
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.VariousIncomeArrangementsForTaxBase,
+                Array.Empty<ExpenseClassificationTypesPerExpenseClassificationCategoryInfo>()),
+
+            // 17.5 Various income arrangements for accounting base
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.VariousIncomeArrangementsForAccountingBase,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_10, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_11, Array.Empty<ExpenseClassificationType>()),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_12, new[]
+                    {
+                        ExpenseClassificationType.E3_102_001,
+                        ExpenseClassificationType.E3_102_002,
+                        ExpenseClassificationType.E3_102_003,
+                        ExpenseClassificationType.E3_102_004,
+                        ExpenseClassificationType.E3_102_005,
+                        ExpenseClassificationType.E3_202_001,
+                        ExpenseClassificationType.E3_202_002,
+                        ExpenseClassificationType.E3_202_003,
+                        ExpenseClassificationType.E3_202_004,
+                        ExpenseClassificationType.E3_202_005,
+                        ExpenseClassificationType.E3_302_001,
+                        ExpenseClassificationType.E3_302_002,
+                        ExpenseClassificationType.E3_302_003,
+                        ExpenseClassificationType.E3_302_004,
+                        ExpenseClassificationType.E3_302_005,
+                        ExpenseClassificationType.E3_313_001,
+                        ExpenseClassificationType.E3_313_002,
+                        ExpenseClassificationType.E3_313_003,
+                        ExpenseClassificationType.E3_313_004,
+                        ExpenseClassificationType.E3_313_005,
+                        ExpenseClassificationType.E3_585_001,
+                        ExpenseClassificationType.E3_585_002,
+                        ExpenseClassificationType.E3_585_003,
+                        ExpenseClassificationType.E3_585_004,
+                        ExpenseClassificationType.E3_585_005,
+                        ExpenseClassificationType.E3_585_006,
+                        ExpenseClassificationType.E3_585_007,
+                        ExpenseClassificationType.E3_585_008,
+                        ExpenseClassificationType.E3_585_009,
+                        ExpenseClassificationType.E3_585_010,
+                        ExpenseClassificationType.E3_585_011,
+                        ExpenseClassificationType.E3_585_012,
+                        ExpenseClassificationType.E3_585_013,
+                        ExpenseClassificationType.E3_585_014,
+                        ExpenseClassificationType.E3_585_015,
+                        ExpenseClassificationType.E3_585_016,
+                        ExpenseClassificationType.E3_586,
+                        ExpenseClassificationType.E3_587,
+                        ExpenseClassificationType.E3_882_001,
+                        ExpenseClassificationType.E3_882_002,
+                        ExpenseClassificationType.E3_882_003,
+                        ExpenseClassificationType.E3_882_004,
+                        ExpenseClassificationType.E3_883_001,
+                        ExpenseClassificationType.E3_883_002,
+                        ExpenseClassificationType.E3_883_003,
+                        ExpenseClassificationType.E3_883_004,
+                        ExpenseClassificationType.E3_582,
+                        ExpenseClassificationType.E3_583,
+                        ExpenseClassificationType.E3_584,
+                        ExpenseClassificationType.E3_588,
+                        ExpenseClassificationType.E3_589,
+                    }), 
+                    
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_13, new[]
+                    {
+                        ExpenseClassificationType.E3_101,
+                        ExpenseClassificationType.E3_201,
+                        ExpenseClassificationType.E3_301,
+                        ExpenseClassificationType.E3_207,
+                        ExpenseClassificationType.E3_307,
+                        ExpenseClassificationType.E3_312,
+                    }),
+
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+
+            // 17.6 Various expense arrangements for tax base
+            new ExpenseClassificationCategoriesPerInvoiceTypeInfo(
+                InvoiceType.VariousExpenseArrangementsForTaxBase,
+                new[]
+                {
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_12, Array.Empty<ExpenseClassificationType>()),
+                    new ExpenseClassificationTypesPerExpenseClassificationCategoryInfo(ExpenseClassificationCategory.Category2_95, Array.Empty<ExpenseClassificationType>()),
+                }),
+        }.ToImmutableArray();
     }
 }
